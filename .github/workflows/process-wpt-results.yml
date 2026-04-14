@@ -16,10 +16,20 @@ env:
 
 jobs:
   wpt:
-    name: "Fetch results"
+    name: "Run WPT Tests"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
       - name: List results
         run: |
           curl -L -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/dioxuslabs/blitz/actions/artifacts?page=1"
+      - name: Process results
+        run: cargo run -rp process
+      # - name: Compress report (zstd)
+      #   run: zstd -22 --ultra -o ./wpt/output/wptreport.json.zst ./wpt/output/wptreport.json
+      # - uses: actions/upload-artifact@v4
+      #   with:
+      #     name: wpt-report.json.zst
+      #     path: ./wpt/output/wptreport.json.zst
+      #     compression: 0 # We are already using zstd compression
