@@ -1300,7 +1300,9 @@ dependencies = [
 
 [[package]]
 name = "wptreport"
-version = "0.0.11"
+version = "0.0.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "738812135c330e11ce28a41fe8955fc6976518bb71b9671e26f94e914f21c7bd"
 dependencies = [
  "indexmap",
  "rayon",
