@@ -1,7 +1,8 @@
 name: Process WPT Results
 
 on:
-  pull_request:
+  repository_dispatch:
+  workflow_dispatch:
   push:
     branches:
       - main
