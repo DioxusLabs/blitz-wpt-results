@@ -30,6 +30,8 @@ jobs:
           git config user.email ci@blitz.is
       - name: Process results
         run: cargo run -rp process
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # - name: Compress report (zstd)
       #   run: zstd -22 --ultra -o ./wpt/output/wptreport.json.zst ./wpt/output/wptreport.json
       # - uses: actions/upload-artifact@v4
