@@ -24,6 +24,10 @@ jobs:
       - name: List results
         run: |
           curl -L -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/dioxuslabs/blitz/actions/artifacts?page=1"
+      - name: Set git credentials
+        run: |
+          git config user.name blitz-ci
+          git config user.email ci@blitz.is
       - name: Process results
         run: cargo run -rp process
       # - name: Compress report (zstd)
