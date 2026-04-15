@@ -20,9 +20,9 @@ pub fn maybe_unzip_single_file(raw_file: Vec<u8>) -> Vec<u8> {
 }
 
 pub fn zstd_decode(file: &[u8]) -> Vec<u8> {
-  zstd::decode_all(Cursor::new(&file)).unwrap()
+    zstd::decode_all(Cursor::new(&file)).unwrap()
 }
 
 pub fn zstd_encode(file: &[u8], level: u16) -> Vec<u8> {
-  zstd::encode_all(Cursor::new(&file), level as i32).unwrap()
+    zstd::encode_all(Cursor::new(&file), level as i32).unwrap()
 }

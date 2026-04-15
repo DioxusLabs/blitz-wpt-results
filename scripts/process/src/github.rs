@@ -1,5 +1,5 @@
 use serde::Deserialize;
-use serde_derive::{Serialize};
+use serde_derive::Serialize;
 
 pub struct GithubClient {
     auth_header: String,

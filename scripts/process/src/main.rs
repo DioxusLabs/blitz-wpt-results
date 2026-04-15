@@ -1,13 +1,21 @@
+#![allow(dead_code)]
+#![allow(unused_imports)]
+
 mod compression;
+mod git;
 mod github;
+mod report;
 
 use std::{
     collections::{BTreeMap, HashSet},
+    fs::{canonicalize, read_dir},
     io::Cursor,
 };
 
 use compression::{maybe_unzip_single_file, zstd_decode, zstd_encode};
+use git::{git_add, git_commit};
 use github::GithubClient;
+use report::{load_existing_reports, parse_zstd_report};
 use wptreport::{
     AreaScores,
     score_summary::FocusArea,
@@ -17,6 +25,10 @@ use wptreport::{
 };
 
 fn main() {
+    let reports_dir =
+        canonicalize(format!("{}/../../reports", env!("CARGO_MANIFEST_DIR"))).unwrap();
+    let existing_report_ids = load_existing_reports(&reports_dir);
+
     println!("Fetching artifacts");
 
     let token = std::env::var("GITHUB_TOKEN").expect("GITHUB_TOKEN environment variable not found");
@@ -30,15 +42,37 @@ fn main() {
         artifact_response.total_count
     );
 
-    let artifact = &artifact_response.artifacts[0];
-    println!("{}", serde_json::to_string_pretty(artifact).unwrap());
+    for artifact in &artifact_response.artifacts {
+        // Skip non-main branch artifacts
+        if artifact.workflow_run.head_branch != "main" {
+            continue;
+        }
 
-    // let file = client.get_bytes(&artifact.archive_download_url);
-    // let file = maybe_unzip_single_file(file);
-    // let file = zstd_decode(&file);
-    // let file = String::from_utf8(file).expect("Expected report to be valid utf8");
+        // Stop processing once we encounter a run that has aleady been imported
+        let commit_id = &artifact.workflow_run.head_sha;
+        let exists = existing_report_ids.contains(&artifact.workflow_run.head_sha);
+        if exists {
+            break;
+        }
 
-    // let report: WptReport = serde_json::from_str(&file).unwrap();
+        println!("Found new WPT report artifact:");
+        println!("{}", serde_json::to_string_pretty(artifact).unwrap());
+
+        let file = client.get_bytes(&artifact.archive_download_url);
+        let file = maybe_unzip_single_file(file);
+        let report = parse_zstd_report(&file);
+
+        println!("Valid: {:?}", report.is_ok());
+        if !report.is_ok() {
+            continue;
+        }
+
+        let outpath = reports_dir.join(format!("{commit_id}.json.zst"));
+        std::fs::write(&outpath, file).unwrap();
+
+        git_add(&outpath).unwrap();
+        git_commit(&format!("Import WPT results for commit {commit_id}")).unwrap();
+    }
 
     // let mut scores = score_wpt_report(&report);
     // scores.retain(|area, _| is_focus_area(area));
