@@ -47,6 +47,10 @@ fn main() {
         if artifact.workflow_run.head_branch != "main" {
             continue;
         }
+        // Skip non-wptreport artifacts
+        if !artifact.name.contains("wptreport") {
+            continue;
+        }
 
         // Stop processing once we encounter a run that has aleady been imported
         let commit_id = &artifact.workflow_run.head_sha;
