@@ -5,7 +5,7 @@ use chrono::{DateTime, SecondsFormat};
 use wptreport::{
     score_summary::{FocusArea, ScoreSummaryReport},
     score_wpt_report,
-    summarize::{summarize_results, RunInfoWithScores},
+    summarize::{RunInfoWithScores, summarize_results},
     wpt_report::{TestStatus, WptReport},
 };
 

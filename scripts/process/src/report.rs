@@ -5,7 +5,7 @@ use wptreport::wpt_report::WptReport;
 use crate::compression::zstd_decode;
 
 pub fn parse_zstd_report(file: &[u8]) -> Result<WptReport, ()> {
-    let file = zstd_decode(&file);
+    let file = zstd_decode(file);
     let file = String::from_utf8(file).map_err(|_| ())?;
     serde_json::from_str(&file).map_err(|_| ())
 }
