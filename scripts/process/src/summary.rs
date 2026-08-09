@@ -2,12 +2,75 @@ use std::collections::HashSet;
 use std::path::Path;
 
 use chrono::{DateTime, SecondsFormat};
+use serde::{Deserialize, Serialize};
 use wptreport::{
-    score_summary::{FocusArea, ScoreSummaryReport},
+    score_summary::{FocusArea, RunScores, RunSummary, ScoreSummaryReport},
     score_wpt_report,
     summarize::{RunInfoWithScores, summarize_results},
     wpt_report::{TestStatus, WptReport},
 };
+
+/// A compact on-disk representation of `ScoreSummaryReport`: each run's
+/// per-area scores are stored as `[total_tests, total_score, total_subtests,
+/// total_subtests_passed]` arrays (parallel to `focus_areas`) with
+/// `total_score` rounded to 1dp, and each run is written on a single line.
+#[derive(Serialize, Deserialize)]
+struct CompactSummary {
+    focus_areas: Vec<String>,
+    runs: Vec<CompactRun>,
+}
+
+#[derive(Serialize, Deserialize)]
+struct CompactRun {
+    date: String,
+    wpt_revision: String,
+    product_revision: String,
+    scores: Vec<(u32, f64, u32, u32)>,
+}
+
+impl From<&RunSummary> for CompactRun {
+    fn from(run: &RunSummary) -> Self {
+        CompactRun {
+            date: run.date.clone(),
+            wpt_revision: run.wpt_revision.clone(),
+            product_revision: run.product_revision.clone(),
+            scores: run
+                .scores
+                .iter()
+                .map(|s| {
+                    (
+                        s.total_tests,
+                        (s.total_score * 10.0).round() / 10.0,
+                        s.total_subtests,
+                        s.total_subtests_passed,
+                    )
+                })
+                .collect(),
+        }
+    }
+}
+
+impl From<CompactRun> for RunSummary {
+    fn from(run: CompactRun) -> Self {
+        RunSummary {
+            date: run.date,
+            wpt_revision: run.wpt_revision,
+            product_revision: run.product_revision,
+            scores: run
+                .scores
+                .into_iter()
+                .map(
+                    |(total_tests, total_score, total_subtests, total_subtests_passed)| RunScores {
+                        total_tests,
+                        total_score,
+                        total_subtests,
+                        total_subtests_passed,
+                    },
+                )
+                .collect(),
+        }
+    }
+}
 
 pub fn is_focus_area(area: &str) -> bool {
     let slash_count = area.chars().filter(|c| *c == '/').count();
@@ -60,7 +123,12 @@ pub fn write_commit_messages(
 
 pub fn load_summary(path: impl AsRef<Path>) -> Option<ScoreSummaryReport> {
     let contents = std::fs::read(path).ok()?;
-    Some(serde_json::from_slice(&contents).expect("summary file should be valid JSON"))
+    let compact: CompactSummary =
+        serde_json::from_slice(&contents).expect("summary file should be valid JSON");
+    Some(ScoreSummaryReport {
+        focus_areas: compact.focus_areas,
+        runs: compact.runs.into_iter().map(RunSummary::from).collect(),
+    })
 }
 
 pub fn write_summary(path: impl AsRef<Path>, summary: &mut ScoreSummaryReport) {
@@ -68,8 +136,17 @@ pub fn write_summary(path: impl AsRef<Path>, summary: &mut ScoreSummaryReport) {
         .runs
         .sort_by(|a, b| (&a.date, &a.product_revision).cmp(&(&b.date, &b.product_revision)));
 
-    let mut json = serde_json::to_string_pretty(summary).unwrap();
-    json.push('\n');
+    // One compact line per run, so appends produce one-line git diffs
+    let mut json = String::from("{\n\"focus_areas\":");
+    json.push_str(&serde_json::to_string(&summary.focus_areas).unwrap());
+    json.push_str(",\n\"runs\":[\n");
+    for (i, run) in summary.runs.iter().enumerate() {
+        if i > 0 {
+            json.push_str(",\n");
+        }
+        json.push_str(&serde_json::to_string(&CompactRun::from(run)).unwrap());
+    }
+    json.push_str("\n]}\n");
     std::fs::write(path, json).unwrap();
 }
 
