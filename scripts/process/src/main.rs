@@ -8,7 +8,7 @@ use std::fs::canonicalize;
 use std::path::{Path, PathBuf};
 
 use compression::maybe_unzip_single_file;
-use git::{git_add, git_commit};
+use git::{git_add, git_commit, git_commit_timestamp};
 use github::GithubClient;
 use report::{load_existing_reports, parse_zstd_report};
 use summary::{append_runs, build_summary, load_summary, score_report, write_summary};
@@ -22,6 +22,25 @@ fn summary_path() -> PathBuf {
     canonicalize(format!("{}/../..", env!("CARGO_MANIFEST_DIR")))
         .unwrap()
         .join("summary.json")
+}
+
+/// A local checkout of the blitz repository, used to look up commit
+/// timestamps. Configurable via the BLITZ_REPO environment variable,
+/// defaulting to a checkout named "blitz" alongside this repository.
+fn blitz_repo_path() -> PathBuf {
+    let path = std::env::var("BLITZ_REPO")
+        .map(PathBuf::from)
+        .unwrap_or_else(|_| {
+            canonicalize(format!("{}/../../..", env!("CARGO_MANIFEST_DIR")))
+                .unwrap()
+                .join("blitz")
+        });
+    assert!(
+        path.join(".git").exists(),
+        "Blitz checkout not found at {} (set BLITZ_REPO to the path of a blitz checkout)",
+        path.display()
+    );
+    path
 }
 
 fn main() {
@@ -39,6 +58,7 @@ fn main() {
 /// directory.
 fn backfill() {
     let reports_dir = reports_dir();
+    let blitz_repo = blitz_repo_path();
     let report_ids = load_existing_reports(&reports_dir);
     let report_count = report_ids.len();
     println!("Backfilling summary from {report_count} reports");
@@ -51,7 +71,11 @@ fn backfill() {
             println!("Skipping invalid report {commit_id}");
             continue;
         };
-        runs.push(score_report(report));
+        let commit_timestamp = git_commit_timestamp(&blitz_repo, commit_id);
+        if commit_timestamp.is_none() {
+            println!("No commit timestamp found for {commit_id}; using WPT run time");
+        }
+        runs.push(score_report(report, commit_timestamp));
         if (idx + 1) % 50 == 0 {
             println!("Scored {}/{report_count} reports", idx + 1);
         }
@@ -66,6 +90,7 @@ fn backfill() {
 /// directory, and update summary.json with their scores.
 fn process_new_artifacts() {
     let reports_dir = reports_dir();
+    let blitz_repo = blitz_repo_path();
     let existing_report_ids = load_existing_reports(&reports_dir);
 
     println!("Fetching artifacts");
@@ -118,7 +143,11 @@ fn process_new_artifacts() {
         git_add(&outpath).unwrap();
         git_commit(&format!("Import WPT results for commit {commit_id}")).unwrap();
 
-        new_runs.push(score_report(report));
+        let commit_timestamp = git_commit_timestamp(&blitz_repo, commit_id);
+        if commit_timestamp.is_none() {
+            println!("No commit timestamp found for {commit_id}; using WPT run time");
+        }
+        new_runs.push(score_report(report, commit_timestamp));
     }
 
     if !new_runs.is_empty() {

@@ -26,3 +26,18 @@ pub fn git_commit(message: &str) -> Result<Output, std::io::Error> {
         .arg(message)
         .output()
 }
+
+/// The committer timestamp (seconds since the unix epoch) of a commit in the
+/// git repository at `repo`
+pub fn git_commit_timestamp(repo: &Path, sha: &str) -> Option<i64> {
+    let output = Command::new("git")
+        .arg("-C")
+        .arg(repo)
+        .args(["show", "-s", "--format=%ct", sha])
+        .output()
+        .ok()?;
+    if !output.status.success() {
+        return None;
+    }
+    String::from_utf8(output.stdout).ok()?.trim().parse().ok()
+}

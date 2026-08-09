@@ -16,7 +16,11 @@ pub fn is_focus_area(area: &str) -> bool {
 
 /// Convert a report into a `RunInfoWithScores`, scoring only focus areas.
 /// Skipped tests are stripped before scoring (matching the blitz website).
-pub fn score_report(mut report: WptReport) -> RunInfoWithScores {
+///
+/// The run is dated by the blitz commit's timestamp (`commit_timestamp`),
+/// falling back to the report's `time_start` (when the WPT run was executed)
+/// if no commit timestamp is available.
+pub fn score_report(mut report: WptReport, commit_timestamp: Option<i64>) -> RunInfoWithScores {
     report
         .results
         .retain(|test| test.status != TestStatus::Skip);
@@ -24,7 +28,8 @@ pub fn score_report(mut report: WptReport) -> RunInfoWithScores {
     let mut scores = score_wpt_report::<WptReport>(&report);
     scores.retain(|area, _| is_focus_area(area));
 
-    let date = DateTime::from_timestamp(report.time_start as i64, 0)
+    let timestamp = commit_timestamp.unwrap_or(report.time_start as i64);
+    let date = DateTime::from_timestamp(timestamp, 0)
         .expect("valid unix timestamp")
         .to_rfc3339_opts(SecondsFormat::Secs, true);
 
