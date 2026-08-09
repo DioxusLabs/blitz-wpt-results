@@ -8,10 +8,13 @@ use std::fs::canonicalize;
 use std::path::{Path, PathBuf};
 
 use compression::maybe_unzip_single_file;
-use git::{git_add, git_commit, git_commit_timestamp};
+use git::{git_add, git_commit, git_commit_message, git_commit_timestamp};
 use github::GithubClient;
 use report::{load_existing_reports, parse_zstd_report};
-use summary::{append_runs, build_summary, load_summary, score_report, write_summary};
+use summary::{
+    append_runs, build_summary, load_commit_messages, load_summary, score_report,
+    write_commit_messages, write_summary,
+};
 use wptreport::summarize::RunInfoWithScores;
 
 fn reports_dir() -> PathBuf {
@@ -22,6 +25,12 @@ fn summary_path() -> PathBuf {
     canonicalize(format!("{}/../..", env!("CARGO_MANIFEST_DIR")))
         .unwrap()
         .join("summary.json")
+}
+
+fn commit_messages_path() -> PathBuf {
+    canonicalize(format!("{}/../..", env!("CARGO_MANIFEST_DIR")))
+        .unwrap()
+        .join("commit-messages.json")
 }
 
 /// A local checkout of the blitz repository, used to look up commit
@@ -64,6 +73,7 @@ fn backfill() {
     println!("Backfilling summary from {report_count} reports");
 
     let mut runs: Vec<RunInfoWithScores> = Vec::with_capacity(report_count);
+    let mut commit_messages = std::collections::BTreeMap::new();
     for (idx, commit_id) in report_ids.iter().enumerate() {
         let path = reports_dir.join(format!("{commit_id}.json.zst"));
         let file = std::fs::read(&path).unwrap();
@@ -75,6 +85,9 @@ fn backfill() {
         if commit_timestamp.is_none() {
             println!("No commit timestamp found for {commit_id}; using WPT run time");
         }
+        if let Some(message) = git_commit_message(&blitz_repo, commit_id) {
+            commit_messages.insert(commit_id.clone(), message);
+        }
         runs.push(score_report(report, commit_timestamp));
         if (idx + 1) % 50 == 0 {
             println!("Scored {}/{report_count} reports", idx + 1);
@@ -83,6 +96,7 @@ fn backfill() {
 
     let mut summary = build_summary(runs);
     write_summary(summary_path(), &mut summary);
+    write_commit_messages(commit_messages_path(), &commit_messages);
     println!("Wrote summary with {} runs", summary.runs.len());
 }
 
@@ -107,6 +121,7 @@ fn process_new_artifacts() {
     );
 
     let mut new_runs: Vec<RunInfoWithScores> = Vec::new();
+    let mut new_commit_messages: Vec<(String, String)> = Vec::new();
 
     for artifact in &artifact_response.artifacts {
         // Skip non-main branch artifacts
@@ -147,12 +162,31 @@ fn process_new_artifacts() {
         if commit_timestamp.is_none() {
             println!("No commit timestamp found for {commit_id}; using WPT run time");
         }
+        if let Some(message) = git_commit_message(&blitz_repo, commit_id) {
+            new_commit_messages.push((commit_id.clone(), message));
+        }
         new_runs.push(score_report(report, commit_timestamp));
     }
 
     if !new_runs.is_empty() {
         update_summary(&summary_path(), new_runs);
+        update_commit_messages(&commit_messages_path(), new_commit_messages);
     }
+}
+
+fn update_commit_messages(path: &Path, new_messages: Vec<(String, String)>) {
+    if new_messages.is_empty() {
+        return;
+    }
+    let count = new_messages.len();
+    let mut messages = load_commit_messages(path);
+    messages.extend(new_messages);
+    write_commit_messages(path, &messages);
+
+    println!("Updated commit messages with {count} new commits");
+
+    git_add(path).unwrap();
+    git_commit(&format!("Update commit messages with {count} new commits")).unwrap();
 }
 
 fn update_summary(summary_path: &Path, new_runs: Vec<RunInfoWithScores>) {

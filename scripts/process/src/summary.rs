@@ -40,6 +40,24 @@ pub fn score_report(mut report: WptReport, commit_timestamp: Option<i64>) -> Run
     }
 }
 
+/// Load the commit-messages sidecar file (a map from blitz commit sha to the
+/// first line of its commit message)
+pub fn load_commit_messages(path: impl AsRef<Path>) -> std::collections::BTreeMap<String, String> {
+    let Ok(contents) = std::fs::read(path) else {
+        return Default::default();
+    };
+    serde_json::from_slice(&contents).expect("commit messages file should be valid JSON")
+}
+
+pub fn write_commit_messages(
+    path: impl AsRef<Path>,
+    messages: &std::collections::BTreeMap<String, String>,
+) {
+    let mut json = serde_json::to_string_pretty(messages).unwrap();
+    json.push('\n');
+    std::fs::write(path, json).unwrap();
+}
+
 pub fn load_summary(path: impl AsRef<Path>) -> Option<ScoreSummaryReport> {
     let contents = std::fs::read(path).ok()?;
     Some(serde_json::from_slice(&contents).expect("summary file should be valid JSON"))
