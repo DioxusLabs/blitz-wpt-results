@@ -91,20 +91,21 @@ pub fn score_report(
     }
 }
 
-/// The name of the group (and so the file) that an area's scores are stored
-/// in. Areas of depth <= 1 (e.g. "css", "css/css-flexbox") belong to the root
-/// group ("css"); deeper areas belong to their top-level folder's group.
-/// Depth-1 areas additionally head their own group so that each group file
-/// contains the full subtree including the folder itself.
+/// The name of the group (and so the file, nested under the suite's root
+/// directory) that an area's scores are stored in. Areas of depth <= 1 (e.g.
+/// "css", "css/css-flexbox") belong to the root group ("css/css"); deeper
+/// areas belong to their top-level folder's group. Depth-1 areas additionally
+/// head their own group so that each group file contains the full subtree
+/// including the folder itself.
 fn area_groups(area: &str) -> Vec<String> {
     let mut components = area.split('/');
-    let _root = components.next();
+    let root = components.next().unwrap();
     match components.next() {
-        None => vec!["css".to_string()],
+        None => vec![format!("{root}/{root}")],
         Some(second) if components.next().is_none() => {
-            vec!["css".to_string(), second.to_string()]
+            vec![format!("{root}/{root}"), format!("{root}/{second}")]
         }
-        Some(second) => vec![second.to_string()],
+        Some(second) => vec![format!("{root}/{second}")],
     }
 }
 
@@ -121,17 +122,23 @@ impl SummaryStore {
             serde_json::from_slice(&std::fs::read(dir.join("runs.json")).ok()?)
                 .expect("runs.json should be valid JSON");
         let mut areas = BTreeMap::new();
-        for entry in std::fs::read_dir(dir.join("areas")).expect("summary/areas should exist") {
-            let path = entry.unwrap().path();
-            let name = path.file_stem().unwrap().to_str().unwrap().to_string();
-            let file: AreaFile = serde_json::from_slice(&std::fs::read(&path).unwrap())
-                .expect("area file should be valid JSON");
-            assert_eq!(
-                file.scores.len(),
-                runs_file.runs.len(),
-                "area file {name} is misaligned with runs.json"
-            );
-            areas.insert(name, file);
+        for root_entry in std::fs::read_dir(dir.join("areas")).expect("summary/areas should exist")
+        {
+            let root_path = root_entry.unwrap().path();
+            let root = root_path.file_name().unwrap().to_str().unwrap().to_string();
+            for entry in std::fs::read_dir(&root_path).unwrap() {
+                let path = entry.unwrap().path();
+                let stem = path.file_stem().unwrap().to_str().unwrap();
+                let name = format!("{root}/{stem}");
+                let file: AreaFile = serde_json::from_slice(&std::fs::read(&path).unwrap())
+                    .expect("area file should be valid JSON");
+                assert_eq!(
+                    file.scores.len(),
+                    runs_file.runs.len(),
+                    "area file {name} is misaligned with runs.json"
+                );
+                areas.insert(name, file);
+            }
         }
         Some(SummaryStore {
             runs: runs_file.runs,
@@ -235,8 +242,10 @@ impl SummaryStore {
         );
 
         for (group, file) in &self.areas {
+            let path = areas_dir.join(format!("{group}.json"));
+            std::fs::create_dir_all(path.parent().unwrap()).unwrap();
             write_json_lines(
-                &areas_dir.join(format!("{group}.json")),
+                &path,
                 &format!(
                     "{{\n\"focus_areas\":{},\n\"scores\":[\n",
                     serde_json::to_string(&file.focus_areas).unwrap()
