@@ -21,6 +21,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Checkout blitz (for commit metadata)
+        uses: actions/checkout@v4
+        with:
+          repository: DioxusLabs/blitz
+          path: blitz-checkout
+          fetch-depth: 0
       - uses: dtolnay/rust-toolchain@stable
       - name: Set git credentials
         run: |
@@ -30,12 +36,31 @@ jobs:
         run: cargo run -rp process
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BLITZ_REPO: ${{ github.workspace }}/blitz-checkout
       - name: Push changes
         run: git push
-      # - name: Compress report (zstd)
-      #   run: zstd -22 --ultra -o ./wpt/output/wptreport.json.zst ./wpt/output/wptreport.json
-      # - uses: actions/upload-artifact@v4
-      #   with:
-      #     name: wpt-report.json.zst
-      #     path: ./wpt/output/wptreport.json.zst
-      #     compression: 0 # We are already using zstd compression
+
+  publish:
+    name: "Publish summary data to GitHub Pages"
+    needs: wpt
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Build pages site
+        run: |
+          mkdir -p _site
+          cp -r summary _site/summary
+          tar -cf - summary | zstd -19 -o _site/summary.tar.zst
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

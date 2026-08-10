@@ -1,197 +1,264 @@
-use std::collections::HashSet;
+use std::collections::{BTreeMap, HashSet};
 use std::path::Path;
 
 use chrono::{DateTime, SecondsFormat};
 use serde::{Deserialize, Serialize};
 use wptreport::{
-    score_summary::{FocusArea, RunScores, RunSummary, ScoreSummaryReport},
-    score_wpt_report,
-    summarize::{RunInfoWithScores, summarize_results},
+    AreaScores, score_wpt_report,
     wpt_report::{TestStatus, WptReport},
 };
 
-/// A compact on-disk representation of `ScoreSummaryReport`: each run's
-/// per-area scores are stored as `[total_tests, total_score, total_subtests,
-/// total_subtests_passed]` arrays (parallel to `focus_areas`) with
-/// `total_score` rounded to 1dp, and each run is written on a single line.
-#[derive(Serialize, Deserialize)]
-struct CompactSummary {
-    focus_areas: Vec<String>,
-    runs: Vec<CompactRun>,
+/// Per-area scores for a single run, stored as a compact
+/// `[total_tests, total_score, total_subtests, total_subtests_passed]` array
+/// (with `total_score` rounded to 1dp)
+pub type ScoreTuple = (u32, f64, u32, u32);
+
+fn score_tuple(scores: &AreaScores) -> ScoreTuple {
+    (
+        scores.tests.total,
+        (scores.servo_score() * 10.0).round() / 10.0,
+        scores.subtests.total,
+        scores.subtests.pass,
+    )
+}
+
+/// Metadata about a single WPT run, stored once in `runs.json` and shared by
+/// all per-area score files (which are index-aligned with it)
+#[derive(Clone, Serialize, Deserialize)]
+pub struct RunMeta {
+    /// The date of the blitz commit (falling back to when the WPT run was
+    /// executed if the commit isn't found), RFC3339 format
+    pub date: String,
+    /// The revision of the WPT test suite that was run (9-char sha)
+    pub wpt_revision: String,
+    /// The blitz commit that was tested (full sha)
+    pub product_revision: String,
+    /// First line of the blitz commit's message
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub commit_message: Option<String>,
 }
 
 #[derive(Serialize, Deserialize)]
-struct CompactRun {
-    date: String,
-    wpt_revision: String,
-    product_revision: String,
-    scores: Vec<(u32, f64, u32, u32)>,
+struct RunsFile {
+    runs: Vec<RunMeta>,
 }
 
-impl From<&RunSummary> for CompactRun {
-    fn from(run: &RunSummary) -> Self {
-        CompactRun {
-            date: run.date.clone(),
-            wpt_revision: run.wpt_revision.clone(),
-            product_revision: run.product_revision.clone(),
-            scores: run
-                .scores
-                .iter()
-                .map(|s| {
-                    (
-                        s.total_tests,
-                        (s.total_score * 10.0).round() / 10.0,
-                        s.total_subtests,
-                        s.total_subtests_passed,
-                    )
-                })
-                .collect(),
-        }
-    }
+/// Scores for one group of areas (one top-level WPT folder). `scores` is
+/// index-aligned with `runs.json`: one row per run, each row parallel to
+/// `focus_areas`. `null` marks an area with no data for that run.
+#[derive(Serialize, Deserialize)]
+pub struct AreaFile {
+    pub focus_areas: Vec<String>,
+    pub scores: Vec<Vec<Option<ScoreTuple>>>,
 }
 
-impl From<CompactRun> for RunSummary {
-    fn from(run: CompactRun) -> Self {
-        RunSummary {
-            date: run.date,
-            wpt_revision: run.wpt_revision,
-            product_revision: run.product_revision,
-            scores: run
-                .scores
-                .into_iter()
-                .map(
-                    |(total_tests, total_score, total_subtests, total_subtests_passed)| RunScores {
-                        total_tests,
-                        total_score,
-                        total_subtests,
-                        total_subtests_passed,
-                    },
-                )
-                .collect(),
-        }
-    }
+/// A run scored across every directory of the WPT tree
+pub struct ScoredRun {
+    pub meta: RunMeta,
+    pub scores: BTreeMap<String, ScoreTuple>,
 }
 
-pub fn is_focus_area(area: &str) -> bool {
-    let slash_count = area.chars().filter(|c| *c == '/').count();
-    slash_count < 2 || (slash_count == 2 && area.starts_with("css/CSS2"))
-}
-
-/// Convert a report into a `RunInfoWithScores`, scoring only focus areas.
+/// Convert a report into a `ScoredRun`, scoring every directory of the tree.
 /// Skipped tests are stripped before scoring (matching the blitz website).
-///
-/// The run is dated by the blitz commit's timestamp (`commit_timestamp`),
-/// falling back to the report's `time_start` (when the WPT run was executed)
-/// if no commit timestamp is available.
-pub fn score_report(mut report: WptReport, commit_timestamp: Option<i64>) -> RunInfoWithScores {
+pub fn score_report(
+    mut report: WptReport,
+    commit_id: &str,
+    commit_timestamp: Option<i64>,
+    commit_message: Option<String>,
+) -> ScoredRun {
     report
         .results
         .retain(|test| test.status != TestStatus::Skip);
 
-    let mut scores = score_wpt_report::<WptReport>(&report);
-    scores.retain(|area, _| is_focus_area(area));
+    let scores = score_wpt_report::<WptReport>(&report);
 
     let timestamp = commit_timestamp.unwrap_or(report.time_start as i64);
     let date = DateTime::from_timestamp(timestamp, 0)
         .expect("valid unix timestamp")
         .to_rfc3339_opts(SecondsFormat::Secs, true);
 
-    RunInfoWithScores {
-        date,
-        info: report.run_info,
-        scores,
+    ScoredRun {
+        meta: RunMeta {
+            date,
+            wpt_revision: report.run_info.revision[0..9].to_string(),
+            product_revision: commit_id.to_string(),
+            commit_message,
+        },
+        scores: scores
+            .iter()
+            .map(|(area, scores)| (area.clone(), score_tuple(scores)))
+            .collect(),
     }
 }
 
-/// Load the commit-messages sidecar file (a map from blitz commit sha to the
-/// first line of its commit message)
-pub fn load_commit_messages(path: impl AsRef<Path>) -> std::collections::BTreeMap<String, String> {
-    let Ok(contents) = std::fs::read(path) else {
-        return Default::default();
-    };
-    serde_json::from_slice(&contents).expect("commit messages file should be valid JSON")
+/// The name of the group (and so the file) that an area's scores are stored
+/// in. Areas of depth <= 1 (e.g. "css", "css/css-flexbox") belong to the root
+/// group ("css"); deeper areas belong to their top-level folder's group.
+/// Depth-1 areas additionally head their own group so that each group file
+/// contains the full subtree including the folder itself.
+fn area_groups(area: &str) -> Vec<String> {
+    let mut components = area.split('/');
+    let _root = components.next();
+    match components.next() {
+        None => vec!["css".to_string()],
+        Some(second) if components.next().is_none() => {
+            vec!["css".to_string(), second.to_string()]
+        }
+        Some(second) => vec![second.to_string()],
+    }
 }
 
-pub fn write_commit_messages(
-    path: impl AsRef<Path>,
-    messages: &std::collections::BTreeMap<String, String>,
+/// The whole summary dataset: shared run metadata plus per-group score files
+#[derive(Default)]
+pub struct SummaryStore {
+    pub runs: Vec<RunMeta>,
+    pub areas: BTreeMap<String, AreaFile>,
+}
+
+impl SummaryStore {
+    pub fn load(dir: &Path) -> Option<Self> {
+        let runs_file: RunsFile =
+            serde_json::from_slice(&std::fs::read(dir.join("runs.json")).ok()?)
+                .expect("runs.json should be valid JSON");
+        let mut areas = BTreeMap::new();
+        for entry in std::fs::read_dir(dir.join("areas")).expect("summary/areas should exist") {
+            let path = entry.unwrap().path();
+            let name = path.file_stem().unwrap().to_str().unwrap().to_string();
+            let file: AreaFile = serde_json::from_slice(&std::fs::read(&path).unwrap())
+                .expect("area file should be valid JSON");
+            assert_eq!(
+                file.scores.len(),
+                runs_file.runs.len(),
+                "area file {name} is misaligned with runs.json"
+            );
+            areas.insert(name, file);
+        }
+        Some(SummaryStore {
+            runs: runs_file.runs,
+            areas,
+        })
+    }
+
+    /// Append runs, skipping any whose product revision is already present,
+    /// then re-sort all files consistently by (date, product_revision)
+    pub fn append(&mut self, new_runs: Vec<ScoredRun>) {
+        let existing: HashSet<String> = self
+            .runs
+            .iter()
+            .map(|run| run.product_revision.clone())
+            .collect();
+
+        for run in new_runs {
+            if existing.contains(&run.meta.product_revision) {
+                continue;
+            }
+
+            // Group this run's areas
+            let mut grouped: BTreeMap<String, BTreeMap<&str, ScoreTuple>> = BTreeMap::new();
+            for (area, scores) in &run.scores {
+                for group in area_groups(area) {
+                    grouped.entry(group).or_default().insert(area, *scores);
+                }
+            }
+
+            // Ensure every group file exists and contains every area of this
+            // run, padding pre-existing rows with nulls for new columns
+            let run_count = self.runs.len();
+            for (group, area_scores) in &grouped {
+                let file = self.areas.entry(group.clone()).or_insert_with(|| AreaFile {
+                    focus_areas: Vec::new(),
+                    scores: vec![Vec::new(); run_count],
+                });
+                for area in area_scores.keys() {
+                    if !file.focus_areas.iter().any(|a| a == area) {
+                        file.focus_areas.push(area.to_string());
+                        for row in &mut file.scores {
+                            row.push(None);
+                        }
+                    }
+                }
+            }
+
+            // Append this run's row to every group file (null-filled for
+            // groups the run has no data for)
+            for (group, file) in &mut self.areas {
+                let area_scores = grouped.get(group);
+                let row = file
+                    .focus_areas
+                    .iter()
+                    .map(|area| area_scores.and_then(|scores| scores.get(area.as_str()).copied()))
+                    .collect();
+                file.scores.push(row);
+            }
+            self.runs.push(run.meta);
+        }
+
+        self.sort();
+    }
+
+    /// Sort runs by (date, product_revision), applying the same permutation
+    /// to every area file so they stay index-aligned. Also sorts each file's
+    /// area columns alphabetically.
+    fn sort(&mut self) {
+        let mut order: Vec<usize> = (0..self.runs.len()).collect();
+        order.sort_by(|&a, &b| {
+            let ka = (&self.runs[a].date, &self.runs[a].product_revision);
+            let kb = (&self.runs[b].date, &self.runs[b].product_revision);
+            ka.cmp(&kb)
+        });
+
+        self.runs = order.iter().map(|&i| self.runs[i].clone()).collect();
+        for file in self.areas.values_mut() {
+            let mut columns: Vec<usize> = (0..file.focus_areas.len()).collect();
+            columns.sort_by(|&a, &b| file.focus_areas[a].cmp(&file.focus_areas[b]));
+            file.focus_areas = columns
+                .iter()
+                .map(|&c| file.focus_areas[c].clone())
+                .collect();
+            file.scores = order
+                .iter()
+                .map(|&i| columns.iter().map(|&c| file.scores[i][c]).collect())
+                .collect();
+        }
+    }
+
+    /// Write the store to `dir` as runs.json + areas/<group>.json, with one
+    /// line per run in each file so appends produce one-line git diffs
+    pub fn write(&self, dir: &Path) {
+        let areas_dir = dir.join("areas");
+        std::fs::create_dir_all(&areas_dir).unwrap();
+
+        write_json_lines(
+            &dir.join("runs.json"),
+            "{\n\"runs\":[\n",
+            self.runs.iter().map(serde_json::to_string),
+        );
+
+        for (group, file) in &self.areas {
+            write_json_lines(
+                &areas_dir.join(format!("{group}.json")),
+                &format!(
+                    "{{\n\"focus_areas\":{},\n\"scores\":[\n",
+                    serde_json::to_string(&file.focus_areas).unwrap()
+                ),
+                file.scores.iter().map(serde_json::to_string),
+            );
+        }
+    }
+}
+
+fn write_json_lines(
+    path: &Path,
+    header: &str,
+    lines: impl Iterator<Item = serde_json::Result<String>>,
 ) {
-    let mut json = serde_json::to_string_pretty(messages).unwrap();
-    json.push('\n');
-    std::fs::write(path, json).unwrap();
-}
-
-pub fn load_summary(path: impl AsRef<Path>) -> Option<ScoreSummaryReport> {
-    let contents = std::fs::read(path).ok()?;
-    let compact: CompactSummary =
-        serde_json::from_slice(&contents).expect("summary file should be valid JSON");
-    Some(ScoreSummaryReport {
-        focus_areas: compact.focus_areas,
-        runs: compact.runs.into_iter().map(RunSummary::from).collect(),
-    })
-}
-
-pub fn write_summary(path: impl AsRef<Path>, summary: &mut ScoreSummaryReport) {
-    summary
-        .runs
-        .sort_by(|a, b| (&a.date, &a.product_revision).cmp(&(&b.date, &b.product_revision)));
-
-    // One compact line per run, so appends produce one-line git diffs
-    let mut json = String::from("{\n\"focus_areas\":");
-    json.push_str(&serde_json::to_string(&summary.focus_areas).unwrap());
-    json.push_str(",\n\"runs\":[\n");
-    for (i, run) in summary.runs.iter().enumerate() {
+    let mut json = String::from(header);
+    for (i, line) in lines.enumerate() {
         if i > 0 {
             json.push_str(",\n");
         }
-        json.push_str(&serde_json::to_string(&CompactRun::from(run)).unwrap());
+        json.push_str(&line.unwrap());
     }
     json.push_str("\n]}\n");
     std::fs::write(path, json).unwrap();
-}
-
-/// Append runs to an existing summary, scoring them against the summary's
-/// existing focus areas. Runs whose product revision is already present are
-/// skipped.
-pub fn append_runs(summary: &mut ScoreSummaryReport, runs: Vec<RunInfoWithScores>) {
-    let focus_areas: Vec<FocusArea> = summary
-        .focus_areas
-        .iter()
-        .map(|area| FocusArea::from(area.as_str()))
-        .collect();
-
-    let existing_revisions: HashSet<String> = summary
-        .runs
-        .iter()
-        .map(|run| run.product_revision.clone())
-        .collect();
-
-    let runs: Vec<RunInfoWithScores> = runs
-        .into_iter()
-        .filter(|run| {
-            !existing_revisions.contains(run.info.browser_version.as_deref().unwrap_or(""))
-        })
-        .collect();
-
-    let new_summary = summarize_results(&runs, Some(&focus_areas));
-    summary.runs.extend(new_summary.runs);
-}
-
-/// Build a summary from scratch from a set of runs, deriving the focus area
-/// list from the union of areas present across all runs.
-pub fn build_summary(runs: Vec<RunInfoWithScores>) -> ScoreSummaryReport {
-    let mut areas: Vec<String> = runs
-        .iter()
-        .flat_map(|run| run.scores.keys().cloned())
-        .collect::<HashSet<_>>()
-        .into_iter()
-        .collect();
-    areas.sort_unstable();
-
-    let focus_areas: Vec<FocusArea> = areas
-        .iter()
-        .map(|area| FocusArea::from(area.as_str()))
-        .collect();
-
-    summarize_results(&runs, Some(&focus_areas))
 }
