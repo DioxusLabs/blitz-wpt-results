@@ -43,13 +43,12 @@ struct RunsFile {
     runs: Vec<RunMeta>,
 }
 
-/// Scores for one group of areas (one top-level WPT folder). `scores` is
-/// index-aligned with `runs.json`: one row per run, each row parallel to
-/// `focus_areas`. `null` marks an area with no data for that run.
+/// Scores for a single area (one WPT folder). `scores` is index-aligned with
+/// `runs.json`: one entry per run. `null` marks a run with no data for this
+/// area.
 #[derive(Serialize, Deserialize)]
 pub struct AreaFile {
-    pub focus_areas: Vec<String>,
-    pub scores: Vec<Vec<Option<ScoreTuple>>>,
+    pub scores: Vec<Option<ScoreTuple>>,
 }
 
 /// A run scored across every directory of the WPT tree
@@ -91,29 +90,38 @@ pub fn score_report(
     }
 }
 
-/// The name of the group (and so the file, nested under the suite's root
-/// directory) that an area's scores are stored in. Areas of depth <= 1 (e.g.
-/// "css", "css/css-flexbox") belong to the root group ("css/css"); deeper
-/// areas belong to their top-level folder's group. Depth-1 areas additionally
-/// head their own group so that each group file contains the full subtree
-/// including the folder itself.
-fn area_groups(area: &str) -> Vec<String> {
-    let mut components = area.split('/');
-    let root = components.next().unwrap();
-    match components.next() {
-        None => vec![format!("{root}/{root}")],
-        Some(second) if components.next().is_none() => {
-            vec![format!("{root}/{root}"), format!("{root}/{second}")]
-        }
-        Some(second) => vec![format!("{root}/{second}")],
-    }
-}
-
-/// The whole summary dataset: shared run metadata plus per-group score files
+/// The whole summary dataset: shared run metadata plus one score file per
+/// area
 #[derive(Default)]
 pub struct SummaryStore {
     pub runs: Vec<RunMeta>,
-    pub areas: BTreeMap<String, AreaFile>,
+    pub areas: BTreeMap<String, Vec<Option<ScoreTuple>>>,
+}
+
+fn load_area_files(
+    dir: &Path,
+    prefix: &str,
+    run_count: usize,
+    areas: &mut BTreeMap<String, Vec<Option<ScoreTuple>>>,
+) {
+    for entry in std::fs::read_dir(dir).unwrap() {
+        let path = entry.unwrap().path();
+        if path.is_dir() {
+            let name = path.file_name().unwrap().to_str().unwrap();
+            load_area_files(&path, &format!("{prefix}{name}/"), run_count, areas);
+        } else if path.extension().is_some_and(|ext| ext == "json") {
+            let stem = path.file_stem().unwrap().to_str().unwrap();
+            let name = format!("{prefix}{stem}");
+            let file: AreaFile = serde_json::from_slice(&std::fs::read(&path).unwrap())
+                .expect("area file should be valid JSON");
+            assert_eq!(
+                file.scores.len(),
+                run_count,
+                "area file {name} is misaligned with runs.json"
+            );
+            areas.insert(name, file.scores);
+        }
+    }
 }
 
 impl SummaryStore {
@@ -122,24 +130,7 @@ impl SummaryStore {
             serde_json::from_slice(&std::fs::read(dir.join("runs.json")).ok()?)
                 .expect("runs.json should be valid JSON");
         let mut areas = BTreeMap::new();
-        for root_entry in std::fs::read_dir(dir.join("areas")).expect("summary/areas should exist")
-        {
-            let root_path = root_entry.unwrap().path();
-            let root = root_path.file_name().unwrap().to_str().unwrap().to_string();
-            for entry in std::fs::read_dir(&root_path).unwrap() {
-                let path = entry.unwrap().path();
-                let stem = path.file_stem().unwrap().to_str().unwrap();
-                let name = format!("{root}/{stem}");
-                let file: AreaFile = serde_json::from_slice(&std::fs::read(&path).unwrap())
-                    .expect("area file should be valid JSON");
-                assert_eq!(
-                    file.scores.len(),
-                    runs_file.runs.len(),
-                    "area file {name} is misaligned with runs.json"
-                );
-                areas.insert(name, file);
-            }
-        }
+        load_area_files(&dir.join("areas"), "", runs_file.runs.len(), &mut areas);
         Some(SummaryStore {
             runs: runs_file.runs,
             areas,
@@ -160,42 +151,19 @@ impl SummaryStore {
                 continue;
             }
 
-            // Group this run's areas
-            let mut grouped: BTreeMap<String, BTreeMap<&str, ScoreTuple>> = BTreeMap::new();
-            for (area, scores) in &run.scores {
-                for group in area_groups(area) {
-                    grouped.entry(group).or_default().insert(area, *scores);
-                }
-            }
-
-            // Ensure every group file exists and contains every area of this
-            // run, padding pre-existing rows with nulls for new columns
+            // Ensure every area of this run has a file, padding new areas
+            // with nulls for pre-existing runs
             let run_count = self.runs.len();
-            for (group, area_scores) in &grouped {
-                let file = self.areas.entry(group.clone()).or_insert_with(|| AreaFile {
-                    focus_areas: Vec::new(),
-                    scores: vec![Vec::new(); run_count],
-                });
-                for area in area_scores.keys() {
-                    if !file.focus_areas.iter().any(|a| a == area) {
-                        file.focus_areas.push(area.to_string());
-                        for row in &mut file.scores {
-                            row.push(None);
-                        }
-                    }
-                }
+            for area in run.scores.keys() {
+                self.areas
+                    .entry(area.clone())
+                    .or_insert_with(|| vec![None; run_count]);
             }
 
-            // Append this run's row to every group file (null-filled for
-            // groups the run has no data for)
-            for (group, file) in &mut self.areas {
-                let area_scores = grouped.get(group);
-                let row = file
-                    .focus_areas
-                    .iter()
-                    .map(|area| area_scores.and_then(|scores| scores.get(area.as_str()).copied()))
-                    .collect();
-                file.scores.push(row);
+            // Append this run's score to every area file (null for areas the
+            // run has no data for)
+            for (area, scores) in &mut self.areas {
+                scores.push(run.scores.get(area).copied());
             }
             self.runs.push(run.meta);
         }
@@ -204,8 +172,7 @@ impl SummaryStore {
     }
 
     /// Sort runs by (date, product_revision), applying the same permutation
-    /// to every area file so they stay index-aligned. Also sorts each file's
-    /// area columns alphabetically.
+    /// to every area file so they stay index-aligned
     fn sort(&mut self) {
         let mut order: Vec<usize> = (0..self.runs.len()).collect();
         order.sort_by(|&a, &b| {
@@ -215,21 +182,12 @@ impl SummaryStore {
         });
 
         self.runs = order.iter().map(|&i| self.runs[i].clone()).collect();
-        for file in self.areas.values_mut() {
-            let mut columns: Vec<usize> = (0..file.focus_areas.len()).collect();
-            columns.sort_by(|&a, &b| file.focus_areas[a].cmp(&file.focus_areas[b]));
-            file.focus_areas = columns
-                .iter()
-                .map(|&c| file.focus_areas[c].clone())
-                .collect();
-            file.scores = order
-                .iter()
-                .map(|&i| columns.iter().map(|&c| file.scores[i][c]).collect())
-                .collect();
+        for scores in self.areas.values_mut() {
+            *scores = order.iter().map(|&i| scores[i]).collect();
         }
     }
 
-    /// Write the store to `dir` as runs.json + areas/<group>.json, with one
+    /// Write the store to `dir` as runs.json + areas/<area>.json, with one
     /// line per run in each file so appends produce one-line git diffs
     pub fn write(&self, dir: &Path) {
         let areas_dir = dir.join("areas");
@@ -241,16 +199,13 @@ impl SummaryStore {
             self.runs.iter().map(serde_json::to_string),
         );
 
-        for (group, file) in &self.areas {
-            let path = areas_dir.join(format!("{group}.json"));
+        for (area, scores) in &self.areas {
+            let path = areas_dir.join(format!("{area}.json"));
             std::fs::create_dir_all(path.parent().unwrap()).unwrap();
             write_json_lines(
                 &path,
-                &format!(
-                    "{{\n\"focus_areas\":{},\n\"scores\":[\n",
-                    serde_json::to_string(&file.focus_areas).unwrap()
-                ),
-                file.scores.iter().map(serde_json::to_string),
+                "{\n\"scores\":[\n",
+                scores.iter().map(serde_json::to_string),
             );
         }
     }
