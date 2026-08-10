@@ -921,5 +921,6 @@
 {"date":"2026-08-09T20:05:31Z","wpt_revision":"a95401e4e","product_revision":"1093b86cd2ac84c806a65b609832610d394e27e1","commit_message":"wpt: skip non-UTF-8 test files instead of crashing (#659)"},
 {"date":"2026-08-09T20:49:25Z","wpt_revision":"a95401e4e","product_revision":"b57322a7e67cff30a30ef50d103290fa8c394c99","commit_message":"wpt: handle missing or unresolvable ref files gracefully; exclude tools/resources dirs (#660)"},
 {"date":"2026-08-09T21:27:52Z","wpt_revision":"a95401e4e","product_revision":"708eb61323e9dda6d57d6f0a667512bb4dfd0068","commit_message":"WPT runner: support mismatch reftests and multiple rel=match links (#665)"},
-{"date":"2026-08-10T17:30:40Z","wpt_revision":"a95401e4e","product_revision":"8c7cfd9187cf7faeeb0b2c0601176abb31bae60e","commit_message":"Fix inner HTML fragment root leak (#681)"}
+{"date":"2026-08-10T17:30:40Z","wpt_revision":"a95401e4e","product_revision":"8c7cfd9187cf7faeeb0b2c0601176abb31bae60e","commit_message":"Fix inner HTML fragment root leak (#681)"},
+{"date":"2026-08-10T18:00:56Z","wpt_revision":"a95401e4e","product_revision":"7167d7bde9ac73d18fdb11b9d15b9334c61bb14a","commit_message":"Keep get_element_by_id index in sync with id attribute mutations (#682)"}
 ]}
