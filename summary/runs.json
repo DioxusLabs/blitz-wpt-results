@@ -937,5 +937,6 @@
 {"date":"2026-08-13T19:40:39Z","wpt_revision":"a95401e4e","product_revision":"0a22dbff7a7230218e18c32a08c0cb31f643740a","commit_message":"Implement background-attachment: fixed (#646)"},
 {"date":"2026-08-13T19:55:41Z","wpt_revision":"a95401e4e","product_revision":"bdc9bf07a6da867d67e86113023d8b3d0a3e2d47","commit_message":"Update the README"},
 {"date":"2026-08-13T20:14:56Z","wpt_revision":"a95401e4e","product_revision":"66c1564e16485005e8f9da4ac1804ee69573b756","commit_message":"Fix static position of abspos inline boxes (scale, container offset, line top) (#704)"},
-{"date":"2026-08-13T22:23:41Z","wpt_revision":"a95401e4e","product_revision":"9ac084ae858397044276485e74cbea9570246a74","commit_message":"Hook scrollbar styles up to Stylo (#707)"}
+{"date":"2026-08-13T22:23:41Z","wpt_revision":"a95401e4e","product_revision":"9ac084ae858397044276485e74cbea9570246a74","commit_message":"Hook scrollbar styles up to Stylo (#707)"},
+{"date":"2026-08-13T22:54:11Z","wpt_revision":"a95401e4e","product_revision":"42193e64f0c6bc9ee69b166a957c9bf5b8f8b548","commit_message":"Bump taffy to 74f8b2ca (#711)"}
 ]}
