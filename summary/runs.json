@@ -930,5 +930,6 @@
 {"date":"2026-08-12T14:12:00Z","wpt_revision":"a95401e4e","product_revision":"4322e86f0b272bd301a3cc40e452712f7f86b699","commit_message":"Don't resolve styles/layout while render-blocking resources are pending (#695)"},
 {"date":"2026-08-12T15:46:14Z","wpt_revision":"a95401e4e","product_revision":"085b875d5e011486275e976fdb36fa6281cc5b8d","commit_message":"Use crates.io usvg 0.46 + anyrender_svg 0.13; drop git patches (#697)"},
 {"date":"2026-08-13T15:35:17Z","wpt_revision":"a95401e4e","product_revision":"bc114c8144debb75d4a7e9996663f4bfa8c6b04e","commit_message":"Don't let display:none children force an inline formatting context (#656)"},
-{"date":"2026-08-13T15:57:27Z","wpt_revision":"a95401e4e","product_revision":"ca7073e58e0c25be37e9fe6c3ff170988c6ed661","commit_message":"Never emit bare text nodes as block/flex/grid layout children (#657)"}
+{"date":"2026-08-13T15:57:27Z","wpt_revision":"a95401e4e","product_revision":"ca7073e58e0c25be37e9fe6c3ff170988c6ed661","commit_message":"Never emit bare text nodes as block/flex/grid layout children (#657)"},
+{"date":"2026-08-13T16:25:33Z","wpt_revision":"a95401e4e","product_revision":"0f5e59c97ce0746506853f905e6cd7409afb68ec","commit_message":"Classify display:contents pseudo-element children in flow containers (#658)"}
 ]}
