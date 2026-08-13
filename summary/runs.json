@@ -933,5 +933,6 @@
 {"date":"2026-08-13T15:57:27Z","wpt_revision":"a95401e4e","product_revision":"ca7073e58e0c25be37e9fe6c3ff170988c6ed661","commit_message":"Never emit bare text nodes as block/flex/grid layout children (#657)"},
 {"date":"2026-08-13T16:25:33Z","wpt_revision":"a95401e4e","product_revision":"0f5e59c97ce0746506853f905e6cd7409afb68ec","commit_message":"Classify display:contents pseudo-element children in flow containers (#658)"},
 {"date":"2026-08-13T16:33:03Z","wpt_revision":"a95401e4e","product_revision":"e723ae2c015785791a701c3724a14e38ff2c5446","commit_message":"WPT runner: parse meta name=fuzzy and use tolerances in reftest comparison (#669)"},
-{"date":"2026-08-13T18:22:23Z","wpt_revision":"a95401e4e","product_revision":"cf2d24c63ded93a0e317e4707a74f9023f17a7a2","commit_message":"Refactor background tiling into per-axis helpers (#645)"}
+{"date":"2026-08-13T18:22:23Z","wpt_revision":"a95401e4e","product_revision":"cf2d24c63ded93a0e317e4707a74f9023f17a7a2","commit_message":"Refactor background tiling into per-axis helpers (#645)"},
+{"date":"2026-08-13T19:40:39Z","wpt_revision":"a95401e4e","product_revision":"0a22dbff7a7230218e18c32a08c0cb31f643740a","commit_message":"Implement background-attachment: fixed (#646)"}
 ]}
