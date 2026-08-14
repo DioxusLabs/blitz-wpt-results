@@ -943,5 +943,6 @@
 {"date":"2026-08-14T01:17:29Z","wpt_revision":"a95401e4e","product_revision":"66b0692c26633cedbc53ff366ff314eabd7592ed","commit_message":"Don't subtract border of statically positioned body in offsetLeft/offsetTop (#713)"},
 {"date":"2026-08-14T01:27:43Z","wpt_revision":"a95401e4e","product_revision":"6ff35523d70b62322c914315d80452769c0e2939","commit_message":"Bump taffy to 2e4dbc55 (flex wrap against max main size fix) (#714)"},
 {"date":"2026-08-14T01:49:19Z","wpt_revision":"a95401e4e","product_revision":"5f1ded2eaa598b202c5bb7875fb30cea27957117","commit_message":"Honor 'order' on ::before/::after flex/grid items (#715)"},
-{"date":"2026-08-14T11:16:28Z","wpt_revision":"a95401e4e","product_revision":"974843f6c1e7f6fafcc41fef020d9e0a031e18a5","commit_message":"Upgrade to Taffy with sizing keyword support on `width`, `height`, and `flex-basis` (#712)"}
+{"date":"2026-08-14T11:16:28Z","wpt_revision":"a95401e4e","product_revision":"974843f6c1e7f6fafcc41fef020d9e0a031e18a5","commit_message":"Upgrade to Taffy with sizing keyword support on `width`, `height`, and `flex-basis` (#712)"},
+{"date":"2026-08-14T17:23:25Z","wpt_revision":"a95401e4e","product_revision":"7e237cec51fa0f5b52a3499495af5ed067932c6d","commit_message":"Upgrade to Taffy with `contain` support (#718)"}
 ]}
