@@ -953,5 +953,6 @@
 {"date":"2026-08-16T22:52:50Z","wpt_revision":"a95401e4e","product_revision":"5dc02567f4349b21ed84bc39cf56cee451df1296","commit_message":"Upgrade to parley 0.11, skrifa 0.44 (#725)"},
 {"date":"2026-08-16T23:31:49Z","wpt_revision":"a95401e4e","product_revision":"b96c9c24a8862678217fe0f9889a772455748879","commit_message":"Size SVG background images per the CSS default sizing algorithm (#726)"},
 {"date":"2026-08-16T23:40:15Z","wpt_revision":"a95401e4e","product_revision":"e22327ccc261e8e106eea9918751de1bcef88ea9","commit_message":"Fix spurious horizontal scroll from non-scroll-container padding (#727)"},
-{"date":"2026-08-17T00:13:05Z","wpt_revision":"a95401e4e","product_revision":"01a6c4b9282c25b76616d71863ea55a03c48a730","commit_message":"Re-pin taffy to merged main commit (#728)"}
+{"date":"2026-08-17T00:13:05Z","wpt_revision":"a95401e4e","product_revision":"01a6c4b9282c25b76616d71863ea55a03c48a730","commit_message":"Re-pin taffy to merged main commit (#728)"},
+{"date":"2026-08-17T10:37:50Z","wpt_revision":"a95401e4e","product_revision":"f17257029a7ff9d3aae0c1600a38ac20ae856074","commit_message":"Upgrade to Taffy that doesn't double apply free space to both auto margins and justify content (at once) (#729)"}
 ]}
