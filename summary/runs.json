@@ -960,5 +960,8 @@
 {"date":"2026-08-17T12:44:09Z","wpt_revision":"a95401e4e","product_revision":"d1dbb0c273dea4dbe5175a9668350bc76ac5bd37","commit_message":"Include unbreakable inline overflow (e.g. white-space: pre) in content_size (#734)"},
 {"date":"2026-08-17T13:23:37Z","wpt_revision":"a95401e4e","product_revision":"06c4a704b5b359d0417b4f679a09200c6ae9d23c","commit_message":"Prepare replaced layout for upstreaming into Taffy (#732)"},
 {"date":"2026-08-17T16:20:40Z","wpt_revision":"a95401e4e","product_revision":"5ce66825e0783387388f04203b296ff7578c7b0f","commit_message":"Fix squashed rendering on iOS: size render surface for full window and use physical safe-area insets (#735)"},
-{"date":"2026-08-18T15:59:46Z","wpt_revision":"a95401e4e","product_revision":"72cef1fe4dddd65177d3b91b8cd117eff746a5a4","commit_message":"Fix HTTP cache directory on iOS (#737)"}
+{"date":"2026-08-18T15:59:46Z","wpt_revision":"a95401e4e","product_revision":"72cef1fe4dddd65177d3b91b8cd117eff746a5a4","commit_message":"Fix HTTP cache directory on iOS (#737)"},
+{"date":"2026-08-18T17:12:46Z","wpt_revision":"a95401e4e","product_revision":"5e673712f29ea089912eac0920543d8fee0731fe","commit_message":"blitz-html: add explicit XML (XHTML) parsing entry points (#741)"},
+{"date":"2026-08-18T17:17:13Z","wpt_revision":"a95401e4e","product_revision":"ce1e666387fa651585add9b9741cc5021fce1af0","commit_message":"blitz-dom: add find_element_by_tag_name and body/head document lookups (#746)"},
+{"date":"2026-08-18T17:23:31Z","wpt_revision":"a95401e4e","product_revision":"327eba7a3f051d33b0c908b8ff1899386e2a2051","commit_message":"blitz-dom: add element_from_point()/elements_from_point() hit-test resolution (#744)"}
 ]}
