@@ -971,5 +971,6 @@
 {"date":"2026-08-18T19:01:07Z","wpt_revision":"a95401e4e","product_revision":"10606cc5014f3564a48dbbc1adebaaa0269b3201","commit_message":"Added SVG native feature example (#749)"},
 {"date":"2026-08-19T00:12:28Z","wpt_revision":"a95401e4e","product_revision":"dec10118c6ca31f370a915e8a6382f6dc7abe121","commit_message":"Update taffy to latest main (#751)"},
 {"date":"2026-08-19T11:34:56Z","wpt_revision":"a95401e4e","product_revision":"cca749d0baa4e10841d2dba1d7459ce6f8078b2b","commit_message":"Wire up `contain: layout` and `contain: paint` to Taffy (#752)"},
-{"date":"2026-08-19T11:58:45Z","wpt_revision":"a95401e4e","product_revision":"3bded3aeb2d3228eb1a1b479c78209642b47de9e","commit_message":"Implement standard scrollTo, scrollBy, and scrollIntoView (#703)"}
+{"date":"2026-08-19T11:58:45Z","wpt_revision":"a95401e4e","product_revision":"3bded3aeb2d3228eb1a1b479c78209642b47de9e","commit_message":"Implement standard scrollTo, scrollBy, and scrollIntoView (#703)"},
+{"date":"2026-08-19T12:42:59Z","wpt_revision":"a95401e4e","product_revision":"33a87d2be9485555655f1483e7d2691246cf9226","commit_message":"Make programmatic scrolls apply to overflow:hidden scrolling boxes (#754)"}
 ]}
