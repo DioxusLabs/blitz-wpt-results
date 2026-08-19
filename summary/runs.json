@@ -969,5 +969,6 @@
 {"date":"2026-08-18T17:39:47Z","wpt_revision":"a95401e4e","product_revision":"918e2e99fe8e7851e19640ac3c0020c4caf667db","commit_message":"Generalize sub-documents to any Document impl and add polling plumbing (#743)"},
 {"date":"2026-08-18T17:51:46Z","wpt_revision":"a95401e4e","product_revision":"df9d7c3d8572c43a74963d07d62364418784f52e","commit_message":"Adapt to taffy's scrollable_overflow_rect API (#733)"},
 {"date":"2026-08-18T19:01:07Z","wpt_revision":"a95401e4e","product_revision":"10606cc5014f3564a48dbbc1adebaaa0269b3201","commit_message":"Added SVG native feature example (#749)"},
-{"date":"2026-08-19T00:12:28Z","wpt_revision":"a95401e4e","product_revision":"dec10118c6ca31f370a915e8a6382f6dc7abe121","commit_message":"Update taffy to latest main (#751)"}
+{"date":"2026-08-19T00:12:28Z","wpt_revision":"a95401e4e","product_revision":"dec10118c6ca31f370a915e8a6382f6dc7abe121","commit_message":"Update taffy to latest main (#751)"},
+{"date":"2026-08-19T11:34:56Z","wpt_revision":"a95401e4e","product_revision":"cca749d0baa4e10841d2dba1d7459ce6f8078b2b","commit_message":"Wire up `contain: layout` and `contain: paint` to Taffy (#752)"}
 ]}
