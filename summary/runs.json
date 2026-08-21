@@ -975,5 +975,6 @@
 {"date":"2026-08-19T12:42:59Z","wpt_revision":"a95401e4e","product_revision":"33a87d2be9485555655f1483e7d2691246cf9226","commit_message":"Make programmatic scrolls apply to overflow:hidden scrolling boxes (#754)"},
 {"date":"2026-08-19T13:04:36Z","wpt_revision":"a95401e4e","product_revision":"61cc1634beddd96bc298071f52b2c6f2a372e6db","commit_message":"Touch action (#485)"},
 {"date":"2026-08-19T13:31:12Z","wpt_revision":"a95401e4e","product_revision":"2c75d477f1eaa0876419420c08216dcc9576ae98","commit_message":"Implement text decoration styles (rebased) (#753)"},
-{"date":"2026-08-19T15:20:39Z","wpt_revision":"a95401e4e","product_revision":"111ed2f7224e49cd3177ef3cb5990efc279d3e73","commit_message":"Update README screenshot"}
+{"date":"2026-08-19T15:20:39Z","wpt_revision":"a95401e4e","product_revision":"111ed2f7224e49cd3177ef3cb5990efc279d3e73","commit_message":"Update README screenshot"},
+{"date":"2026-08-21T01:59:35Z","wpt_revision":"a95401e4e","product_revision":"818a50e79b0314aa489005ada28bea204cd8570d","commit_message":"Clippy (Rust 1.98)"}
 ]}
