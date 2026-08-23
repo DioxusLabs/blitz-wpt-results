@@ -983,5 +983,6 @@
 {"date":"2026-08-23T15:47:32Z","wpt_revision":"a95401e4e","product_revision":"51ddb932a4bec603ce188dfb5ec9f0f0ed59de46","commit_message":"Keep transforms in the 2d subset instead of dropping all 3d functions (#760)"},
 {"date":"2026-08-23T17:30:38Z","wpt_revision":"a95401e4e","product_revision":"6350b74cc4ab96602fcabfb23791f1907c2e7ccb","commit_message":"Stylo: use snapshot-driven fine-grained invalidation for element state changes (#765)"},
 {"date":"2026-08-23T18:09:57Z","wpt_revision":"a95401e4e","product_revision":"7ca45ac809a4b70cc99204fabd7056d1c144d3bd","commit_message":"Upgrade Taffy to latest main (#767)"},
-{"date":"2026-08-23T19:02:32Z","wpt_revision":"a95401e4e","product_revision":"e3ea0be65afbb8a152fe193119823d814e5d0650","commit_message":"Sync pseudo-element styles during the style traversal (#768)"}
+{"date":"2026-08-23T19:02:32Z","wpt_revision":"a95401e4e","product_revision":"e3ea0be65afbb8a152fe193119823d814e5d0650","commit_message":"Sync pseudo-element styles during the style traversal (#768)"},
+{"date":"2026-08-23T19:57:58Z","wpt_revision":"a95401e4e","product_revision":"455c627f5cf090de8ac5db2ac9cd97edbd308565","commit_message":"Drive background/mask image flushing from the style traversal (#770)"}
 ]}
