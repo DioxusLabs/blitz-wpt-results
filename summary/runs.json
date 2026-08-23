@@ -979,5 +979,6 @@
 {"date":"2026-08-21T01:59:35Z","wpt_revision":"a95401e4e","product_revision":"818a50e79b0314aa489005ada28bea204cd8570d","commit_message":"Clippy (Rust 1.98)"},
 {"date":"2026-08-21T11:19:00Z","wpt_revision":"a95401e4e","product_revision":"c6b50e83a7471fbbd5b6f63b31781a0654586392","commit_message":"Support the `role` attribute when setting the role in an `AccessKitNode` (#761)"},
 {"date":"2026-08-21T11:23:53Z","wpt_revision":"a95401e4e","product_revision":"d8e860a1e3b40fa0bf85106a6ec5b47797a53e3c","commit_message":"Upgrade taffy to latest main (#759)"},
-{"date":"2026-08-22T13:56:24Z","wpt_revision":"a95401e4e","product_revision":"aa41c3072e0366c0c83421665ecd859e697d7672","commit_message":"Upgrade Taffy to latest main (#762)"}
+{"date":"2026-08-22T13:56:24Z","wpt_revision":"a95401e4e","product_revision":"aa41c3072e0366c0c83421665ecd859e697d7672","commit_message":"Upgrade Taffy to latest main (#762)"},
+{"date":"2026-08-23T15:47:32Z","wpt_revision":"a95401e4e","product_revision":"51ddb932a4bec603ce188dfb5ec9f0f0ed59de46","commit_message":"Keep transforms in the 2d subset instead of dropping all 3d functions (#760)"}
 ]}
