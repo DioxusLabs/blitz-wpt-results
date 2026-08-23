@@ -985,5 +985,6 @@
 {"date":"2026-08-23T18:09:57Z","wpt_revision":"a95401e4e","product_revision":"7ca45ac809a4b70cc99204fabd7056d1c144d3bd","commit_message":"Upgrade Taffy to latest main (#767)"},
 {"date":"2026-08-23T19:02:32Z","wpt_revision":"a95401e4e","product_revision":"e3ea0be65afbb8a152fe193119823d814e5d0650","commit_message":"Sync pseudo-element styles during the style traversal (#768)"},
 {"date":"2026-08-23T19:57:58Z","wpt_revision":"a95401e4e","product_revision":"455c627f5cf090de8ac5db2ac9cd97edbd308565","commit_message":"Drive background/mask image flushing from the style traversal (#770)"},
-{"date":"2026-08-23T20:51:57Z","wpt_revision":"a95401e4e","product_revision":"4fe44f1871a2510118b8e2821477fa6bed57ffd2","commit_message":"Paint: don't construct initial ComputedValues for every element (~35% faster paint) (#771)"}
+{"date":"2026-08-23T20:51:57Z","wpt_revision":"a95401e4e","product_revision":"4fe44f1871a2510118b8e2821477fa6bed57ffd2","commit_message":"Paint: don't construct initial ComputedValues for every element (~35% faster paint) (#771)"},
+{"date":"2026-08-23T21:35:01Z","wpt_revision":"a95401e4e","product_revision":"7f60715343de3e812d97bdf9f7a5a22006061650","commit_message":"Add paint_bench example for benchmarking/profiling the paint phase (#772)"}
 ]}
