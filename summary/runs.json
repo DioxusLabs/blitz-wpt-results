@@ -995,5 +995,6 @@
 {"date":"2026-08-24T20:17:11Z","wpt_revision":"a95401e4e","product_revision":"307f6324ae033015f7d6c1707456f1c09ba55628","commit_message":"Upgrade to anyrender_vello_cpu 0.17 (bounded image cache) (#780)"},
 {"date":"2026-08-24T21:34:04Z","wpt_revision":"a95401e4e","product_revision":"054f0432c3f2cce3c2d9ba4aacea4c842841b71d","commit_message":"Fix just browskia command"},
 {"date":"2026-08-24T22:05:42Z","wpt_revision":"a95401e4e","product_revision":"d4340cfcd71383918464206912149b865f2a9cfe","commit_message":"Bump MSRV to 1.90"},
-{"date":"2026-08-24T22:17:16Z","wpt_revision":"a95401e4e","product_revision":"6c1a829a3c5b306be359206779dd106550e673dd","commit_message":"Avoid full restyle on viewport resize (#782)"}
+{"date":"2026-08-24T22:17:16Z","wpt_revision":"a95401e4e","product_revision":"6c1a829a3c5b306be359206779dd106550e673dd","commit_message":"Avoid full restyle on viewport resize (#782)"},
+{"date":"2026-08-24T22:21:36Z","wpt_revision":"a95401e4e","product_revision":"07e07049fd0bee551643eb32053e405498f40167","commit_message":"Fix zoom_by/zoom_to not invalidating inline contexts or requesting redraw (#784)"}
 ]}
