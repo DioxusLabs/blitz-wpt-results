@@ -989,5 +989,6 @@
 {"date":"2026-08-23T21:35:01Z","wpt_revision":"a95401e4e","product_revision":"7f60715343de3e812d97bdf9f7a5a22006061650","commit_message":"Add paint_bench example for benchmarking/profiling the paint phase (#772)"},
 {"date":"2026-08-23T22:17:46Z","wpt_revision":"a95401e4e","product_revision":"b604d677d0703a5a27b758e4af226bc493ada741","commit_message":"Skip background image layer clips when the layer paints nothing (#774)"},
 {"date":"2026-08-24T10:15:30Z","wpt_revision":"a95401e4e","product_revision":"e0610f360eb0c8227321a4a8adc79114415b2795","commit_message":"Update Taffy for negative-margin flex sizing fix (#775)"},
-{"date":"2026-08-24T16:59:54Z","wpt_revision":"a95401e4e","product_revision":"92fabe5d946e381f12d2fa0568a3c7a73b67e473","commit_message":"Upgrade Taffy for measure cache axis fix (#776)"}
+{"date":"2026-08-24T16:59:54Z","wpt_revision":"a95401e4e","product_revision":"92fabe5d946e381f12d2fa0568a3c7a73b67e473","commit_message":"Upgrade Taffy for measure cache axis fix (#776)"},
+{"date":"2026-08-24T17:18:38Z","wpt_revision":"a95401e4e","product_revision":"4239e30fa3d84cb829c8d5ee065426bc689025d9","commit_message":"Update Taffy pin to main (flexbox ContentSize sizing, taffy#1155) (#777)"}
 ]}
