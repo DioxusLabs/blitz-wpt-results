@@ -993,5 +993,6 @@
 {"date":"2026-08-24T17:18:38Z","wpt_revision":"a95401e4e","product_revision":"4239e30fa3d84cb829c8d5ee065426bc689025d9","commit_message":"Update Taffy pin to main (flexbox ContentSize sizing, taffy#1155) (#777)"},
 {"date":"2026-08-24T19:32:34Z","wpt_revision":"a95401e4e","product_revision":"b6c008faa0995e23c48a5bc07f470d938e275d16","commit_message":"Upgrade Taffy to v0.14.0 (#779)"},
 {"date":"2026-08-24T20:17:11Z","wpt_revision":"a95401e4e","product_revision":"307f6324ae033015f7d6c1707456f1c09ba55628","commit_message":"Upgrade to anyrender_vello_cpu 0.17 (bounded image cache) (#780)"},
-{"date":"2026-08-24T21:34:04Z","wpt_revision":"a95401e4e","product_revision":"054f0432c3f2cce3c2d9ba4aacea4c842841b71d","commit_message":"Fix just browskia command"}
+{"date":"2026-08-24T21:34:04Z","wpt_revision":"a95401e4e","product_revision":"054f0432c3f2cce3c2d9ba4aacea4c842841b71d","commit_message":"Fix just browskia command"},
+{"date":"2026-08-24T22:05:42Z","wpt_revision":"a95401e4e","product_revision":"d4340cfcd71383918464206912149b865f2a9cfe","commit_message":"Bump MSRV to 1.90"}
 ]}
