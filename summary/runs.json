@@ -998,5 +998,6 @@
 {"date":"2026-08-24T22:17:16Z","wpt_revision":"a95401e4e","product_revision":"6c1a829a3c5b306be359206779dd106550e673dd","commit_message":"Avoid full restyle on viewport resize (#782)"},
 {"date":"2026-08-24T22:21:36Z","wpt_revision":"a95401e4e","product_revision":"07e07049fd0bee551643eb32053e405498f40167","commit_message":"Fix zoom_by/zoom_to not invalidating inline contexts or requesting redraw (#784)"},
 {"date":"2026-08-24T22:53:49Z","wpt_revision":"a95401e4e","product_revision":"216402351e20e1eb8c1d8c782e5df6d51b4ca7f5","commit_message":"Coalesce stylist device changes into a single rebuild per resolve (#785)"},
-{"date":"2026-08-25T00:43:20Z","wpt_revision":"a95401e4e","product_revision":"651142cd0ae19ae3f79c61059efb8728464cc5bc","commit_message":"Fix stale dirty_descendants bits breaking hover invalidation (#789)"}
+{"date":"2026-08-25T00:43:20Z","wpt_revision":"a95401e4e","product_revision":"651142cd0ae19ae3f79c61059efb8728464cc5bc","commit_message":"Fix stale dirty_descendants bits breaking hover invalidation (#789)"},
+{"date":"2026-08-25T13:36:17Z","wpt_revision":"a95401e4e","product_revision":"ad7b707ee4bd0d85c103ebb249d559a0404b6115","commit_message":"Apply scale and transform in fast path of `resolve_transforms` (#792)"}
 ]}
