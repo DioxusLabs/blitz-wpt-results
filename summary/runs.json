@@ -1001,5 +1001,6 @@
 {"date":"2026-08-25T00:43:20Z","wpt_revision":"a95401e4e","product_revision":"651142cd0ae19ae3f79c61059efb8728464cc5bc","commit_message":"Fix stale dirty_descendants bits breaking hover invalidation (#789)"},
 {"date":"2026-08-25T13:36:17Z","wpt_revision":"a95401e4e","product_revision":"ad7b707ee4bd0d85c103ebb249d559a0404b6115","commit_message":"Apply scale and transform in fast path of `resolve_transforms` (#792)"},
 {"date":"2026-08-25T19:10:28Z","wpt_revision":"a95401e4e","product_revision":"e254d8bbc1ce1e2c418605c71702d89d7928b8cb","commit_message":"Avoid cloning decoded image in ImageHandler::parse (#795)"},
-{"date":"2026-08-25T21:06:30Z","wpt_revision":"a95401e4e","product_revision":"1ce132855ac40550e83a20fad581edf9fdafa867","commit_message":"Use ThinVec for element attrs, background_images and mask_images (#798)"}
+{"date":"2026-08-25T21:06:30Z","wpt_revision":"a95401e4e","product_revision":"1ce132855ac40550e83a20fad581edf9fdafa867","commit_message":"Use ThinVec for element attrs, background_images and mask_images (#798)"},
+{"date":"2026-08-25T22:08:35Z","wpt_revision":"a95401e4e","product_revision":"5c30078e0a94950ffcb75010db08beb63269a7ed","commit_message":"Pass newtype wrapper of Stylo `ComputedValues` to Taffy directly (#794)"}
 ]}
