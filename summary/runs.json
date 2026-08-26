@@ -1004,5 +1004,6 @@
 {"date":"2026-08-25T21:06:30Z","wpt_revision":"a95401e4e","product_revision":"1ce132855ac40550e83a20fad581edf9fdafa867","commit_message":"Use ThinVec for element attrs, background_images and mask_images (#798)"},
 {"date":"2026-08-25T22:08:35Z","wpt_revision":"a95401e4e","product_revision":"5c30078e0a94950ffcb75010db08beb63269a7ed","commit_message":"Pass newtype wrapper of Stylo `ComputedValues` to Taffy directly (#794)"},
 {"date":"2026-08-25T23:41:41Z","wpt_revision":"a95401e4e","product_revision":"c11ad7840175fd7720ee835c9c5ad25056a0b809","commit_message":"Lazily allocate taffy layout output state in a boxed LayoutData (#797)"},
-{"date":"2026-08-26T01:08:32Z","wpt_revision":"a95401e4e","product_revision":"678aef9c5fbe82bd9d80a88d5f3b77580174cba5","commit_message":"Rename _opt accessor methods to use try_ prefix (#801)"}
+{"date":"2026-08-26T01:08:32Z","wpt_revision":"a95401e4e","product_revision":"678aef9c5fbe82bd9d80a88d5f3b77580174cba5","commit_message":"Rename _opt accessor methods to use try_ prefix (#801)"},
+{"date":"2026-08-26T11:03:36Z","wpt_revision":"a95401e4e","product_revision":"e639e42d0b1c9bc22ed4e42e984d8913ff8b2341","commit_message":"Fix print_taffy_tree to use the real root node and recurse into subdocuments (#804)"}
 ]}
