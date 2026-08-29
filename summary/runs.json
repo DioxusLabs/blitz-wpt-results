@@ -1008,5 +1008,6 @@
 {"date":"2026-08-26T11:03:36Z","wpt_revision":"a95401e4e","product_revision":"e639e42d0b1c9bc22ed4e42e984d8913ff8b2341","commit_message":"Fix print_taffy_tree to use the real root node and recurse into subdocuments (#804)"},
 {"date":"2026-08-27T11:34:20Z","wpt_revision":"a95401e4e","product_revision":"40a66eccb964298c7a9837cc5b6fb93665917a05","commit_message":"Replace mark_style_attr_updated with set_restyle_hint (#811)"},
 {"date":"2026-08-27T13:39:59Z","wpt_revision":"a95401e4e","product_revision":"9d5cef2fa3d01423081681843d91b76ef593443e","commit_message":"Document running Parley WPT tests (#812)"},
-{"date":"2026-08-28T13:26:18Z","wpt_revision":"a95401e4e","product_revision":"548acc44a2f85bc327b5b40bbeaf2baaf27f46d4","commit_message":"wpt: exclude non-test files (visual/manual/support) from wptreport.json (#813)"}
+{"date":"2026-08-28T13:26:18Z","wpt_revision":"a95401e4e","product_revision":"548acc44a2f85bc327b5b40bbeaf2baaf27f46d4","commit_message":"wpt: exclude non-test files (visual/manual/support) from wptreport.json (#813)"},
+{"date":"2026-08-29T00:59:51Z","wpt_revision":"a95401e4e","product_revision":"64eb27853aa2672486b7edf825fb044be78c9db3","commit_message":"Add `blitz-vibey-script` crate + JS support for the WPT runner (#738)"}
 ]}
