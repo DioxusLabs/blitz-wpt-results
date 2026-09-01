@@ -1016,5 +1016,6 @@
 {"date":"2026-09-01T08:02:26Z","wpt_revision":"a95401e4e","product_revision":"647b44b3d2201f0ce8e2ed2a72a4c6cf25e16ecc","commit_message":"wpt: run JS timers on virtual time, fast-forwarding instead of sleeping (#821)"},
 {"date":"2026-09-01T08:41:11Z","wpt_revision":"a95401e4e","product_revision":"4507cd7e2261a439e727aacc0a65cb1d3a2434f9","commit_message":"script: fix panic in replaceChild when old child is not a child of this node (#822)"},
 {"date":"2026-09-01T21:55:14Z","wpt_revision":"a95401e4e","product_revision":"68f2641205a118224ca5315246cb5c0bf6dddb42","commit_message":"ci: install libfontconfig directly instead of via the apt cache action (#825)"},
-{"date":"2026-09-01T22:17:26Z","wpt_revision":"a95401e4e","product_revision":"4c9396a82ef1644386750d3ea915f57f7347741b","commit_message":"wpt: un-quarantine tests that no longer time out, relabel the rest (#824)"}
+{"date":"2026-09-01T22:17:26Z","wpt_revision":"a95401e4e","product_revision":"4c9396a82ef1644386750d3ea915f57f7347741b","commit_message":"wpt: un-quarantine tests that no longer time out, relabel the rest (#824)"},
+{"date":"2026-09-01T23:14:32Z","wpt_revision":"a95401e4e","product_revision":"45cb5eaf05ac43f4e2a1d0ca63ea6325240eeeba","commit_message":"wpt: run SVG reftests that declare references with <html:link> (#827)"}
 ]}
