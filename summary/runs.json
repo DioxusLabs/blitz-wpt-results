@@ -1037,5 +1037,6 @@
 {"date":"2026-09-10T20:24:27Z","wpt_revision":"5a5b2b591","product_revision":"901126d9caad1e14639fb23059d28a279cf360b0","commit_message":"Upgrade Taffy: fix column flex items with percentage-height children (#856)"},
 {"date":"2026-09-10T22:06:48Z","wpt_revision":"5a5b2b591","product_revision":"a2c20769e0fd260c00c95a663be2045a737e9696","commit_message":"Upgrade Taffy: omit grid-template-areas implicit line names from resolved track lists (#858)"},
 {"date":"2026-09-10T22:41:50Z","wpt_revision":"5a5b2b591","product_revision":"1c1e78c54841d2e47c511edfa2917a6b89a1915c","commit_message":"tables: implement fixed table layout column sizing (#852)"},
-{"date":"2026-09-12T20:40:16Z","wpt_revision":"5a5b2b591","product_revision":"3778a7ab1a24bfc3ee16f076f168d8866badae70","commit_message":"Attach @import stylesheets on the document thread instead of inside the net handler (#861)"}
+{"date":"2026-09-12T20:40:16Z","wpt_revision":"5a5b2b591","product_revision":"3778a7ab1a24bfc3ee16f076f168d8866badae70","commit_message":"Attach @import stylesheets on the document thread instead of inside the net handler (#861)"},
+{"date":"2026-09-12T21:35:45Z","wpt_revision":"5a5b2b591","product_revision":"e2b03fa18e309c7b39c8b2ca855ba6f95a1c56a3","commit_message":"Implement CSSOM stylesheet API (document.styleSheets, CSSStyleSheet, CSSRule) (#860)"}
 ]}
