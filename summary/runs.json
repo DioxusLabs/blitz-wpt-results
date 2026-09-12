@@ -1036,5 +1036,6 @@
 {"date":"2026-09-10T20:11:31Z","wpt_revision":"5a5b2b591","product_revision":"3ecf88d2def9b9af5c1b64cd0c4a97f644c79a3a","commit_message":"ci: bump pinned WPT commit to 5a5b2b591 (2026-09-10) (#853)"},
 {"date":"2026-09-10T20:24:27Z","wpt_revision":"5a5b2b591","product_revision":"901126d9caad1e14639fb23059d28a279cf360b0","commit_message":"Upgrade Taffy: fix column flex items with percentage-height children (#856)"},
 {"date":"2026-09-10T22:06:48Z","wpt_revision":"5a5b2b591","product_revision":"a2c20769e0fd260c00c95a663be2045a737e9696","commit_message":"Upgrade Taffy: omit grid-template-areas implicit line names from resolved track lists (#858)"},
-{"date":"2026-09-10T22:41:50Z","wpt_revision":"5a5b2b591","product_revision":"1c1e78c54841d2e47c511edfa2917a6b89a1915c","commit_message":"tables: implement fixed table layout column sizing (#852)"}
+{"date":"2026-09-10T22:41:50Z","wpt_revision":"5a5b2b591","product_revision":"1c1e78c54841d2e47c511edfa2917a6b89a1915c","commit_message":"tables: implement fixed table layout column sizing (#852)"},
+{"date":"2026-09-12T20:40:16Z","wpt_revision":"5a5b2b591","product_revision":"3778a7ab1a24bfc3ee16f076f168d8866badae70","commit_message":"Attach @import stylesheets on the document thread instead of inside the net handler (#861)"}
 ]}
