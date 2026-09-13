@@ -1041,5 +1041,6 @@
 {"date":"2026-09-12T21:35:45Z","wpt_revision":"5a5b2b591","product_revision":"e2b03fa18e309c7b39c8b2ca855ba6f95a1c56a3","commit_message":"Implement CSSOM stylesheet API (document.styleSheets, CSSStyleSheet, CSSRule) (#860)"},
 {"date":"2026-09-12T22:15:55Z","wpt_revision":"5a5b2b591","product_revision":"fb848c9f81d46d62984edda5e9791609ee83fd9f","commit_message":"script: add a minimal fetch()/Response/Headers implementation backed by ScriptFetcher (#869)"},
 {"date":"2026-09-12T22:57:21Z","wpt_revision":"5a5b2b591","product_revision":"e19710cca487237a4464cebeb813d7d61b5b5f9c","commit_message":"script: element.style setter, root clientWidth/Height, CSS.registerProperty; enable progress() pref (#866) (#872)"},
-{"date":"2026-09-12T23:18:21Z","wpt_revision":"5a5b2b591","product_revision":"b9bd463b954a2f85aacbb0e7736f09bc426efd4c","commit_message":"script: implement HTMLHyperlinkElementUtils (href/pathname/host/...) on <a>/<area> (#873)"}
+{"date":"2026-09-12T23:18:21Z","wpt_revision":"5a5b2b591","product_revision":"b9bd463b954a2f85aacbb0e7736f09bc426efd4c","commit_message":"script: implement HTMLHyperlinkElementUtils (href/pathname/host/...) on <a>/<area> (#873)"},
+{"date":"2026-09-12T23:52:45Z","wpt_revision":"5a5b2b591","product_revision":"59a6f55d06f7e05aed59165660dd04136bac91d0","commit_message":"dom: use unrounded layout positions for getBoundingClientRect/getClientRects (#874)"}
 ]}
