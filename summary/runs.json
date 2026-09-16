@@ -1045,5 +1045,6 @@
 {"date":"2026-09-12T23:52:45Z","wpt_revision":"5a5b2b591","product_revision":"59a6f55d06f7e05aed59165660dd04136bac91d0","commit_message":"dom: use unrounded layout positions for getBoundingClientRect/getClientRects (#874)"},
 {"date":"2026-09-13T00:18:17Z","wpt_revision":"5a5b2b591","product_revision":"0b05eca96199bdb34512c1807af48cb973225c49","commit_message":"Enable stylo's layout.variable_fonts.enabled pref (font-variation-settings, font-optical-sizing) (#876)"},
 {"date":"2026-09-13T08:43:53Z","wpt_revision":"5a5b2b591","product_revision":"450e576dd4b1fe8cd1def09facf9c73c6c1006ed","commit_message":"script: fire window error events for uncaught exceptions; wpt: keep completed subtests on uncaught JS errors (#886)"},
-{"date":"2026-09-14T12:58:10Z","wpt_revision":"5a5b2b591","product_revision":"ea108e19cb4046051460d4fc7229a23f3f4ca50b","commit_message":"keyboard: request redraw and dispatch focus/blur events when Tab moves focus (#899)"}
+{"date":"2026-09-14T12:58:10Z","wpt_revision":"5a5b2b591","product_revision":"ea108e19cb4046051460d4fc7229a23f3f4ca50b","commit_message":"keyboard: request redraw and dispatch focus/blur events when Tab moves focus (#899)"},
+{"date":"2026-09-16T18:40:04Z","wpt_revision":"5a5b2b591","product_revision":"6772b5b7ff748034fcaa9eee2dad4fdf2ec7f9ef","commit_message":"stylo_taffy: ignore insets on position:static boxes (#903)"}
 ]}
