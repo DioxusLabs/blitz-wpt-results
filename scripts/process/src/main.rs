@@ -2,7 +2,6 @@ mod compression;
 mod git;
 mod github;
 mod report;
-mod summary;
 
 use std::fs::canonicalize;
 use std::path::{Path, PathBuf};
@@ -10,8 +9,8 @@ use std::path::{Path, PathBuf};
 use compression::maybe_unzip_single_file;
 use git::{git_add, git_commit, git_commit_message, git_commit_timestamp};
 use github::GithubClient;
+use process::summary::{ScoredRun, SummaryStore, score_report};
 use report::{load_existing_reports, parse_zstd_report};
-use summary::{ScoredRun, SummaryStore, score_report};
 
 fn reports_dir() -> PathBuf {
     canonicalize(format!("{}/../../reports", env!("CARGO_MANIFEST_DIR"))).unwrap()

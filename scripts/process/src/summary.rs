@@ -13,7 +13,7 @@ use wptreport::{
 /// (with `total_score` rounded to 1dp)
 pub type ScoreTuple = (u32, f64, u32, u32);
 
-fn score_tuple(scores: &AreaScores) -> ScoreTuple {
+pub fn score_tuple(scores: &AreaScores) -> ScoreTuple {
     (
         scores.tests.total,
         (scores.servo_score() * 10.0).round() / 10.0,
@@ -36,6 +36,20 @@ pub struct RunMeta {
     /// First line of the blitz commit's message
     #[serde(skip_serializing_if = "Option::is_none")]
     pub commit_message: Option<String>,
+    /// The wpt.fyi run ID, for runs imported from wpt.fyi rather than from
+    /// blitz CI. Used to de-duplicate runs when `product_revision` (a browser
+    /// version) is not unique.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub run_id: Option<u64>,
+}
+
+impl RunMeta {
+    fn dedup_key(&self) -> String {
+        match self.run_id {
+            Some(id) => format!("run:{id}"),
+            None => self.product_revision.clone(),
+        }
+    }
 }
 
 #[derive(Serialize, Deserialize)]
@@ -82,6 +96,7 @@ pub fn score_report(
             wpt_revision: report.run_info.revision[0..9].to_string(),
             product_revision: commit_id.to_string(),
             commit_message,
+            run_id: None,
         },
         scores: scores
             .iter()
@@ -137,17 +152,14 @@ impl SummaryStore {
         })
     }
 
-    /// Append runs, skipping any whose product revision is already present,
-    /// then re-sort all files consistently by (date, product_revision)
+    /// Append runs, skipping any already present (by wpt.fyi run ID if set,
+    /// otherwise by product revision), then re-sort all files consistently by
+    /// (date, product_revision)
     pub fn append(&mut self, new_runs: Vec<ScoredRun>) {
-        let existing: HashSet<String> = self
-            .runs
-            .iter()
-            .map(|run| run.product_revision.clone())
-            .collect();
+        let mut existing: HashSet<String> = self.runs.iter().map(RunMeta::dedup_key).collect();
 
         for run in new_runs {
-            if existing.contains(&run.meta.product_revision) {
+            if !existing.insert(run.meta.dedup_key()) {
                 continue;
             }
 

@@ -1,0 +1,16 @@
+[package]
+name = "browsers"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = { version = "0.4", default-features = false, features = ["alloc"] }
+flate2 = "1.1"
+gix = { version = "0.87", default-features = false, features = ["max-performance-safe", "sha1"] }
+percent-encoding = "2.3"
+process = { path = "../process" }
+serde = "1.0.228"
+serde_derive = "1.0.228"
+serde_json = "1.0.149"
+ureq = { version = "3.3.0", features = ["json"] }
+wptreport = { version = "0.0.12" }
