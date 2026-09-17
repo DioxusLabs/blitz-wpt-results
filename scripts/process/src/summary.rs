@@ -13,7 +13,7 @@ use wptreport::{
 /// (with `total_score` rounded to 1dp)
 pub type ScoreTuple = (u32, f64, u32, u32);
 
-pub fn score_tuple(scores: &AreaScores) -> ScoreTuple {
+fn score_tuple(scores: &AreaScores) -> ScoreTuple {
     (
         scores.tests.total,
         (scores.servo_score() * 10.0).round() / 10.0,
@@ -37,8 +37,8 @@ pub struct RunMeta {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub commit_message: Option<String>,
     /// The wpt.fyi run ID, for runs imported from wpt.fyi rather than from
-    /// blitz CI. Used to de-duplicate runs when `product_revision` (a browser
-    /// version) is not unique.
+    /// blitz CI (see DioxusLabs/browser-wpt-results). Used to de-duplicate
+    /// runs when `product_revision` (a browser version) is not unique.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub run_id: Option<u64>,
 }

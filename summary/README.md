@@ -41,14 +41,15 @@ Metadata shared by all area files, stored once:
 | `wpt_revision` | Revision of the WPT test suite that was run (9-char sha). |
 | `product_revision` | The Blitz commit that was tested (full sha). |
 | `commit_message` | First line of the Blitz commit's message (optional). |
-| `run_id` | wpt.fyi run ID, only for datasets imported from wpt.fyi by `scripts/browsers` (optional). |
+| `run_id` | wpt.fyi run ID, only for datasets imported from wpt.fyi (optional). |
 
 Runs are sorted by `(date, product_revision)`. Runs are de-duplicated by
 `run_id` when present, otherwise by `product_revision`.
 
-The same layout is used by `scripts/browsers` to produce one dataset per
-browser (`<out>/<product>/{runs.json,areas/}`), where `product_revision` is
-the browser version and `date` the wpt.fyi run's start time.
+The same format is used by
+[browser-wpt-results](https://github.com/DioxusLabs/browser-wpt-results) for
+one dataset per browser, where `product_revision` is the browser version and
+`date` the wpt.fyi run's start time.
 
 ## Area files (`areas/<area path>.json`)
 
