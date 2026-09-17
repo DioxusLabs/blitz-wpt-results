@@ -28,7 +28,7 @@ cargo run -rp browsers -- --cache ../results-analysis-cache.git --out browsers -
 # scored; runs missing from the cache fall back to wpt.fyi summaries
 cargo run -rp browsers -- --cache ../results-analysis-cache.git --out browsers --daily --from 2026-09-01
 
-# Options
+# Options (including --fetch-delay, the pause between wpt.fyi requests; default 1s)
 cargo run -rp browsers -- --help
 ```
 

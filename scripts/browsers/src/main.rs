@@ -13,7 +13,7 @@ mod wptfyi;
 
 use std::collections::HashSet;
 use std::path::PathBuf;
-use std::time::Instant;
+use std::time::{Duration, Instant};
 
 use process::summary::{ScoredRun, SummaryStore};
 
@@ -48,6 +48,8 @@ struct Args {
     /// Only score this subtree of WPT (e.g. `css`)
     subtree: Option<String>,
     source: Source,
+    /// Pause between requests to wpt.fyi / GCS
+    fetch_delay: Duration,
 }
 
 const USAGE: &str = "\
@@ -63,6 +65,7 @@ Usage: browsers [options]
   --max-runs <n>       Process at most n runs per product
   --subtree <dir>      Only score this WPT directory (e.g. css)
   --source <mode>      auto (default) | cache | summary
+  --fetch-delay <ms>   Pause between wpt.fyi requests (default: 1000)
 ";
 
 fn parse_args() -> Args {
@@ -77,6 +80,7 @@ fn parse_args() -> Args {
         max_runs: None,
         subtree: None,
         source: Source::Auto,
+        fetch_delay: Duration::from_millis(1000),
     };
 
     let mut iter = std::env::args().skip(1);
@@ -95,6 +99,10 @@ fn parse_args() -> Args {
             "--daily" => args.daily = true,
             "--max-runs" => args.max_runs = Some(value().parse().expect("--max-runs number")),
             "--subtree" => args.subtree = Some(value()),
+            "--fetch-delay" => {
+                args.fetch_delay =
+                    Duration::from_millis(value().parse().expect("--fetch-delay milliseconds"))
+            }
             "--source" => {
                 args.source = match value().as_str() {
                     "auto" => Source::Auto,
@@ -151,12 +159,15 @@ fn main() {
         let mut store = SummaryStore::load(&out_dir).unwrap_or_default();
         let existing: HashSet<u64> = store.runs.iter().filter_map(|run| run.run_id).collect();
 
-        let mut runs = wptfyi::list_runs(&RunQuery {
-            product,
-            labels: &args.labels,
-            from: args.from.as_deref(),
-            to: args.to.as_deref(),
-        });
+        let mut runs = wptfyi::list_runs(
+            &RunQuery {
+                product,
+                labels: &args.labels,
+                from: args.from.as_deref(),
+                to: args.to.as_deref(),
+            },
+            args.fetch_delay,
+        );
         println!("{product}: {} runs match on wpt.fyi", runs.len());
 
         if args.daily {
@@ -187,6 +198,7 @@ fn main() {
                 }
                 None => {
                     from_summary += 1;
+                    std::thread::sleep(args.fetch_delay);
                     let mut results = wptfyi::fetch_summary(run);
                     if let Some(subtree) = &args.subtree {
                         let prefix = format!("{}/", subtree.trim_matches('/'));

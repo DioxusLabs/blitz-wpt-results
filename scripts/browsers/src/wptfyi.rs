@@ -4,6 +4,7 @@
 
 use std::collections::HashMap;
 use std::io::Read;
+use std::time::Duration;
 
 use chrono::{DateTime, Utc};
 use serde::Deserialize;
@@ -41,8 +42,8 @@ pub struct RunQuery<'a> {
 ///
 /// The pagination token doesn't preserve `from`, so pages keep walking back in
 /// time past it; we stop once a page reaches runs older than `from` and filter
-/// the results client-side.
-pub fn list_runs(query: &RunQuery) -> Vec<Run> {
+/// the results client-side. `delay` is the pause between page requests.
+pub fn list_runs(query: &RunQuery, delay: Duration) -> Vec<Run> {
     let mut url = format!("{RUNS_API}?product={}&max-count=500", query.product);
     if !query.labels.is_empty() {
         url.push_str(&format!("&labels={}", query.labels.join(",")));
@@ -75,7 +76,10 @@ pub fn list_runs(query: &RunQuery) -> Vec<Run> {
         runs.extend(page);
 
         match next_page {
-            Some(token) if !reached_from => url = format!("{RUNS_API}?page={token}"),
+            Some(token) if !reached_from => {
+                url = format!("{RUNS_API}?page={token}");
+                std::thread::sleep(delay);
+            }
             _ => break,
         }
     }
