@@ -1053,5 +1053,6 @@
 {"date":"2026-09-17T19:15:43Z","wpt_revision":"d552535bc","product_revision":"9d92719b37c801b8b41c81b799a2a474db8b3936","commit_message":"Propagate scrollable_overflow_rect to atomic inline boxes (#909)"},
 {"date":"2026-09-18T01:05:13Z","wpt_revision":"d552535bc","product_revision":"6347f435d00869f3f59c352d26160b0a61ec672c","commit_message":"resolved_style: use implicit track sizes for none tracks in grid-template shorthand (#911)"},
 {"date":"2026-09-18T10:54:27Z","wpt_revision":"d552535bc","product_revision":"190e37ef2d38b04b1d0f8bbb35fbead2fb0be05b","commit_message":"CI: Add weekly job that bumps the pinned WPT revision (#908)"},
-{"date":"2026-09-18T11:22:44Z","wpt_revision":"d552535bc","product_revision":"33af534a5235195c5f365297118aafa95acb4fae","commit_message":"Bump taffy to main (out-of-flow refactor) (#912)"}
+{"date":"2026-09-18T11:22:44Z","wpt_revision":"d552535bc","product_revision":"33af534a5235195c5f365297118aafa95acb4fae","commit_message":"Bump taffy to main (out-of-flow refactor) (#912)"},
+{"date":"2026-09-18T13:05:32Z","wpt_revision":"d552535bc","product_revision":"e7bf7bca452bc9194ac5c9bcf2ac3c0ebcf02e09","commit_message":"Clear stale stacking_context when a node stops being a stacking context root (#913)"}
 ]}
