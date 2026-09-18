@@ -1052,5 +1052,6 @@
 {"date":"2026-09-17T19:06:55Z","wpt_revision":"d552535bc","product_revision":"2a01eaf2b6b9a6d4c081fab49f48ff6b5ec4fb24","commit_message":"Bump pinned WPT revision to `d552535bc` (2026-09-17) (#907)"},
 {"date":"2026-09-17T19:15:43Z","wpt_revision":"d552535bc","product_revision":"9d92719b37c801b8b41c81b799a2a474db8b3936","commit_message":"Propagate scrollable_overflow_rect to atomic inline boxes (#909)"},
 {"date":"2026-09-18T01:05:13Z","wpt_revision":"d552535bc","product_revision":"6347f435d00869f3f59c352d26160b0a61ec672c","commit_message":"resolved_style: use implicit track sizes for none tracks in grid-template shorthand (#911)"},
-{"date":"2026-09-18T10:54:27Z","wpt_revision":"d552535bc","product_revision":"190e37ef2d38b04b1d0f8bbb35fbead2fb0be05b","commit_message":"CI: Add weekly job that bumps the pinned WPT revision (#908)"}
+{"date":"2026-09-18T10:54:27Z","wpt_revision":"d552535bc","product_revision":"190e37ef2d38b04b1d0f8bbb35fbead2fb0be05b","commit_message":"CI: Add weekly job that bumps the pinned WPT revision (#908)"},
+{"date":"2026-09-18T11:22:44Z","wpt_revision":"d552535bc","product_revision":"33af534a5235195c5f365297118aafa95acb4fae","commit_message":"Bump taffy to main (out-of-flow refactor) (#912)"}
 ]}
