@@ -1049,5 +1049,6 @@
 {"date":"2026-09-16T18:40:04Z","wpt_revision":"5a5b2b591","product_revision":"6772b5b7ff748034fcaa9eee2dad4fdf2ec7f9ef","commit_message":"stylo_taffy: ignore insets on position:static boxes (#903)"},
 {"date":"2026-09-16T21:00:49Z","wpt_revision":"5a5b2b591","product_revision":"1b044c2d9d80afafb08304a6b17d96c2579979e5","commit_message":"Use warpbuild runner for WPT tests (#905)"},
 {"date":"2026-09-17T19:06:55Z","wpt_revision":"d552535bc","product_revision":"2a01eaf2b6b9a6d4c081fab49f48ff6b5ec4fb24","commit_message":"Bump pinned WPT revision to `d552535bc` (2026-09-17) (#907)"},
-{"date":"2026-09-17T19:15:43Z","wpt_revision":"d552535bc","product_revision":"9d92719b37c801b8b41c81b799a2a474db8b3936","commit_message":"Propagate scrollable_overflow_rect to atomic inline boxes (#909)"}
+{"date":"2026-09-17T19:15:43Z","wpt_revision":"d552535bc","product_revision":"9d92719b37c801b8b41c81b799a2a474db8b3936","commit_message":"Propagate scrollable_overflow_rect to atomic inline boxes (#909)"},
+{"date":"2026-09-18T01:05:13Z","wpt_revision":"d552535bc","product_revision":"6347f435d00869f3f59c352d26160b0a61ec672c","commit_message":"resolved_style: use implicit track sizes for none tracks in grid-template shorthand (#911)"}
 ]}
