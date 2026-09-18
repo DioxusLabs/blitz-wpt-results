@@ -11,7 +11,9 @@ use compression::maybe_unzip_single_file;
 use git::{git_add, git_commit, git_commit_message, git_commit_timestamp};
 use github::GithubClient;
 use report::{load_existing_reports, parse_zstd_report};
-use summary::{ScoredRun, SummaryStore, score_report};
+use std::collections::HashMap;
+
+use summary::{RunMeta, ScoredRun, SummaryStore, score_report};
 
 fn reports_dir() -> PathBuf {
     canonicalize(format!("{}/../../reports", env!("CARGO_MANIFEST_DIR"))).unwrap()
@@ -62,6 +64,19 @@ fn backfill() {
     let report_count = report_ids.len();
     println!("Backfilling summary from {report_count} reports");
 
+    // Keep the metadata of runs already in the summary: commits from since
+    // rebased/squashed branches can't be looked up in the blitz repo anymore
+    let summary_dir = summary_dir();
+    let existing_meta: HashMap<String, RunMeta> = SummaryStore::load(&summary_dir)
+        .map(|store| {
+            store
+                .runs
+                .into_iter()
+                .map(|meta| (meta.product_revision.clone(), meta))
+                .collect()
+        })
+        .unwrap_or_default();
+
     let mut runs: Vec<ScoredRun> = Vec::with_capacity(report_count);
     for (idx, commit_id) in report_ids.iter().enumerate() {
         let path = reports_dir.join(format!("{commit_id}.json.zst"));
@@ -70,17 +85,19 @@ fn backfill() {
             println!("Skipping invalid report {commit_id}");
             continue;
         };
-        let commit_timestamp = git_commit_timestamp(&blitz_repo, commit_id);
-        if commit_timestamp.is_none() {
-            println!("No commit timestamp found for {commit_id}; using WPT run time");
-        }
-        let commit_message = git_commit_message(&blitz_repo, commit_id);
-        runs.push(score_report(
-            report,
-            commit_id,
-            commit_timestamp,
-            commit_message,
-        ));
+        let run = if let Some(meta) = existing_meta.get(commit_id) {
+            let mut run = score_report(report, commit_id, None, None);
+            run.meta = meta.clone();
+            run
+        } else {
+            let commit_timestamp = git_commit_timestamp(&blitz_repo, commit_id);
+            if commit_timestamp.is_none() {
+                println!("No commit timestamp found for {commit_id}; using WPT run time");
+            }
+            let commit_message = git_commit_message(&blitz_repo, commit_id);
+            score_report(report, commit_id, commit_timestamp, commit_message)
+        };
+        runs.push(run);
         if (idx + 1) % 50 == 0 {
             println!("Scored {}/{report_count} reports", idx + 1);
         }
@@ -88,7 +105,7 @@ fn backfill() {
 
     let mut store = SummaryStore::default();
     store.append(runs);
-    store.write(&summary_dir());
+    store.write(&summary_dir);
     println!(
         "Wrote summary with {} runs across {} area files",
         store.runs.len(),
