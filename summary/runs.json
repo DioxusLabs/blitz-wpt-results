@@ -1059,5 +1059,6 @@
 {"date":"2026-09-20T18:20:12Z","wpt_revision":"d552535bc","product_revision":"efef6519fe6520caf66dc82df557580eecbf652b","commit_message":"Release accesskit_xplat v0.2.0 (#916)"},
 {"date":"2026-09-21T12:26:31Z","wpt_revision":"d552535bc","product_revision":"6c6f8f6e92deca6c182be06bf16c83c84f7e507d","commit_message":"Implement `order` sorting at box construction time (local reconstruct on `order` damage) (#917)"},
 {"date":"2026-09-21T13:15:32Z","wpt_revision":"d552535bc","product_revision":"1fb14304783d4f994f6dbeac0f5241f0c8c54297","commit_message":"Invalidate anonymous-block layout caches via layout_parent in propagate_damage_flags (#918)"},
-{"date":"2026-09-21T13:47:05Z","wpt_revision":"d552535bc","product_revision":"47ade08eab29ddea7ecb4454184767d84e447f89","commit_message":"Make non-incremental layout just a pre-pass that marks all nodes damaged (#919)"}
+{"date":"2026-09-21T13:47:05Z","wpt_revision":"d552535bc","product_revision":"47ade08eab29ddea7ecb4454184767d84e447f89","commit_message":"Make non-incremental layout just a pre-pass that marks all nodes damaged (#919)"},
+{"date":"2026-09-21T15:29:33Z","wpt_revision":"d552535bc","product_revision":"e99fbdbd1d03b9f0aa1622c3f810d95daac92042","commit_message":"Visit each node once in clear_damage_and_dirty_flags (#920)"}
 ]}
