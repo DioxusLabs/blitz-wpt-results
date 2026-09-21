@@ -1056,5 +1056,6 @@
 {"date":"2026-09-18T11:22:44Z","wpt_revision":"d552535bc","product_revision":"33af534a5235195c5f365297118aafa95acb4fae","commit_message":"Bump taffy to main (out-of-flow refactor) (#912)"},
 {"date":"2026-09-18T13:05:32Z","wpt_revision":"d552535bc","product_revision":"e7bf7bca452bc9194ac5c9bcf2ac3c0ebcf02e09","commit_message":"Clear stale stacking_context when a node stops being a stacking context root (#913)"},
 {"date":"2026-09-20T18:11:24Z","wpt_revision":"d552535bc","product_revision":"df13934a74c523c9ae9c3037d4c9e41edc0834f9","commit_message":"Upgrade accesskit_xplat to latest accesskit versions (#915)"},
-{"date":"2026-09-20T18:20:12Z","wpt_revision":"d552535bc","product_revision":"efef6519fe6520caf66dc82df557580eecbf652b","commit_message":"Release accesskit_xplat v0.2.0 (#916)"}
+{"date":"2026-09-20T18:20:12Z","wpt_revision":"d552535bc","product_revision":"efef6519fe6520caf66dc82df557580eecbf652b","commit_message":"Release accesskit_xplat v0.2.0 (#916)"},
+{"date":"2026-09-21T12:26:31Z","wpt_revision":"d552535bc","product_revision":"6c6f8f6e92deca6c182be06bf16c83c84f7e507d","commit_message":"Implement `order` sorting at box construction time (local reconstruct on `order` damage) (#917)"}
 ]}
