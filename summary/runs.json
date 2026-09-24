@@ -1068,5 +1068,6 @@
 {"date":"2026-09-24T20:10:37Z","wpt_revision":"d552535bc","product_revision":"0bc6c0516bd38a197f8956c58fc163bbe0506f69","commit_message":"Set `-x-lang` from `lang`/`xml:lang` and pass it to Parley as the text locale (#932)"},
 {"date":"2026-09-24T21:28:11Z","wpt_revision":"d552535bc","product_revision":"a0465a0c495751ba1f189c47eda0ae015a0054f3","commit_message":"Apply translate/rotate/scale in the correct order (T·R·S) (#934)"},
 {"date":"2026-09-24T21:30:58Z","wpt_revision":"d552535bc","product_revision":"a9b1821b21e55a925a60d53cf47c9017a99822e7","commit_message":"Establish a stacking context for any non-none transform/translate/rotate/scale (#935)"},
-{"date":"2026-09-24T21:48:40Z","wpt_revision":"d552535bc","product_revision":"b31dd579ea487120c26d842d8847615f06985b11","commit_message":"wpt: run JS timers in reftests and honour reftest-wait (#936)"}
+{"date":"2026-09-24T21:48:40Z","wpt_revision":"d552535bc","product_revision":"b31dd579ea487120c26d842d8847615f06985b11","commit_message":"wpt: run JS timers in reftests and honour reftest-wait (#936)"},
+{"date":"2026-09-24T22:05:22Z","wpt_revision":"d552535bc","product_revision":"d9546fcbd4d5d3faefd73faf602652fa428e94e5","commit_message":"Add UA rule mapping td/th nowrap attribute to white-space: nowrap (#931)"}
 ]}
