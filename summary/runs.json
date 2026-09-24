@@ -1062,5 +1062,6 @@
 {"date":"2026-09-21T13:47:05Z","wpt_revision":"d552535bc","product_revision":"47ade08eab29ddea7ecb4454184767d84e447f89","commit_message":"Make non-incremental layout just a pre-pass that marks all nodes damaged (#919)"},
 {"date":"2026-09-21T15:29:33Z","wpt_revision":"d552535bc","product_revision":"e99fbdbd1d03b9f0aa1622c3f810d95daac92042","commit_message":"Visit each node once in clear_damage_and_dirty_flags (#920)"},
 {"date":"2026-09-24T17:53:34Z","wpt_revision":"d552535bc","product_revision":"5b227f8afc80b36b3bf8f3772b0865f01a3ad3bb","commit_message":"Upgrade Parley from 0.11 to latest main (#914)"},
-{"date":"2026-09-24T19:02:55Z","wpt_revision":"d552535bc","product_revision":"82939e2fcbe9b3014d26c02d0ebef94b19936ce0","commit_message":"Compute ch/ic advances with the same scaling as Parley's glyph advances (#927)"}
+{"date":"2026-09-24T19:02:55Z","wpt_revision":"d552535bc","product_revision":"82939e2fcbe9b3014d26c02d0ebef94b19936ce0","commit_message":"Compute ch/ic advances with the same scaling as Parley's glyph advances (#927)"},
+{"date":"2026-09-24T19:38:17Z","wpt_revision":"d552535bc","product_revision":"277dfe895dd62828ad80a7c0c01c77a642922abc","commit_message":"Don't drop whitespace-only text nodes whose whitespace is preserved (#930)"}
 ]}
