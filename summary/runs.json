@@ -1065,5 +1065,7 @@
 {"date":"2026-09-24T19:02:55Z","wpt_revision":"d552535bc","product_revision":"82939e2fcbe9b3014d26c02d0ebef94b19936ce0","commit_message":"Compute ch/ic advances with the same scaling as Parley's glyph advances (#927)"},
 {"date":"2026-09-24T19:38:17Z","wpt_revision":"d552535bc","product_revision":"277dfe895dd62828ad80a7c0c01c77a642922abc","commit_message":"Don't drop whitespace-only text nodes whose whitespace is preserved (#930)"},
 {"date":"2026-09-24T19:47:29Z","wpt_revision":"d552535bc","product_revision":"370b35cac466be2c406fd743647efcea8d1c45ae","commit_message":"Pass textarea content, text styles, width and alignment to the text editor (#929)"},
-{"date":"2026-09-24T20:10:37Z","wpt_revision":"d552535bc","product_revision":"0bc6c0516bd38a197f8956c58fc163bbe0506f69","commit_message":"Set `-x-lang` from `lang`/`xml:lang` and pass it to Parley as the text locale (#932)"}
+{"date":"2026-09-24T20:10:37Z","wpt_revision":"d552535bc","product_revision":"0bc6c0516bd38a197f8956c58fc163bbe0506f69","commit_message":"Set `-x-lang` from `lang`/`xml:lang` and pass it to Parley as the text locale (#932)"},
+{"date":"2026-09-24T21:28:11Z","wpt_revision":"d552535bc","product_revision":"a0465a0c495751ba1f189c47eda0ae015a0054f3","commit_message":"Apply translate/rotate/scale in the correct order (T·R·S) (#934)"},
+{"date":"2026-09-24T21:30:58Z","wpt_revision":"d552535bc","product_revision":"a9b1821b21e55a925a60d53cf47c9017a99822e7","commit_message":"Establish a stacking context for any non-none transform/translate/rotate/scale (#935)"}
 ]}
