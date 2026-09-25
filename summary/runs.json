@@ -1072,5 +1072,6 @@
 {"date":"2026-09-24T22:05:22Z","wpt_revision":"d552535bc","product_revision":"d9546fcbd4d5d3faefd73faf602652fa428e94e5","commit_message":"Add UA rule mapping td/th nowrap attribute to white-space: nowrap (#931)"},
 {"date":"2026-09-24T22:34:24Z","wpt_revision":"d552535bc","product_revision":"42821263fc370e4363b75c2d40e52bfe5d7eed98","commit_message":"Don't clamp replaced elements' max size to the available space (#937)"},
 {"date":"2026-09-24T22:59:46Z","wpt_revision":"d552535bc","product_revision":"3b387225d9bde42f364b8c919d3dbb21bcb3c122","commit_message":"Support `stretch` for replaced elements' width and height (#938)"},
-{"date":"2026-09-24T23:31:54Z","wpt_revision":"d552535bc","product_revision":"be485e61a4916b117d4b822a6af2e7ee86b3fbc0","commit_message":"Don't count the empty line Parley adds after a final forced line break in inline height (#939)"}
+{"date":"2026-09-24T23:31:54Z","wpt_revision":"d552535bc","product_revision":"be485e61a4916b117d4b822a6af2e7ee86b3fbc0","commit_message":"Don't count the empty line Parley adds after a final forced line break in inline height (#939)"},
+{"date":"2026-09-25T00:16:11Z","wpt_revision":"d552535bc","product_revision":"ab0e30b1f9bd3ad0e413c2c39e2db1935ba8f5f8","commit_message":"Give form controls a UA default font-family (#940)"}
 ]}
