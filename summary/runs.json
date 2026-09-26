@@ -1076,5 +1076,6 @@
 {"date":"2026-09-25T00:16:11Z","wpt_revision":"d552535bc","product_revision":"ab0e30b1f9bd3ad0e413c2c39e2db1935ba8f5f8","commit_message":"Give form controls a UA default font-family (#940)"},
 {"date":"2026-09-25T21:40:54Z","wpt_revision":"d552535bc","product_revision":"876dcf2915b8085f3be41e09c61a76b8f56fcc36","commit_message":"Clamp an inline box's height to a finite value (#941)"},
 {"date":"2026-09-25T23:42:17Z","wpt_revision":"d552535bc","product_revision":"61ada7bf4a9cca843739c1bf65ae01bc282a0e4e","commit_message":"Build the paint tree in a single damage-gated post-layout pass (#921)"},
-{"date":"2026-09-26T01:26:00Z","wpt_revision":"d552535bc","product_revision":"2a78f29f358c0b99be06e8c9be193c0a34f68576","commit_message":"Fix hit-testing of hoisted children under a scrolled stacking-context root; move viewport_scroll into NodeTree (#944)"}
+{"date":"2026-09-26T01:26:00Z","wpt_revision":"d552535bc","product_revision":"2a78f29f358c0b99be06e8c9be193c0a34f68576","commit_message":"Fix hit-testing of hoisted children under a scrolled stacking-context root; move viewport_scroll into NodeTree (#944)"},
+{"date":"2026-09-26T02:08:50Z","wpt_revision":"d552535bc","product_revision":"7100a3b38901085e9a08180d235810cb6a3194c9","commit_message":"Implement out-of-flow hoisting (`position:absolute` and `position:fixed`)  (#922)"}
 ]}
