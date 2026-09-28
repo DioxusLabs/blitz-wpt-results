@@ -1081,5 +1081,6 @@
 {"date":"2026-09-27T01:13:45Z","wpt_revision":"d552535bc","product_revision":"7931e6794d5d0e791660cc3474536047c01239ed","commit_message":"Stop build_inline_layout_recursive from overwriting layout_parent (#953)"},
 {"date":"2026-09-27T20:39:04Z","wpt_revision":"d552535bc","product_revision":"d4c1a7fb2f3788e729a0c01655c930df6683620b","commit_message":"Fix unused NodeFlags import warning in release builds"},
 {"date":"2026-09-28T15:29:07Z","wpt_revision":"d552535bc","product_revision":"e445c290d8dce226a2514a8885671ebb78face0a","commit_message":"Implement `vertical-align` via Parley (#832)"},
-{"date":"2026-09-28T16:07:10Z","wpt_revision":"375cf2548","product_revision":"d054f11037ab2d2d5b3e51102e6ab4ee2a70d22c","commit_message":"Bump pinned WPT revision to 375cf2548 (2026-09-28) (#970)"}
+{"date":"2026-09-28T16:07:10Z","wpt_revision":"375cf2548","product_revision":"d054f11037ab2d2d5b3e51102e6ab4ee2a70d22c","commit_message":"Bump pinned WPT revision to 375cf2548 (2026-09-28) (#970)"},
+{"date":"2026-09-28T16:23:39Z","wpt_revision":"375cf2548","product_revision":"7d48d0d1cf9ce3e993384354e748ec0ea32c7c3e","commit_message":"Bump Taffy: only resolve abspos auto margins when both insets are set (#971)"}
 ]}
