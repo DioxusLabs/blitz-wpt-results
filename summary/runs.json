@@ -1086,5 +1086,6 @@
 {"date":"2026-09-28T16:31:57Z","wpt_revision":"375cf2548","product_revision":"246c759fcd80e2438b4d0f46cb40f19d7f071c55","commit_message":"Bump Taffy: don't stretch absolutely positioned replaced elements between insets (#972)"},
 {"date":"2026-09-28T16:32:18Z","wpt_revision":"375cf2548","product_revision":"151b1b811bcceb18043813936034a338f1322133","commit_message":"Support CSS `line-break` (#933)"},
 {"date":"2026-09-28T16:54:41Z","wpt_revision":"375cf2548","product_revision":"6b6e9f356a6022b329fcaa6a132e8f7572117199","commit_message":"Bump Taffy: viewport-sized initial containing block (#973)"},
-{"date":"2026-09-28T17:19:50Z","wpt_revision":"375cf2548","product_revision":"674d7d2144585baa0f7368b8ad76371c93fe1b65","commit_message":"WPT CI: install a Thai font (fonts-tlwg-loma-otf) on the runner (#975)"}
+{"date":"2026-09-28T17:19:50Z","wpt_revision":"375cf2548","product_revision":"674d7d2144585baa0f7368b8ad76371c93fe1b65","commit_message":"WPT CI: install a Thai font (fonts-tlwg-loma-otf) on the runner (#975)"},
+{"date":"2026-09-28T21:23:12Z","wpt_revision":"375cf2548","product_revision":"1be8f755de3a6807914fb81a87e82458fb8f98a3","commit_message":"Bump Taffy: respect the root element's position and insets (#976)"}
 ]}
