@@ -1084,5 +1084,6 @@
 {"date":"2026-09-28T16:07:10Z","wpt_revision":"375cf2548","product_revision":"d054f11037ab2d2d5b3e51102e6ab4ee2a70d22c","commit_message":"Bump pinned WPT revision to 375cf2548 (2026-09-28) (#970)"},
 {"date":"2026-09-28T16:23:39Z","wpt_revision":"375cf2548","product_revision":"7d48d0d1cf9ce3e993384354e748ec0ea32c7c3e","commit_message":"Bump Taffy: only resolve abspos auto margins when both insets are set (#971)"},
 {"date":"2026-09-28T16:31:57Z","wpt_revision":"375cf2548","product_revision":"246c759fcd80e2438b4d0f46cb40f19d7f071c55","commit_message":"Bump Taffy: don't stretch absolutely positioned replaced elements between insets (#972)"},
-{"date":"2026-09-28T16:32:18Z","wpt_revision":"375cf2548","product_revision":"151b1b811bcceb18043813936034a338f1322133","commit_message":"Support CSS `line-break` (#933)"}
+{"date":"2026-09-28T16:32:18Z","wpt_revision":"375cf2548","product_revision":"151b1b811bcceb18043813936034a338f1322133","commit_message":"Support CSS `line-break` (#933)"},
+{"date":"2026-09-28T16:54:41Z","wpt_revision":"375cf2548","product_revision":"6b6e9f356a6022b329fcaa6a132e8f7572117199","commit_message":"Bump Taffy: viewport-sized initial containing block (#973)"}
 ]}
