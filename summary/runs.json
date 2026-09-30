@@ -1095,5 +1095,6 @@
 {"date":"2026-09-29T19:42:26Z","wpt_revision":"375cf2548","product_revision":"8c5322fd05ca77e435ae8bef5ab52adaf36ff468","commit_message":"Remove xmlns injection hack for inline SVG (#988)"},
 {"date":"2026-09-29T19:47:24Z","wpt_revision":"375cf2548","product_revision":"4fd7b688e7e2099cb0536c87850899aef9b81eef","commit_message":"Rebuild inline SVG when its styles change (#987)"},
 {"date":"2026-09-30T12:37:59Z","wpt_revision":"375cf2548","product_revision":"2d14d8eb3284e6e1756419d123f72835a4c0e1fb","commit_message":"Upgrade Stylo to 0.22 (#989)"},
-{"date":"2026-09-30T13:32:07Z","wpt_revision":"375cf2548","product_revision":"d6498be2a56116bb879674ba637d4c3e7f91c4a8","commit_message":"Enable flex-wrap: balance integration (#991)"}
+{"date":"2026-09-30T13:32:07Z","wpt_revision":"375cf2548","product_revision":"d6498be2a56116bb879674ba637d4c3e7f91c4a8","commit_message":"Enable flex-wrap: balance integration (#991)"},
+{"date":"2026-09-30T14:00:59Z","wpt_revision":"375cf2548","product_revision":"b7ae42259d9c72acefc6a2b9b20c31d7bb9a8464","commit_message":"Saturate 16-bit grid property conversions (#992)"}
 ]}
