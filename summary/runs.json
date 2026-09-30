@@ -1093,5 +1093,6 @@
 {"date":"2026-09-29T13:16:13Z","wpt_revision":"375cf2548","product_revision":"c20690f3bc2e1f50e428acd7b5d2fe3545ec6f32","commit_message":"Pass CSS direction to the text editor for textarea/input (#981)"},
 {"date":"2026-09-29T19:16:59Z","wpt_revision":"375cf2548","product_revision":"8ea8bd6b712968d3403864eebb699518aad403a2","commit_message":"Propagate :hover/:active along DOM ancestors instead of layout ancestors (#985)"},
 {"date":"2026-09-29T19:42:26Z","wpt_revision":"375cf2548","product_revision":"8c5322fd05ca77e435ae8bef5ab52adaf36ff468","commit_message":"Remove xmlns injection hack for inline SVG (#988)"},
-{"date":"2026-09-29T19:47:24Z","wpt_revision":"375cf2548","product_revision":"4fd7b688e7e2099cb0536c87850899aef9b81eef","commit_message":"Rebuild inline SVG when its styles change (#987)"}
+{"date":"2026-09-29T19:47:24Z","wpt_revision":"375cf2548","product_revision":"4fd7b688e7e2099cb0536c87850899aef9b81eef","commit_message":"Rebuild inline SVG when its styles change (#987)"},
+{"date":"2026-09-30T12:37:59Z","wpt_revision":"375cf2548","product_revision":"2d14d8eb3284e6e1756419d123f72835a4c0e1fb","commit_message":"Upgrade Stylo to 0.22 (#989)"}
 ]}
