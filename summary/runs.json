@@ -1098,5 +1098,6 @@
 {"date":"2026-09-30T13:32:07Z","wpt_revision":"375cf2548","product_revision":"d6498be2a56116bb879674ba637d4c3e7f91c4a8","commit_message":"Enable flex-wrap: balance integration (#991)"},
 {"date":"2026-09-30T14:00:59Z","wpt_revision":"375cf2548","product_revision":"b7ae42259d9c72acefc6a2b9b20c31d7bb9a8464","commit_message":"Saturate 16-bit grid property conversions (#992)"},
 {"date":"2026-09-30T14:43:35Z","wpt_revision":"375cf2548","product_revision":"18f007ee4bae490b787f45a97fe898dc2e73f1bb","commit_message":"Resolve sizing keywords on atomic inline boxes (#993)"},
-{"date":"2026-09-30T16:37:07Z","wpt_revision":"375cf2548","product_revision":"0eee307440611d0ff5f2093d0099018182267ab1","commit_message":"Move pinned WPT revision to wpt/WPT_COMMIT so the bump bot can push it (#995)"}
+{"date":"2026-09-30T16:37:07Z","wpt_revision":"375cf2548","product_revision":"0eee307440611d0ff5f2093d0099018182267ab1","commit_message":"Move pinned WPT revision to wpt/WPT_COMMIT so the bump bot can push it (#995)"},
+{"date":"2026-10-01T00:34:42Z","wpt_revision":"375cf2548","product_revision":"1a75f6781d7a0a9c254ff8270be9368b67f0daf5","commit_message":"Lay out absolutely positioned children of tables as out-of-flow boxes (#999)"}
 ]}
