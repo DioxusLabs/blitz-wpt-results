@@ -1102,5 +1102,6 @@
 {"date":"2026-10-01T00:34:42Z","wpt_revision":"375cf2548","product_revision":"1a75f6781d7a0a9c254ff8270be9368b67f0daf5","commit_message":"Lay out absolutely positioned children of tables as out-of-flow boxes (#999)"},
 {"date":"2026-10-01T00:57:24Z","wpt_revision":"375cf2548","product_revision":"33ae7d5045cc50656a881973beedecc72b386f8e","commit_message":"Place outside list markers outside the list item's border box (#1003)"},
 {"date":"2026-10-01T01:52:46Z","wpt_revision":"375cf2548","product_revision":"ff623a8c39714076d77f2ac3c748b9515c7acaed","commit_message":"Fix the position of collapsed table borders (#1005)"},
-{"date":"2026-10-01T16:53:06Z","wpt_revision":"375cf2548","product_revision":"89e5e615aea649a1a9630c526956aa3d90a3afa7","commit_message":"Implement `text-align-last` (#998)"}
+{"date":"2026-10-01T16:53:06Z","wpt_revision":"375cf2548","product_revision":"89e5e615aea649a1a9630c526956aa3d90a3afa7","commit_message":"Implement `text-align-last` (#998)"},
+{"date":"2026-10-02T20:19:05Z","wpt_revision":"375cf2548","product_revision":"d2827fb386fd22668b7b8bed42639d8e75ddca71","commit_message":"Bump Taffy to main (flexbox percentage padding + intrinsic column sizing fixes) (#1017)"}
 ]}
