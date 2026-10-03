@@ -1104,5 +1104,6 @@
 {"date":"2026-10-01T01:52:46Z","wpt_revision":"375cf2548","product_revision":"ff623a8c39714076d77f2ac3c748b9515c7acaed","commit_message":"Fix the position of collapsed table borders (#1005)"},
 {"date":"2026-10-01T16:53:06Z","wpt_revision":"375cf2548","product_revision":"89e5e615aea649a1a9630c526956aa3d90a3afa7","commit_message":"Implement `text-align-last` (#998)"},
 {"date":"2026-10-02T20:19:05Z","wpt_revision":"375cf2548","product_revision":"d2827fb386fd22668b7b8bed42639d8e75ddca71","commit_message":"Bump Taffy to main (flexbox percentage padding + intrinsic column sizing fixes) (#1017)"},
-{"date":"2026-10-03T15:45:35Z","wpt_revision":"375cf2548","product_revision":"ab97f57025608cfb49a45dbc9e8a11fee69f188d","commit_message":"Bump Taffy to main (layout cache tagged with sizing mode and margin collapsibility) (#1020)"}
+{"date":"2026-10-03T15:45:35Z","wpt_revision":"375cf2548","product_revision":"ab97f57025608cfb49a45dbc9e8a11fee69f188d","commit_message":"Bump Taffy to main (layout cache tagged with sizing mode and margin collapsibility) (#1020)"},
+{"date":"2026-10-03T17:53:21Z","wpt_revision":"375cf2548","product_revision":"65c3dfd2937bd7d39d8c906cd280bea7d90742f8","commit_message":"Upgrade AnyRender to the 0.14 release line (#1023)"}
 ]}
