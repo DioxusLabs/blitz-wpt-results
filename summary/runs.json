@@ -1111,5 +1111,6 @@
 {"date":"2026-10-03T20:40:24Z","wpt_revision":"375cf2548","product_revision":"be11e520648b35e2dbb322858fa4e7d878680659","commit_message":"Bump Taffy to main (grid: use an item's known size as its intrinsic contribution) (#1028)"},
 {"date":"2026-10-03T22:56:04Z","wpt_revision":"375cf2548","product_revision":"e0f7955a35b2c8a9fa79492dd34b731d9cf74b14","commit_message":"Leave container `align-items`/`justify-items: normal` unset in Taffy styles (#1022)"},
 {"date":"2026-10-04T00:24:23Z","wpt_revision":"375cf2548","product_revision":"32a64362f37c967cebbfaea666358db2b3072cba","commit_message":"Bump Taffy to main (grid track sizing optimizations) (#1029)"},
-{"date":"2026-10-04T02:33:38Z","wpt_revision":"375cf2548","product_revision":"8b54d6d2930f654d75446e423b42033d323205f0","commit_message":"Bump Taffy to main (grid: re-run check fixes, automatic minimum size, lazy span-1 contributions) (#1030)"}
+{"date":"2026-10-04T02:33:38Z","wpt_revision":"375cf2548","product_revision":"8b54d6d2930f654d75446e423b42033d323205f0","commit_message":"Bump Taffy to main (grid: re-run check fixes, automatic minimum size, lazy span-1 contributions) (#1030)"},
+{"date":"2026-10-04T11:38:19Z","wpt_revision":"375cf2548","product_revision":"0db8c74a5f8a0df77eed1b33c846eb041515b6c7","commit_message":"Update to Taffy's `available_space` margin convention (parent subtracts the child's margins) (#1035)"}
 ]}
