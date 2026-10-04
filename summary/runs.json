@@ -1109,5 +1109,6 @@
 {"date":"2026-10-03T18:53:05Z","wpt_revision":"375cf2548","product_revision":"3d1ecc2223835155973d9d95ac301177991e0c97","commit_message":"Bump Taffy to main (skip grid row sizing for width-only measurement) (#1025)"},
 {"date":"2026-10-03T20:17:37Z","wpt_revision":"375cf2548","product_revision":"c4cb24ffa8ccfe17c3d5f6b95cefc422d3267719","commit_message":"Bump Taffy to main (skip flexbox cross sizing for main-axis-only measurement) (#1027)"},
 {"date":"2026-10-03T20:40:24Z","wpt_revision":"375cf2548","product_revision":"be11e520648b35e2dbb322858fa4e7d878680659","commit_message":"Bump Taffy to main (grid: use an item's known size as its intrinsic contribution) (#1028)"},
-{"date":"2026-10-03T22:56:04Z","wpt_revision":"375cf2548","product_revision":"e0f7955a35b2c8a9fa79492dd34b731d9cf74b14","commit_message":"Leave container `align-items`/`justify-items: normal` unset in Taffy styles (#1022)"}
+{"date":"2026-10-03T22:56:04Z","wpt_revision":"375cf2548","product_revision":"e0f7955a35b2c8a9fa79492dd34b731d9cf74b14","commit_message":"Leave container `align-items`/`justify-items: normal` unset in Taffy styles (#1022)"},
+{"date":"2026-10-04T00:24:23Z","wpt_revision":"375cf2548","product_revision":"32a64362f37c967cebbfaea666358db2b3072cba","commit_message":"Bump Taffy to main (grid track sizing optimizations) (#1029)"}
 ]}
