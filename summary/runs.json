@@ -1117,5 +1117,6 @@
 {"date":"2026-10-05T12:07:31Z","wpt_revision":"25124fb10","product_revision":"ae90a3ad311b050e03921f7330b29492cc524330","commit_message":"Bump Taffy to main (grid: resolve percentage tracks against an indefinite container's own size) (#1047)"},
 {"date":"2026-10-05T13:06:26Z","wpt_revision":"25124fb10","product_revision":"9249cd33a698100cbca0270b70311890903caf10","commit_message":"Bump Taffy to main (grid: percentage rows resolve against an indefinite container's height) (#1052)"},
 {"date":"2026-10-05T13:43:01Z","wpt_revision":"25124fb10","product_revision":"044fe2642bc5fed2e823973462e6e120a0fb8bd4","commit_message":"Bump Taffy to main (grid: fix fit-content() growth limit distribution for spanning items) (#1053)"},
-{"date":"2026-10-05T14:44:04Z","wpt_revision":"25124fb10","product_revision":"0f60502ea724ef703b34220b3847bb3483f70b5f","commit_message":"Bump Taffy; support fit-content(calc()) widths and track limits (#1055)"}
+{"date":"2026-10-05T14:44:04Z","wpt_revision":"25124fb10","product_revision":"0f60502ea724ef703b34220b3847bb3483f70b5f","commit_message":"Bump Taffy; support fit-content(calc()) widths and track limits (#1055)"},
+{"date":"2026-10-05T16:58:30Z","wpt_revision":"25124fb10","product_revision":"0b5f1fe28168eb32daf0cc5a6048c2089609abf6","commit_message":"Support self-alignment (align-self/justify-self) of absolutely positioned boxes (#977)"}
 ]}
