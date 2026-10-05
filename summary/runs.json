@@ -1119,5 +1119,6 @@
 {"date":"2026-10-05T13:43:01Z","wpt_revision":"25124fb10","product_revision":"044fe2642bc5fed2e823973462e6e120a0fb8bd4","commit_message":"Bump Taffy to main (grid: fix fit-content() growth limit distribution for spanning items) (#1053)"},
 {"date":"2026-10-05T14:44:04Z","wpt_revision":"25124fb10","product_revision":"0f60502ea724ef703b34220b3847bb3483f70b5f","commit_message":"Bump Taffy; support fit-content(calc()) widths and track limits (#1055)"},
 {"date":"2026-10-05T16:58:30Z","wpt_revision":"25124fb10","product_revision":"0b5f1fe28168eb32daf0cc5a6048c2089609abf6","commit_message":"Support self-alignment (align-self/justify-self) of absolutely positioned boxes (#977)"},
-{"date":"2026-10-05T17:37:31Z","wpt_revision":"25124fb10","product_revision":"73fb6a16c713ebfd6711d0ea3aae7388eea557c6","commit_message":"Bump Taffy to fix used auto margins beside floats (#1061)"}
+{"date":"2026-10-05T17:37:31Z","wpt_revision":"25124fb10","product_revision":"73fb6a16c713ebfd6711d0ea3aae7388eea557c6","commit_message":"Bump Taffy to fix used auto margins beside floats (#1061)"},
+{"date":"2026-10-05T18:02:24Z","wpt_revision":"25124fb10","product_revision":"6a15a4d74175aeb5d31ec039abc8709384b6b501","commit_message":"Move inline fragment rect computation to Node without changing behavior (#1062)"}
 ]}
