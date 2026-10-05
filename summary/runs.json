@@ -1114,5 +1114,6 @@
 {"date":"2026-10-04T02:33:38Z","wpt_revision":"375cf2548","product_revision":"8b54d6d2930f654d75446e423b42033d323205f0","commit_message":"Bump Taffy to main (grid: re-run check fixes, automatic minimum size, lazy span-1 contributions) (#1030)"},
 {"date":"2026-10-04T11:38:19Z","wpt_revision":"375cf2548","product_revision":"0db8c74a5f8a0df77eed1b33c846eb041515b6c7","commit_message":"Update to Taffy's `available_space` margin convention (parent subtracts the child's margins) (#1035)"},
 {"date":"2026-10-05T11:04:37Z","wpt_revision":"375cf2548","product_revision":"46be0219e61611619c530a558d74494a1a032c78","commit_message":"Remove automated WPT pin bump workflow (#1045)"},
-{"date":"2026-10-05T12:07:31Z","wpt_revision":"25124fb10","product_revision":"ae90a3ad311b050e03921f7330b29492cc524330","commit_message":"Bump Taffy to main (grid: resolve percentage tracks against an indefinite container's own size) (#1047)"}
+{"date":"2026-10-05T12:07:31Z","wpt_revision":"25124fb10","product_revision":"ae90a3ad311b050e03921f7330b29492cc524330","commit_message":"Bump Taffy to main (grid: resolve percentage tracks against an indefinite container's own size) (#1047)"},
+{"date":"2026-10-05T13:06:26Z","wpt_revision":"25124fb10","product_revision":"9249cd33a698100cbca0270b70311890903caf10","commit_message":"Bump Taffy to main (grid: percentage rows resolve against an indefinite container's height) (#1052)"}
 ]}
