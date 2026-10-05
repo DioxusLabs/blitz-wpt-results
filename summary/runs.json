@@ -1115,5 +1115,6 @@
 {"date":"2026-10-04T11:38:19Z","wpt_revision":"375cf2548","product_revision":"0db8c74a5f8a0df77eed1b33c846eb041515b6c7","commit_message":"Update to Taffy's `available_space` margin convention (parent subtracts the child's margins) (#1035)"},
 {"date":"2026-10-05T11:04:37Z","wpt_revision":"375cf2548","product_revision":"46be0219e61611619c530a558d74494a1a032c78","commit_message":"Remove automated WPT pin bump workflow (#1045)"},
 {"date":"2026-10-05T12:07:31Z","wpt_revision":"25124fb10","product_revision":"ae90a3ad311b050e03921f7330b29492cc524330","commit_message":"Bump Taffy to main (grid: resolve percentage tracks against an indefinite container's own size) (#1047)"},
-{"date":"2026-10-05T13:06:26Z","wpt_revision":"25124fb10","product_revision":"9249cd33a698100cbca0270b70311890903caf10","commit_message":"Bump Taffy to main (grid: percentage rows resolve against an indefinite container's height) (#1052)"}
+{"date":"2026-10-05T13:06:26Z","wpt_revision":"25124fb10","product_revision":"9249cd33a698100cbca0270b70311890903caf10","commit_message":"Bump Taffy to main (grid: percentage rows resolve against an indefinite container's height) (#1052)"},
+{"date":"2026-10-05T13:43:01Z","wpt_revision":"25124fb10","product_revision":"044fe2642bc5fed2e823973462e6e120a0fb8bd4","commit_message":"Bump Taffy to main (grid: fix fit-content() growth limit distribution for spanning items) (#1053)"}
 ]}
