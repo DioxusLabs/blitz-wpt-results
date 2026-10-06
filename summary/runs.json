@@ -1122,5 +1122,6 @@
 {"date":"2026-10-05T17:37:31Z","wpt_revision":"25124fb10","product_revision":"73fb6a16c713ebfd6711d0ea3aae7388eea557c6","commit_message":"Bump Taffy to fix used auto margins beside floats (#1061)"},
 {"date":"2026-10-05T18:02:24Z","wpt_revision":"25124fb10","product_revision":"6a15a4d74175aeb5d31ec039abc8709384b6b501","commit_message":"Move inline fragment rect computation to Node without changing behavior (#1062)"},
 {"date":"2026-10-05T22:36:17Z","wpt_revision":"25124fb10","product_revision":"6832e9cbd323e54c1a92f41eb0593f70cbfaeccc","commit_message":"Bump Parley to latest main (break-lines speedup) (#1065)"},
-{"date":"2026-10-05T23:36:10Z","wpt_revision":"25124fb10","product_revision":"30bb22e02398d9cb0c723a58dd2a673c5938d213","commit_message":"Expose `Node::inline_fragment_boxes` for inline CSSOM geometry + misc. (#1060)"}
+{"date":"2026-10-05T23:36:10Z","wpt_revision":"25124fb10","product_revision":"30bb22e02398d9cb0c723a58dd2a673c5938d213","commit_message":"Expose `Node::inline_fragment_boxes` for inline CSSOM geometry + misc. (#1060)"},
+{"date":"2026-10-06T00:25:40Z","wpt_revision":"25124fb10","product_revision":"3aa87bc1fad8cdada08ff0e6d28119be71b9628c","commit_message":"fix(wpt): include root titles in native checkLayout subtest names (#1067)"}
 ]}
