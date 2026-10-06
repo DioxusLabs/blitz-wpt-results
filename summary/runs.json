@@ -1125,5 +1125,6 @@
 {"date":"2026-10-05T23:36:10Z","wpt_revision":"25124fb10","product_revision":"30bb22e02398d9cb0c723a58dd2a673c5938d213","commit_message":"Expose `Node::inline_fragment_boxes` for inline CSSOM geometry + misc. (#1060)"},
 {"date":"2026-10-06T00:25:40Z","wpt_revision":"25124fb10","product_revision":"3aa87bc1fad8cdada08ff0e6d28119be71b9628c","commit_message":"fix(wpt): include root titles in native checkLayout subtest names (#1067)"},
 {"date":"2026-10-06T00:38:12Z","wpt_revision":"c271c10de","product_revision":"6a30c04a8962e9a33a2c58192cc817203e10b2d9","commit_message":"Update WPT pin to c271c10de (#1068)"},
-{"date":"2026-10-06T01:23:21Z","wpt_revision":"c271c10de","product_revision":"d3ced119afb12e013438aa717d494560833a7655","commit_message":"Add `children` accessor to Document (#1069)"}
+{"date":"2026-10-06T01:23:21Z","wpt_revision":"c271c10de","product_revision":"d3ced119afb12e013438aa717d494560833a7655","commit_message":"Add `children` accessor to Document (#1069)"},
+{"date":"2026-10-06T01:33:46Z","wpt_revision":"c271c10de","product_revision":"2335458530518cdf167c55ce635fae99323e0789","commit_message":"Update Taffy for cyclic percentage grid minimum contributions (#1070)"}
 ]}
