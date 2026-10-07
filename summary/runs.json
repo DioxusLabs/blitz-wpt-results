@@ -1134,5 +1134,6 @@
 {"date":"2026-10-07T19:04:47Z","wpt_revision":"c271c10de","product_revision":"cfdce896a16f19b131b176d358e61664d71edd73","commit_message":"Bump taffy to d384458f (transpose helpers) (#1091)"},
 {"date":"2026-10-07T20:04:13Z","wpt_revision":"c271c10de","product_revision":"d1b433edbc13da889228ae4f92908f7c28514019","commit_message":"WPT CI: report subtest changes per area in the PR description (#1092)"},
 {"date":"2026-10-07T20:32:52Z","wpt_revision":"c271c10de","product_revision":"cb7b08dc6c59c155854f2c76b156e5941e0f893f","commit_message":"Implement `text-transform: math-auto` and rename ICU feature (#1093)"},
-{"date":"2026-10-07T20:57:51Z","wpt_revision":"c271c10de","product_revision":"5399689d8861c7d0dcff52c86c7baee04a73be42","commit_message":"Implement basic JavaScript Selection API (#1094)"}
+{"date":"2026-10-07T20:57:51Z","wpt_revision":"c271c10de","product_revision":"5399689d8861c7d0dcff52c86c7baee04a73be42","commit_message":"Implement basic JavaScript Selection API (#1094)"},
+{"date":"2026-10-07T22:37:30Z","wpt_revision":"c271c10de","product_revision":"90763ba90e6a8baf1bdad48530b43c209e679465","commit_message":"Treat degenerate aspect-ratio values (zero or infinite) as auto (#1097)"}
 ]}
