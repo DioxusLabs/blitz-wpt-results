@@ -1132,5 +1132,6 @@
 {"date":"2026-10-07T17:08:09Z","wpt_revision":"c271c10de","product_revision":"1c23eba7157ee7124d23e189daf96fd54fb78e01","commit_message":"feat: allow tags to be overriddeable by custom widget (#1081)"},
 {"date":"2026-10-07T18:55:45Z","wpt_revision":"c271c10de","product_revision":"e47be5acd8d539391ec19d333d9366cbd3223a28","commit_message":"Add cargo-deny license CI and commercial-use review (#1089)"},
 {"date":"2026-10-07T19:04:47Z","wpt_revision":"c271c10de","product_revision":"cfdce896a16f19b131b176d358e61664d71edd73","commit_message":"Bump taffy to d384458f (transpose helpers) (#1091)"},
-{"date":"2026-10-07T20:04:13Z","wpt_revision":"c271c10de","product_revision":"d1b433edbc13da889228ae4f92908f7c28514019","commit_message":"WPT CI: report subtest changes per area in the PR description (#1092)"}
+{"date":"2026-10-07T20:04:13Z","wpt_revision":"c271c10de","product_revision":"d1b433edbc13da889228ae4f92908f7c28514019","commit_message":"WPT CI: report subtest changes per area in the PR description (#1092)"},
+{"date":"2026-10-07T20:32:52Z","wpt_revision":"c271c10de","product_revision":"cb7b08dc6c59c155854f2c76b156e5941e0f893f","commit_message":"Implement `text-transform: math-auto` and rename ICU feature (#1093)"}
 ]}
