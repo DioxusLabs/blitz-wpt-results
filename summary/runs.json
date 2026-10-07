@@ -1129,5 +1129,6 @@
 {"date":"2026-10-06T01:33:46Z","wpt_revision":"c271c10de","product_revision":"2335458530518cdf167c55ce635fae99323e0789","commit_message":"Update Taffy for cyclic percentage grid minimum contributions (#1070)"},
 {"date":"2026-10-07T14:54:40Z","wpt_revision":"c271c10de","product_revision":"6369e8bd83470f7b182619485af0bd05c644675d","commit_message":"Treat a bare autofocus attribute as enabled (#1085)"},
 {"date":"2026-10-07T15:34:59Z","wpt_revision":"c271c10de","product_revision":"5ad49e861124fc44534bf706f7fcd5f391fd15b0","commit_message":"Bump Taffy: separate sparse grid cursor metadata (#1080)"},
-{"date":"2026-10-07T17:08:09Z","wpt_revision":"c271c10de","product_revision":"1c23eba7157ee7124d23e189daf96fd54fb78e01","commit_message":"feat: allow tags to be overriddeable by custom widget (#1081)"}
+{"date":"2026-10-07T17:08:09Z","wpt_revision":"c271c10de","product_revision":"1c23eba7157ee7124d23e189daf96fd54fb78e01","commit_message":"feat: allow tags to be overriddeable by custom widget (#1081)"},
+{"date":"2026-10-07T18:55:45Z","wpt_revision":"c271c10de","product_revision":"e47be5acd8d539391ec19d333d9366cbd3223a28","commit_message":"Add cargo-deny license CI and commercial-use review (#1089)"}
 ]}
