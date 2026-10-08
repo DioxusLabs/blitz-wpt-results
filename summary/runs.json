@@ -1157,5 +1157,6 @@
 {"date":"2026-10-08T20:15:31Z","wpt_revision":"c271c10de","product_revision":"a53fbabac25e2438954e3ebf9ab2d836b090206f","commit_message":"Return an empty computed style for elements not in the document (#1135)"},
 {"date":"2026-10-08T22:08:13Z","wpt_revision":"c271c10de","product_revision":"ffcda306a07fc9cc7fd9f391a204b3dab62de8f1","commit_message":"wpt.yml: install fontconfig/fonts directly with apt (#1140)"},
 {"date":"2026-10-08T22:18:53Z","wpt_revision":"c271c10de","product_revision":"3eb2ae129e7a2252c36165c9863dd2a8b115befb","commit_message":"Bump Taffy to 333fb630 (Taffy #1281 merged) (#1139)"},
-{"date":"2026-10-08T23:05:46Z","wpt_revision":"c271c10de","product_revision":"a6904a2c3db2c6116261f942116ed4a603f8ec3b","commit_message":"Unzoom serialized grid track lists (bump Taffy to 679d054d) (#1138)"}
+{"date":"2026-10-08T23:05:46Z","wpt_revision":"c271c10de","product_revision":"a6904a2c3db2c6116261f942116ed4a603f8ec3b","commit_message":"Unzoom serialized grid track lists (bump Taffy to 679d054d) (#1138)"},
+{"date":"2026-10-08T23:22:18Z","wpt_revision":"c271c10de","product_revision":"1fc0b03af92c1b58058021d223d6fd379e3c01fe","commit_message":"Don't compress replaced percentage block sizes under a min-content constraint (#1145)"}
 ]}
