@@ -1137,5 +1137,6 @@
 {"date":"2026-10-07T20:57:51Z","wpt_revision":"c271c10de","product_revision":"5399689d8861c7d0dcff52c86c7baee04a73be42","commit_message":"Implement basic JavaScript Selection API (#1094)"},
 {"date":"2026-10-07T22:37:30Z","wpt_revision":"c271c10de","product_revision":"90763ba90e6a8baf1bdad48530b43c209e679465","commit_message":"Treat degenerate aspect-ratio values (zero or infinite) as auto (#1097)"},
 {"date":"2026-10-07T23:02:51Z","wpt_revision":"c271c10de","product_revision":"031372cca052e518d245432e01663241a3a7d43b","commit_message":"Implement `text-transform: full-width` and `full-size-kana` (#1095)"},
-{"date":"2026-10-07T23:11:01Z","wpt_revision":"c271c10de","product_revision":"82d660e0d93c9b036af00090ca2c28291c1686a2","commit_message":"Move the Taffy tree trait impls from BaseDocument onto LayoutPassState (#1099)"}
+{"date":"2026-10-07T23:11:01Z","wpt_revision":"c271c10de","product_revision":"82d660e0d93c9b036af00090ca2c28291c1686a2","commit_message":"Move the Taffy tree trait impls from BaseDocument onto LayoutPassState (#1099)"},
+{"date":"2026-10-08T00:02:13Z","wpt_revision":"c271c10de","product_revision":"4d8d114c1b3e63d861e3ea0221c55a131a5feb89","commit_message":"Fix initial marker index outside ordered lists (#1102)"}
 ]}
