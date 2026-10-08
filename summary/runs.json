@@ -1142,5 +1142,6 @@
 {"date":"2026-10-08T00:25:15Z","wpt_revision":"c271c10de","product_revision":"d8238915b1b6372603477cdf15c26e1740560e11","commit_message":"Apply negative top margins when positioning atomic inlines (#1103)"},
 {"date":"2026-10-08T00:41:58Z","wpt_revision":"c271c10de","product_revision":"2aec6d616be602ab7d731bb1c7f5af626a3d0be0","commit_message":"Implement vertical `writing-mode`s (#1090)"},
 {"date":"2026-10-08T02:16:15Z","wpt_revision":"c271c10de","product_revision":"59468a55dd17928d026291bf563d22f39b1e42e1","commit_message":"Preserve intrinsic inline measurements across orthogonal flows (#1106)"},
-{"date":"2026-10-08T02:19:58Z","wpt_revision":"c271c10de","product_revision":"f52855eaf2533098422e4486c5cdbea35ddd7e06","commit_message":"Only check for a column flex container when laying out a flex container (#1104)"}
+{"date":"2026-10-08T02:19:58Z","wpt_revision":"c271c10de","product_revision":"f52855eaf2533098422e4486c5cdbea35ddd7e06","commit_message":"Only check for a column flex container when laying out a flex container (#1104)"},
+{"date":"2026-10-08T03:01:21Z","wpt_revision":"c271c10de","product_revision":"374e6a6738b85e16e8461c303e35b56666ff7323","commit_message":"Bump Taffy: absolute edges across collapsed auto-fit gutters (#1105)"}
 ]}
