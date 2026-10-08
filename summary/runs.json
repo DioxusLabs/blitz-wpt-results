@@ -1149,5 +1149,6 @@
 {"date":"2026-10-08T12:23:55Z","wpt_revision":"c271c10de","product_revision":"c0dc34e0d0c75e49acd61d8bb90cc111dc416523","commit_message":"CI: derive WPT areas from URL paths only (#1118)"},
 {"date":"2026-10-08T14:34:20Z","wpt_revision":"c271c10de","product_revision":"10dac358fe76ff5924803f8e770de18d45a51092","commit_message":"Bump Taffy to 4f18a82e (Taffy #1259 merged) (#1072)"},
 {"date":"2026-10-08T15:03:29Z","wpt_revision":"c271c10de","product_revision":"f4cb306f0cf2f5782ceee3cecb46bff032bfffd5","commit_message":"CI: use line-tables-only debuginfo for dev builds (#1125)"},
-{"date":"2026-10-08T15:08:51Z","wpt_revision":"c271c10de","product_revision":"6332f2d0379129dd96f3a37e793a1049d20521ad","commit_message":"CI: remove redundant counter job and no-op steps (#1126)"}
+{"date":"2026-10-08T15:08:51Z","wpt_revision":"c271c10de","product_revision":"6332f2d0379129dd96f3a37e793a1049d20521ad","commit_message":"CI: remove redundant counter job and no-op steps (#1126)"},
+{"date":"2026-10-08T15:24:10Z","wpt_revision":"c271c10de","product_revision":"bee91d62479505936c6bd38de97f3a08b8ac8100","commit_message":"CI: drop \"Test [default features]\", run full `cargo test --workspace` in Test (linux) (#1124)"}
 ]}
