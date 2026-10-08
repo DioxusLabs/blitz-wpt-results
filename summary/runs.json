@@ -1155,5 +1155,6 @@
 {"date":"2026-10-08T15:40:14Z","wpt_revision":"c271c10de","product_revision":"ca2d12dbaef598fee988a063415ef6168bab3a3e","commit_message":"WPT: don't cancel in-progress runs on main (#1130)"},
 {"date":"2026-10-08T18:26:46Z","wpt_revision":"c271c10de","product_revision":"7d71c3bef4d5d9a5bcac43d5a6865d3b25fa1bb9","commit_message":"Only style `a` elements with an `href` as links (#1134)"},
 {"date":"2026-10-08T20:15:31Z","wpt_revision":"c271c10de","product_revision":"a53fbabac25e2438954e3ebf9ab2d836b090206f","commit_message":"Return an empty computed style for elements not in the document (#1135)"},
-{"date":"2026-10-08T22:08:13Z","wpt_revision":"c271c10de","product_revision":"ffcda306a07fc9cc7fd9f391a204b3dab62de8f1","commit_message":"wpt.yml: install fontconfig/fonts directly with apt (#1140)"}
+{"date":"2026-10-08T22:08:13Z","wpt_revision":"c271c10de","product_revision":"ffcda306a07fc9cc7fd9f391a204b3dab62de8f1","commit_message":"wpt.yml: install fontconfig/fonts directly with apt (#1140)"},
+{"date":"2026-10-08T22:18:53Z","wpt_revision":"c271c10de","product_revision":"3eb2ae129e7a2252c36165c9863dd2a8b115befb","commit_message":"Bump Taffy to 333fb630 (Taffy #1281 merged) (#1139)"}
 ]}
