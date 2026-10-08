@@ -1145,5 +1145,6 @@
 {"date":"2026-10-08T02:19:58Z","wpt_revision":"c271c10de","product_revision":"f52855eaf2533098422e4486c5cdbea35ddd7e06","commit_message":"Only check for a column flex container when laying out a flex container (#1104)"},
 {"date":"2026-10-08T03:01:21Z","wpt_revision":"c271c10de","product_revision":"374e6a6738b85e16e8461c303e35b56666ff7323","commit_message":"Bump Taffy: absolute edges across collapsed auto-fit gutters (#1105)"},
 {"date":"2026-10-08T03:33:15Z","wpt_revision":"c271c10de","product_revision":"75c86742e2fb90d6663fc6f458508497fa9d8992","commit_message":"CI: bump cache-apt-pkgs version to evict corrupt libfontconfig1-dev cache (#1114)"},
-{"date":"2026-10-08T04:33:02Z","wpt_revision":"c271c10de","product_revision":"70528177f385997845ce59dd020c88212ef17ee2","commit_message":"WPT: support query-string test variants (#1117)"}
+{"date":"2026-10-08T04:33:02Z","wpt_revision":"c271c10de","product_revision":"70528177f385997845ce59dd020c88212ef17ee2","commit_message":"WPT: support query-string test variants (#1117)"},
+{"date":"2026-10-08T12:23:55Z","wpt_revision":"c271c10de","product_revision":"c0dc34e0d0c75e49acd61d8bb90cc111dc416523","commit_message":"CI: derive WPT areas from URL paths only (#1118)"}
 ]}
