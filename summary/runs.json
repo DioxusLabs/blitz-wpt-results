@@ -1139,5 +1139,6 @@
 {"date":"2026-10-07T23:02:51Z","wpt_revision":"c271c10de","product_revision":"031372cca052e518d245432e01663241a3a7d43b","commit_message":"Implement `text-transform: full-width` and `full-size-kana` (#1095)"},
 {"date":"2026-10-07T23:11:01Z","wpt_revision":"c271c10de","product_revision":"82d660e0d93c9b036af00090ca2c28291c1686a2","commit_message":"Move the Taffy tree trait impls from BaseDocument onto LayoutPassState (#1099)"},
 {"date":"2026-10-08T00:02:13Z","wpt_revision":"c271c10de","product_revision":"4d8d114c1b3e63d861e3ea0221c55a131a5feb89","commit_message":"Fix initial marker index outside ordered lists (#1102)"},
-{"date":"2026-10-08T00:25:15Z","wpt_revision":"c271c10de","product_revision":"d8238915b1b6372603477cdf15c26e1740560e11","commit_message":"Apply negative top margins when positioning atomic inlines (#1103)"}
+{"date":"2026-10-08T00:25:15Z","wpt_revision":"c271c10de","product_revision":"d8238915b1b6372603477cdf15c26e1740560e11","commit_message":"Apply negative top margins when positioning atomic inlines (#1103)"},
+{"date":"2026-10-08T00:41:58Z","wpt_revision":"c271c10de","product_revision":"2aec6d616be602ab7d731bb1c7f5af626a3d0be0","commit_message":"Implement vertical `writing-mode`s (#1090)"}
 ]}
