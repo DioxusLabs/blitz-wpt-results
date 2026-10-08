@@ -1153,5 +1153,6 @@
 {"date":"2026-10-08T15:24:10Z","wpt_revision":"c271c10de","product_revision":"bee91d62479505936c6bd38de97f3a08b8ac8100","commit_message":"CI: drop \"Test [default features]\", run full `cargo test --workspace` in Test (linux) (#1124)"},
 {"date":"2026-10-08T15:31:21Z","wpt_revision":"c271c10de","product_revision":"c5e7fda54ba2974ec15334cb491eff465a97fb2b","commit_message":"Bump Taffy to bc525c03 (#1127)"},
 {"date":"2026-10-08T15:40:14Z","wpt_revision":"c271c10de","product_revision":"ca2d12dbaef598fee988a063415ef6168bab3a3e","commit_message":"WPT: don't cancel in-progress runs on main (#1130)"},
-{"date":"2026-10-08T18:26:46Z","wpt_revision":"c271c10de","product_revision":"7d71c3bef4d5d9a5bcac43d5a6865d3b25fa1bb9","commit_message":"Only style `a` elements with an `href` as links (#1134)"}
+{"date":"2026-10-08T18:26:46Z","wpt_revision":"c271c10de","product_revision":"7d71c3bef4d5d9a5bcac43d5a6865d3b25fa1bb9","commit_message":"Only style `a` elements with an `href` as links (#1134)"},
+{"date":"2026-10-08T20:15:31Z","wpt_revision":"c271c10de","product_revision":"a53fbabac25e2438954e3ebf9ab2d836b090206f","commit_message":"Return an empty computed style for elements not in the document (#1135)"}
 ]}
