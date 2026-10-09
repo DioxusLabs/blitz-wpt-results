@@ -1163,5 +1163,6 @@
 {"date":"2026-10-08T23:55:55Z","wpt_revision":"c271c10de","product_revision":"11614dff8f5967462088f8407ab581fdf5d6ee7b","commit_message":"Bump Taffy to c8b7261e (Taffy #1283 and #1284 merged) (#1143)"},
 {"date":"2026-10-09T00:16:25Z","wpt_revision":"c271c10de","product_revision":"7a26ccc43762825766360e78ce89375ebf873044","commit_message":"Preserve percentage height basis through anonymous blocks (#1149)"},
 {"date":"2026-10-09T01:00:01Z","wpt_revision":"71b4d5f0e","product_revision":"4ef73bb31f5ac50f96270752d3e121ee8a735041","commit_message":"Bump WPT pin to 71b4d5f0eb7628a5d5f7cd2ee868ce1b1b5dc010 (#1152)"},
-{"date":"2026-10-09T15:06:38Z","wpt_revision":"71b4d5f0e","product_revision":"1f0ba7ff309478e9c8a7421036bbb430e74ee34d","commit_message":"Upgrade Parley to latest main (#1154)"}
+{"date":"2026-10-09T15:06:38Z","wpt_revision":"71b4d5f0e","product_revision":"1f0ba7ff309478e9c8a7421036bbb430e74ee34d","commit_message":"Upgrade Parley to latest main (#1154)"},
+{"date":"2026-10-09T15:24:58Z","wpt_revision":"71b4d5f0e","product_revision":"971f1a31b9a2084799eeaf292ee6c551f7affb32","commit_message":"Resolve text-indent percentages against the content box (#1155)"}
 ]}
