@@ -1161,5 +1161,6 @@
 {"date":"2026-10-08T23:22:18Z","wpt_revision":"c271c10de","product_revision":"1fc0b03af92c1b58058021d223d6fd379e3c01fe","commit_message":"Don't compress replaced percentage block sizes under a min-content constraint (#1145)"},
 {"date":"2026-10-08T23:36:26Z","wpt_revision":"c271c10de","product_revision":"39f45ff2c5b4b004a65539c70d7983841e6431de","commit_message":"Bump Taffy to 9fb6fc28 (Taffy #1282 merged) (#1141)"},
 {"date":"2026-10-08T23:55:55Z","wpt_revision":"c271c10de","product_revision":"11614dff8f5967462088f8407ab581fdf5d6ee7b","commit_message":"Bump Taffy to c8b7261e (Taffy #1283 and #1284 merged) (#1143)"},
-{"date":"2026-10-09T00:16:25Z","wpt_revision":"c271c10de","product_revision":"7a26ccc43762825766360e78ce89375ebf873044","commit_message":"Preserve percentage height basis through anonymous blocks (#1149)"}
+{"date":"2026-10-09T00:16:25Z","wpt_revision":"c271c10de","product_revision":"7a26ccc43762825766360e78ce89375ebf873044","commit_message":"Preserve percentage height basis through anonymous blocks (#1149)"},
+{"date":"2026-10-09T01:00:01Z","wpt_revision":"71b4d5f0e","product_revision":"4ef73bb31f5ac50f96270752d3e121ee8a735041","commit_message":"Bump WPT pin to 71b4d5f0eb7628a5d5f7cd2ee868ce1b1b5dc010 (#1152)"}
 ]}
