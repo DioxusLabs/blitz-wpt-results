@@ -1165,5 +1165,6 @@
 {"date":"2026-10-09T01:00:01Z","wpt_revision":"71b4d5f0e","product_revision":"4ef73bb31f5ac50f96270752d3e121ee8a735041","commit_message":"Bump WPT pin to 71b4d5f0eb7628a5d5f7cd2ee868ce1b1b5dc010 (#1152)"},
 {"date":"2026-10-09T15:06:38Z","wpt_revision":"71b4d5f0e","product_revision":"1f0ba7ff309478e9c8a7421036bbb430e74ee34d","commit_message":"Upgrade Parley to latest main (#1154)"},
 {"date":"2026-10-09T15:24:58Z","wpt_revision":"71b4d5f0e","product_revision":"971f1a31b9a2084799eeaf292ee6c551f7affb32","commit_message":"Resolve text-indent percentages against the content box (#1155)"},
-{"date":"2026-10-09T16:07:28Z","wpt_revision":"71b4d5f0e","product_revision":"71dda81f5901d06107f742b75719d789ffce2936","commit_message":"Upgrade Parley to 0.12 (#1159)"}
+{"date":"2026-10-09T16:07:28Z","wpt_revision":"71b4d5f0e","product_revision":"71dda81f5901d06107f742b75719d789ffce2936","commit_message":"Upgrade Parley to 0.12 (#1159)"},
+{"date":"2026-10-09T16:18:31Z","wpt_revision":"71b4d5f0e","product_revision":"39091faaf069eaaca9cc9dc9ee81bb536babb1d3","commit_message":"Bump accesskit_unix to 0.24 and accesskit_android to 0.9 (#1158)"}
 ]}
