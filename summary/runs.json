@@ -1169,5 +1169,6 @@
 {"date":"2026-10-09T16:18:31Z","wpt_revision":"71b4d5f0e","product_revision":"39091faaf069eaaca9cc9dc9ee81bb536babb1d3","commit_message":"Bump accesskit_unix to 0.24 and accesskit_android to 0.9 (#1158)"},
 {"date":"2026-10-09T16:52:41Z","wpt_revision":"71b4d5f0e","product_revision":"815c9e61ca52bd2ad4696f72a31bb222cf08288c","commit_message":"Bump comrak to v0.56"},
 {"date":"2026-10-09T17:07:35Z","wpt_revision":"71b4d5f0e","product_revision":"c351a46883b4069c051f51029b902719062b95cd","commit_message":"Pin libc to 0.2.189 to fix iOS build (#1162)"},
-{"date":"2026-10-09T19:45:38Z","wpt_revision":"71b4d5f0e","product_revision":"3f83945902b960913e737c0772746a675ae263aa","commit_message":"Bump Taffy to latest main (7d33901c) (#1165)"}
+{"date":"2026-10-09T19:45:38Z","wpt_revision":"71b4d5f0e","product_revision":"3f83945902b960913e737c0772746a675ae263aa","commit_message":"Bump Taffy to latest main (7d33901c) (#1165)"},
+{"date":"2026-10-09T21:15:48Z","wpt_revision":"71b4d5f0e","product_revision":"7832c177ff272128154bac58afe56c2b9164b417","commit_message":"Abspos: let an inline root claim out-of-flow boxes on behalf of its inline spans (#1167)"}
 ]}
