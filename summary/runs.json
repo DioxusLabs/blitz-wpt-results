@@ -1173,5 +1173,6 @@
 {"date":"2026-10-09T21:15:48Z","wpt_revision":"71b4d5f0e","product_revision":"7832c177ff272128154bac58afe56c2b9164b417","commit_message":"Abspos: let an inline root claim out-of-flow boxes on behalf of its inline spans (#1167)"},
 {"date":"2026-10-11T07:58:55Z","wpt_revision":"172abd268","product_revision":"c3af502c03fd67e6c1861a55a22f28b093d435f7","commit_message":"Bump WPT pin to 172abd268d46f326b3fe937a5a84b99ce0390907 (#1173)"},
 {"date":"2026-10-11T09:57:30Z","wpt_revision":"172abd268","product_revision":"2a9998dfe3946b16636ed395f98b881476209344","commit_message":"Refresh anonymous box styles during incremental damage propagation (#1174)"},
-{"date":"2026-10-11T10:44:39Z","wpt_revision":"172abd268","product_revision":"45496d9288b063719ebeae4e0761273f7881b3d7","commit_message":"Fix UA flex centering leaking into author-styled buttons (#1175)"}
+{"date":"2026-10-11T10:44:39Z","wpt_revision":"172abd268","product_revision":"45496d9288b063719ebeae4e0761273f7881b3d7","commit_message":"Fix UA flex centering leaking into author-styled buttons (#1175)"},
+{"date":"2026-10-12T12:02:39Z","wpt_revision":"172abd268","product_revision":"82fbe9a4401d1883c369c31d5274b9f8c36e51ee","commit_message":"End hover when the pointer leaves the window or a sub-document's host (#1176)"}
 ]}
