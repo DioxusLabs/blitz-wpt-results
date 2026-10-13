@@ -1182,5 +1182,6 @@
 {"date":"2026-10-12T20:09:22Z","wpt_revision":"172abd268","product_revision":"52875c264a6f11cbe34fd1ffb905b089b182d144","commit_message":"dioxus-native-dom: remove falsy boolean attributes instead of writing \"false\" (#1188)"},
 {"date":"2026-10-13T01:13:27Z","wpt_revision":"172abd268","product_revision":"7b28f0f167be555aeecbc89b199647eda4aef1c5","commit_message":"Share parsed UA stylesheets (and their cascade data) across documents (#1189)"},
 {"date":"2026-10-13T04:34:22Z","wpt_revision":"cd1d8aa5b","product_revision":"4a512051d8726c04ab24ef8200dae7b4117711ea","commit_message":"Bump WPT pin to cd1d8aa (#1192)"},
-{"date":"2026-10-13T10:19:43Z","wpt_revision":"cd1d8aa5b","product_revision":"e48d2baf82707989da285e1902991cd110b7ba79","commit_message":"Apply object-fit to SVG images (#1194)"}
+{"date":"2026-10-13T10:19:43Z","wpt_revision":"cd1d8aa5b","product_revision":"e48d2baf82707989da285e1902991cd110b7ba79","commit_message":"Apply object-fit to SVG images (#1194)"},
+{"date":"2026-10-13T10:27:03Z","wpt_revision":"cd1d8aa5b","product_revision":"434e06615d5f47a3df92c0f94e916df088fdcf4d","commit_message":"Clip object-fit/object-position overflow of images to the content box (#1195)"}
 ]}
