@@ -1180,5 +1180,6 @@
 {"date":"2026-10-12T19:46:17Z","wpt_revision":"172abd268","product_revision":"a2454c564c07a3581f839288227ff13edd11dee0","commit_message":"Drop nodes removed by Dioxus in dioxus-native-dom (#1185)"},
 {"date":"2026-10-12T19:56:51Z","wpt_revision":"172abd268","product_revision":"336a31cd05e55c746d874ecf790b4684b66dd2b9","commit_message":"Add `synthetic_form_event` and use the empty namespace for Dioxus attributes (#1186)"},
 {"date":"2026-10-12T20:09:22Z","wpt_revision":"172abd268","product_revision":"52875c264a6f11cbe34fd1ffb905b089b182d144","commit_message":"dioxus-native-dom: remove falsy boolean attributes instead of writing \"false\" (#1188)"},
-{"date":"2026-10-13T01:13:27Z","wpt_revision":"172abd268","product_revision":"7b28f0f167be555aeecbc89b199647eda4aef1c5","commit_message":"Share parsed UA stylesheets (and their cascade data) across documents (#1189)"}
+{"date":"2026-10-13T01:13:27Z","wpt_revision":"172abd268","product_revision":"7b28f0f167be555aeecbc89b199647eda4aef1c5","commit_message":"Share parsed UA stylesheets (and their cascade data) across documents (#1189)"},
+{"date":"2026-10-13T04:34:22Z","wpt_revision":"cd1d8aa5b","product_revision":"4a512051d8726c04ab24ef8200dae7b4117711ea","commit_message":"Bump WPT pin to cd1d8aa (#1192)"}
 ]}
