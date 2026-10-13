@@ -1185,5 +1185,6 @@
 {"date":"2026-10-13T10:19:43Z","wpt_revision":"cd1d8aa5b","product_revision":"e48d2baf82707989da285e1902991cd110b7ba79","commit_message":"Apply object-fit to SVG images (#1194)"},
 {"date":"2026-10-13T10:27:03Z","wpt_revision":"cd1d8aa5b","product_revision":"434e06615d5f47a3df92c0f94e916df088fdcf4d","commit_message":"Clip object-fit/object-position overflow of images to the content box (#1195)"},
 {"date":"2026-10-13T15:22:00Z","wpt_revision":"cd1d8aa5b","product_revision":"8d35e562c1c18cf14d0ff8df92f98fece0a9cc0e","commit_message":"Honor baseline-source when aligning atomic inlines (#1198)"},
-{"date":"2026-10-13T18:19:13Z","wpt_revision":"cd1d8aa5b","product_revision":"6032d0b9d6ee6a135906ffdd26d8df9a0945ef56","commit_message":"Bump Taffy to main (6c2106e3) (#1212)"}
+{"date":"2026-10-13T18:19:13Z","wpt_revision":"cd1d8aa5b","product_revision":"6032d0b9d6ee6a135906ffdd26d8df9a0945ef56","commit_message":"Bump Taffy to main (6c2106e3) (#1212)"},
+{"date":"2026-10-13T18:46:43Z","wpt_revision":"cd1d8aa5b","product_revision":"e72650a6e67941852fddf025295cfee30c39ea32","commit_message":"vibey-script: Element.attributes, getAttributeNames, clientTop/clientLeft, offsetParent and window.event (#1211)"}
 ]}
