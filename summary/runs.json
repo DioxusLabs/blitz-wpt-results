@@ -1188,5 +1188,6 @@
 {"date":"2026-10-13T18:19:13Z","wpt_revision":"cd1d8aa5b","product_revision":"6032d0b9d6ee6a135906ffdd26d8df9a0945ef56","commit_message":"Bump Taffy to main (6c2106e3) (#1212)"},
 {"date":"2026-10-13T18:46:43Z","wpt_revision":"cd1d8aa5b","product_revision":"e72650a6e67941852fddf025295cfee30c39ea32","commit_message":"vibey-script: Element.attributes, getAttributeNames, clientTop/clientLeft, offsetParent and window.event (#1211)"},
 {"date":"2026-10-16T12:09:38Z","wpt_revision":"cd1d8aa5b","product_revision":"3f483ff2ac5dcda0cc5820b839865e842424bcf9","commit_message":"Upgrade to keyboard-types 0.8 (compat code in dioxus-native-dom temporarily)"},
-{"date":"2026-10-16T12:24:58Z","wpt_revision":"cd1d8aa5b","product_revision":"fabd70e78cc1d078d86b4fcb08e450ec517b7b2c","commit_message":"Support the aria-label and aria-labelledby attributes (#859)"}
+{"date":"2026-10-16T12:24:58Z","wpt_revision":"cd1d8aa5b","product_revision":"fabd70e78cc1d078d86b4fcb08e450ec517b7b2c","commit_message":"Support the aria-label and aria-labelledby attributes (#859)"},
+{"date":"2026-10-16T12:35:06Z","wpt_revision":"cd1d8aa5b","product_revision":"8114cd50588a7884ebd810a743d46dd10c9f4d11","commit_message":"Set the ARIA level as well as disabled, selected, and expanded flags in accesskit nodes (#1014)"}
 ]}
