@@ -1191,5 +1191,6 @@
 {"date":"2026-10-16T12:24:58Z","wpt_revision":"cd1d8aa5b","product_revision":"fabd70e78cc1d078d86b4fcb08e450ec517b7b2c","commit_message":"Support the aria-label and aria-labelledby attributes (#859)"},
 {"date":"2026-10-16T12:35:06Z","wpt_revision":"cd1d8aa5b","product_revision":"8114cd50588a7884ebd810a743d46dd10c9f4d11","commit_message":"Set the ARIA level as well as disabled, selected, and expanded flags in accesskit nodes (#1014)"},
 {"date":"2026-10-16T12:46:21Z","wpt_revision":"cd1d8aa5b","product_revision":"dd6f46b55059f4ddf0b8a397519f8f946a4e8593","commit_message":"Support aria-description and aria-describedby building accesskit nodes (#1013)"},
-{"date":"2026-10-16T13:01:42Z","wpt_revision":"cd1d8aa5b","product_revision":"23b9b26a9b6af5947b8f003d2c2cc768bff10b8a","commit_message":"Delete the bump crate"}
+{"date":"2026-10-16T13:01:42Z","wpt_revision":"cd1d8aa5b","product_revision":"23b9b26a9b6af5947b8f003d2c2cc768bff10b8a","commit_message":"Delete the bump crate"},
+{"date":"2026-10-16T23:35:07Z","wpt_revision":"cd1d8aa5b","product_revision":"4a5ab9cc994b3832dc9500c05582f468ea2cde06","commit_message":"Pin Taffy to main (9f9b7365) (#1218)"}
 ]}
