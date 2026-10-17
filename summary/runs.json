@@ -1194,5 +1194,6 @@
 {"date":"2026-10-16T13:01:42Z","wpt_revision":"cd1d8aa5b","product_revision":"23b9b26a9b6af5947b8f003d2c2cc768bff10b8a","commit_message":"Delete the bump crate"},
 {"date":"2026-10-16T23:35:07Z","wpt_revision":"cd1d8aa5b","product_revision":"4a5ab9cc994b3832dc9500c05582f468ea2cde06","commit_message":"Pin Taffy to main (9f9b7365) (#1218)"},
 {"date":"2026-10-17T01:05:03Z","wpt_revision":"cd1d8aa5b","product_revision":"510b592ab10abe4bc712c27ce18cd5d6165e707b","commit_message":"Bump Taffy to main (1cb4b02a) (#1216)"},
-{"date":"2026-10-17T01:47:09Z","wpt_revision":"cd1d8aa5b","product_revision":"1e5479ae62737d60f7c2f8e8d31524f5cfe2ec01","commit_message":"Bump Taffy to main (ea07c4c3) (#1219)"}
+{"date":"2026-10-17T01:47:09Z","wpt_revision":"cd1d8aa5b","product_revision":"1e5479ae62737d60f7c2f8e8d31524f5cfe2ec01","commit_message":"Bump Taffy to main (ea07c4c3) (#1219)"},
+{"date":"2026-10-17T13:08:25Z","wpt_revision":"cd1d8aa5b","product_revision":"fb8d6c15e9ce062b3b41e71cd48988f0093506cc","commit_message":"Show the default cursor when the pointer is over no box (#1220)"}
 ]}
