@@ -1196,5 +1196,6 @@
 {"date":"2026-10-17T01:05:03Z","wpt_revision":"cd1d8aa5b","product_revision":"510b592ab10abe4bc712c27ce18cd5d6165e707b","commit_message":"Bump Taffy to main (1cb4b02a) (#1216)"},
 {"date":"2026-10-17T01:47:09Z","wpt_revision":"cd1d8aa5b","product_revision":"1e5479ae62737d60f7c2f8e8d31524f5cfe2ec01","commit_message":"Bump Taffy to main (ea07c4c3) (#1219)"},
 {"date":"2026-10-17T13:08:25Z","wpt_revision":"cd1d8aa5b","product_revision":"fb8d6c15e9ce062b3b41e71cd48988f0093506cc","commit_message":"Show the default cursor when the pointer is over no box (#1220)"},
-{"date":"2026-10-18T15:23:59Z","wpt_revision":"cd1d8aa5b","product_revision":"38ca4e777513607c7dcb659748380e7a650b018f","commit_message":"Support the :focus-within pseudo-class (#1226)"}
+{"date":"2026-10-18T15:23:59Z","wpt_revision":"cd1d8aa5b","product_revision":"38ca4e777513607c7dcb659748380e7a650b018f","commit_message":"Support the :focus-within pseudo-class (#1226)"},
+{"date":"2026-10-18T22:44:33Z","wpt_revision":"9d8aceec0","product_revision":"17de049b11095808e0d093be2a8f0520e4dcbc0e","commit_message":"Bump WPT pin to 9d8acee (#1228)"}
 ]}
