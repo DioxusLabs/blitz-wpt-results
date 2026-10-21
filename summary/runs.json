@@ -1203,5 +1203,6 @@
 {"date":"2026-10-21T01:11:14Z","wpt_revision":"9d8aceec0","product_revision":"e4ca5b9b547cae93c033822746a19bac6d2e0249","commit_message":"Cache the class attribute as atoms on ElementData (#1240)"},
 {"date":"2026-10-21T02:03:31Z","wpt_revision":"9d8aceec0","product_revision":"46d7cf993c0d8f5b5ba569ce3c0aa25af1b0043c","commit_message":"Record out-of-flow-ness on Node from the style traversal so the round pass does not read child styles (#1238)"},
 {"date":"2026-10-21T02:30:11Z","wpt_revision":"9d8aceec0","product_revision":"fb297a38c1f25f34ee290c0aba26c5094956afc9","commit_message":"Serialise Parallel style traversals; use Parallel in dioxus-native and the browser (#1243)"},
-{"date":"2026-10-21T13:36:46Z","wpt_revision":"9d8aceec0","product_revision":"50bf2f2356f588839977c5dc0df722a689a867d1","commit_message":"Coerce a replaced element's natural height through the aspect-ratio property (#1246)"}
+{"date":"2026-10-21T13:36:46Z","wpt_revision":"9d8aceec0","product_revision":"50bf2f2356f588839977c5dc0df722a689a867d1","commit_message":"Coerce a replaced element's natural height through the aspect-ratio property (#1246)"},
+{"date":"2026-10-21T14:02:20Z","wpt_revision":"9d8aceec0","product_revision":"f8723f495c7c6bfb611a923a21ed5c8e0fe95d55","commit_message":"WPT runner: compare `data-expected-width/height` like `offsetWidth/offsetHeight` (#1247)"}
 ]}
