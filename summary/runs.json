@@ -1208,5 +1208,6 @@
 {"date":"2026-10-21T22:50:21Z","wpt_revision":"9d8aceec0","product_revision":"9babd796ad5cd26cd5c868ffc08f6612a3692038","commit_message":"Bump Taffy to 802e497b (empty flex containers skip item and line processing) (#1253)"},
 {"date":"2026-10-22T00:31:31Z","wpt_revision":"9d8aceec0","product_revision":"06ecec8866c1b18b5a07b5dadbe4194168a06c64","commit_message":"Upgrade Stylo to v0.23-pre (#1255)"},
 {"date":"2026-10-22T14:11:27Z","wpt_revision":"9d8aceec0","product_revision":"3954ecb8541ef238095577f0a22b1b159ed50268","commit_message":"Stylo: Enable `text-indent` keywords and `word-break: break-word` (#1257)"},
-{"date":"2026-10-22T16:03:08Z","wpt_revision":"9d8aceec0","product_revision":"21edc92d90d8f8bedadd3f9ecb14b1ad950952eb","commit_message":"Skip the per-line item walk when an inline layout has no inline boxes (#1258)"}
+{"date":"2026-10-22T16:03:08Z","wpt_revision":"9d8aceec0","product_revision":"21edc92d90d8f8bedadd3f9ecb14b1ad950952eb","commit_message":"Skip the per-line item walk when an inline layout has no inline boxes (#1258)"},
+{"date":"2026-10-23T14:08:56Z","wpt_revision":"9d8aceec0","product_revision":"1c5265a8b3985e1ec05044a115b2ec6266e3fa91","commit_message":"Skip Stylo animation-set lookups for elements that have never animated (#1237)"}
 ]}
