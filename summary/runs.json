@@ -1211,5 +1211,6 @@
 {"date":"2026-10-22T16:03:08Z","wpt_revision":"9d8aceec0","product_revision":"21edc92d90d8f8bedadd3f9ecb14b1ad950952eb","commit_message":"Skip the per-line item walk when an inline layout has no inline boxes (#1258)"},
 {"date":"2026-10-23T14:08:56Z","wpt_revision":"9d8aceec0","product_revision":"1c5265a8b3985e1ec05044a115b2ec6266e3fa91","commit_message":"Skip Stylo animation-set lookups for elements that have never animated (#1237)"},
 {"date":"2026-10-23T18:54:37Z","wpt_revision":"9d8aceec0","product_revision":"f102663b81012a1aa9a30aecf25273348fb52db6","commit_message":"Skip nodes dropped since the last resolve during hit testing (#1244)"},
-{"date":"2026-10-23T19:37:40Z","wpt_revision":"9d8aceec0","product_revision":"286874cc101cfaef2395b56e93c4f27887c38338","commit_message":"Upgrade to Dioxus 0.8.0-alpha.3 and sync dioxus-native(-dom) from the Dioxus repo (#1260)"}
+{"date":"2026-10-23T19:37:40Z","wpt_revision":"9d8aceec0","product_revision":"286874cc101cfaef2395b56e93c4f27887c38338","commit_message":"Upgrade to Dioxus 0.8.0-alpha.3 and sync dioxus-native(-dom) from the Dioxus repo (#1260)"},
+{"date":"2026-10-23T21:20:55Z","wpt_revision":"9d8aceec0","product_revision":"f9cbb275628b8f3017df8f76150f5f32df218620","commit_message":"Upgrade Rust toolchain to version 1.91.0 (#1264)"}
 ]}
