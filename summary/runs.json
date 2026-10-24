@@ -1214,5 +1214,6 @@
 {"date":"2026-10-23T19:37:40Z","wpt_revision":"9d8aceec0","product_revision":"286874cc101cfaef2395b56e93c4f27887c38338","commit_message":"Upgrade to Dioxus 0.8.0-alpha.3 and sync dioxus-native(-dom) from the Dioxus repo (#1260)"},
 {"date":"2026-10-23T21:20:55Z","wpt_revision":"9d8aceec0","product_revision":"f9cbb275628b8f3017df8f76150f5f32df218620","commit_message":"Upgrade Rust toolchain to version 1.91.0 (#1264)"},
 {"date":"2026-10-24T13:58:46Z","wpt_revision":"9d8aceec0","product_revision":"d63ed2c8cbf359bf096c70e9b7dbb2b981f36c40","commit_message":"Keep browser tab lenses alive across navigation (#1268)"},
-{"date":"2026-10-24T13:59:37Z","wpt_revision":"9d8aceec0","product_revision":"6587e7e79acfcc061540e44710bce373e5698713","commit_message":"Route shell redraw requests through the event loop (#1269)"}
+{"date":"2026-10-24T13:59:37Z","wpt_revision":"9d8aceec0","product_revision":"6587e7e79acfcc061540e44710bce373e5698713","commit_message":"Route shell redraw requests through the event loop (#1269)"},
+{"date":"2026-10-24T14:59:21Z","wpt_revision":"9d8aceec0","product_revision":"e6f4615ecdf25e917e8d62c3dfc9a407a5781f81","commit_message":"refactor(script): separate runtime orchestration and API bindings (#1270)"}
 ]}
