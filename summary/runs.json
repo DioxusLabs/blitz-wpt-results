@@ -1216,5 +1216,6 @@
 {"date":"2026-10-24T13:58:46Z","wpt_revision":"9d8aceec0","product_revision":"d63ed2c8cbf359bf096c70e9b7dbb2b981f36c40","commit_message":"Keep browser tab lenses alive across navigation (#1268)"},
 {"date":"2026-10-24T13:59:37Z","wpt_revision":"9d8aceec0","product_revision":"6587e7e79acfcc061540e44710bce373e5698713","commit_message":"Route shell redraw requests through the event loop (#1269)"},
 {"date":"2026-10-24T14:59:21Z","wpt_revision":"9d8aceec0","product_revision":"e6f4615ecdf25e917e8d62c3dfc9a407a5781f81","commit_message":"refactor(script): separate runtime orchestration and API bindings (#1270)"},
-{"date":"2026-10-24T16:30:41Z","wpt_revision":"9d8aceec0","product_revision":"a09f467927d08aa5f40370497bfc5d0e28b394dd","commit_message":"Upgrade winit to 0.31.0-beta.4 (#1271)"}
+{"date":"2026-10-24T16:30:41Z","wpt_revision":"9d8aceec0","product_revision":"a09f467927d08aa5f40370497bfc5d0e28b394dd","commit_message":"Upgrade winit to 0.31.0-beta.4 (#1271)"},
+{"date":"2026-10-24T17:24:12Z","wpt_revision":"9d8aceec0","product_revision":"52739472460824ec7f1624ab135c09a4bbc99219","commit_message":"Use winit's clipboard API instead of arboard (#1273)"}
 ]}
