@@ -1222,5 +1222,7 @@
 {"date":"2026-10-25T19:13:12Z","wpt_revision":"9d8aceec0","product_revision":"7fc9ee3af156ead71ef4c09fb2d869381db3640e","commit_message":"Enable IME when constructing a focused text input"},
 {"date":"2026-10-25T20:47:07Z","wpt_revision":"9d8aceec0","product_revision":"2963b65a2d3be98ce45ac6768ced9bd2c483d719","commit_message":"Box construction: box-generating ::before/::after pseudos vote in the flow classification (#1280)"},
 {"date":"2026-10-25T21:26:01Z","wpt_revision":"9d8aceec0","product_revision":"ccfe15332f2d1bea0151c1f69299aebc335338c9","commit_message":"Bump Taffy: fit margins and baseline shim when clamping the content-based minimum size to fixed max tracks (#1282)"},
-{"date":"2026-10-26T01:59:54Z","wpt_revision":"9d8aceec0","product_revision":"cee6b87310e57fe370832034fc6a61d58309d6d0","commit_message":"blitz-vibey-script: only let file: documents load file: URLs (#1283)"}
+{"date":"2026-10-26T01:59:54Z","wpt_revision":"9d8aceec0","product_revision":"cee6b87310e57fe370832034fc6a61d58309d6d0","commit_message":"blitz-vibey-script: only let file: documents load file: URLs (#1283)"},
+{"date":"2026-10-26T16:46:10Z","wpt_revision":"9d8aceec0","product_revision":"6c45ea061a552100c1fbfac2fb2788521b5d35d4"},
+{"date":"2026-10-26T17:07:30Z","wpt_revision":"9d8aceec0","product_revision":"53e9d81c6ba24f3fdd57ad4b3abfb707eff133f6","commit_message":"Add support for `<details>` `:open` selector (#1007)"}
 ]}
