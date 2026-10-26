@@ -1221,5 +1221,6 @@
 {"date":"2026-10-25T15:26:36Z","wpt_revision":"9d8aceec0","product_revision":"a7ea9631b249bd05a31b5c3a56695db278a9714f","commit_message":"Retry macOS browser bundling on transient failures (#1274)"},
 {"date":"2026-10-25T19:13:12Z","wpt_revision":"9d8aceec0","product_revision":"7fc9ee3af156ead71ef4c09fb2d869381db3640e","commit_message":"Enable IME when constructing a focused text input"},
 {"date":"2026-10-25T20:47:07Z","wpt_revision":"9d8aceec0","product_revision":"2963b65a2d3be98ce45ac6768ced9bd2c483d719","commit_message":"Box construction: box-generating ::before/::after pseudos vote in the flow classification (#1280)"},
-{"date":"2026-10-25T21:26:01Z","wpt_revision":"9d8aceec0","product_revision":"ccfe15332f2d1bea0151c1f69299aebc335338c9","commit_message":"Bump Taffy: fit margins and baseline shim when clamping the content-based minimum size to fixed max tracks (#1282)"}
+{"date":"2026-10-25T21:26:01Z","wpt_revision":"9d8aceec0","product_revision":"ccfe15332f2d1bea0151c1f69299aebc335338c9","commit_message":"Bump Taffy: fit margins and baseline shim when clamping the content-based minimum size to fixed max tracks (#1282)"},
+{"date":"2026-10-26T01:59:54Z","wpt_revision":"9d8aceec0","product_revision":"cee6b87310e57fe370832034fc6a61d58309d6d0","commit_message":"blitz-vibey-script: only let file: documents load file: URLs (#1283)"}
 ]}
