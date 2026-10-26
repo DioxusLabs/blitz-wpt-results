@@ -1225,5 +1225,6 @@
 {"date":"2026-10-26T01:59:54Z","wpt_revision":"9d8aceec0","product_revision":"cee6b87310e57fe370832034fc6a61d58309d6d0","commit_message":"blitz-vibey-script: only let file: documents load file: URLs (#1283)"},
 {"date":"2026-10-26T16:46:10Z","wpt_revision":"9d8aceec0","product_revision":"6c45ea061a552100c1fbfac2fb2788521b5d35d4"},
 {"date":"2026-10-26T17:07:30Z","wpt_revision":"9d8aceec0","product_revision":"53e9d81c6ba24f3fdd57ad4b3abfb707eff133f6","commit_message":"Add support for `<details>` `:open` selector (#1007)"},
-{"date":"2026-10-26T18:49:48Z","wpt_revision":"d4b721171","product_revision":"6fee0db257c5e263ac7047487e2f56791f89bddd","commit_message":"Bump WPT pin to d4b7211 (#1295)"}
+{"date":"2026-10-26T18:49:48Z","wpt_revision":"d4b721171","product_revision":"6fee0db257c5e263ac7047487e2f56791f89bddd","commit_message":"Bump WPT pin to d4b7211 (#1295)"},
+{"date":"2026-10-26T21:47:47Z","wpt_revision":"d4b721171","product_revision":"0980cce5f24fb716cfe5dc6a1fa652f880bb384d","commit_message":"Support reversed scroll origins using Taffy's `ScrollableOverflow` (#1294)"}
 ]}
