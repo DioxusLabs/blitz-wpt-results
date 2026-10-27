@@ -1228,5 +1228,6 @@
 {"date":"2026-10-26T18:49:48Z","wpt_revision":"d4b721171","product_revision":"6fee0db257c5e263ac7047487e2f56791f89bddd","commit_message":"Bump WPT pin to d4b7211 (#1295)"},
 {"date":"2026-10-26T21:47:47Z","wpt_revision":"d4b721171","product_revision":"0980cce5f24fb716cfe5dc6a1fa652f880bb384d","commit_message":"Support reversed scroll origins using Taffy's `ScrollableOverflow` (#1294)"},
 {"date":"2026-10-26T22:24:21Z","wpt_revision":"d4b721171","product_revision":"efdc5472a070640d6053ca51340ee6146ae4575e","commit_message":"Expose CSS properties as accessors on CSSStyleDeclaration prototypes (#1297)"},
-{"date":"2026-10-27T00:39:16Z","wpt_revision":"d4b721171","product_revision":"ebacd68bd35552e42ed546faa7fa53dfccc109af","commit_message":"Hit test elements that have no computed styles yet (#1304)"}
+{"date":"2026-10-27T00:39:16Z","wpt_revision":"d4b721171","product_revision":"ebacd68bd35552e42ed546faa7fa53dfccc109af","commit_message":"Hit test elements that have no computed styles yet (#1304)"},
+{"date":"2026-10-27T13:05:24Z","wpt_revision":"d4b721171","product_revision":"fe33b778baaef5375d941c8a4f491f62cbd31d30","commit_message":"Narrow restyle invalidation on DOM mutation (#1276)"}
 ]}
