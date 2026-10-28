@@ -1232,5 +1232,6 @@
 {"date":"2026-10-27T13:05:24Z","wpt_revision":"d4b721171","product_revision":"fe33b778baaef5375d941c8a4f491f62cbd31d30","commit_message":"Narrow restyle invalidation on DOM mutation (#1276)"},
 {"date":"2026-10-28T15:23:44Z","wpt_revision":"d4b721171","product_revision":"8b1a0a3ce569275b04b2687c437223f9ec6afeb5","commit_message":"Damage layout for SVG attribute and <col span> changes (#1312)"},
 {"date":"2026-10-28T17:27:50Z","wpt_revision":"d4b721171","product_revision":"dee854c764cb815b0d28d88eeafeabee6bd344fd","commit_message":"Remove `display: contents` UA rule for `<picture>` (#1317)"},
-{"date":"2026-10-28T17:32:53Z","wpt_revision":"d4b721171","product_revision":"f6edb97019c56b2434312f4ee9e3cf46a3af6df4","commit_message":"Fix failed stylesheets blocking page rendering (#1318)"}
+{"date":"2026-10-28T17:32:53Z","wpt_revision":"d4b721171","product_revision":"f6edb97019c56b2434312f4ee9e3cf46a3af6df4","commit_message":"Fix failed stylesheets blocking page rendering (#1318)"},
+{"date":"2026-10-28T17:44:23Z","wpt_revision":"d4b721171","product_revision":"7a3dd8918e75299408a2749895d0a95752f8e87b","commit_message":"Fix Stylo preference initialization before UA stylesheet parsing (#1310)"}
 ]}
