@@ -1237,5 +1237,6 @@
 {"date":"2026-10-28T19:16:08Z","wpt_revision":"d4b721171","product_revision":"91ef65e218551a11866087f5fad7b2c83c5b1bed","commit_message":"blitz-vibey-script: add URLSearchParams (#1314)"},
 {"date":"2026-10-28T20:51:36Z","wpt_revision":"d4b721171","product_revision":"a26c6ddeb85e1f6e47cb2fc1ee28dc946ec8adcd","commit_message":"CustomWidget: replay initial attributes on attach (#1322)"},
 {"date":"2026-10-28T22:21:52Z","wpt_revision":"d4b721171","product_revision":"f76777766b5ae017f4824b0710581c018dd15fce","commit_message":"Don't paint inline box decorations over block-only children (#1319)"},
-{"date":"2026-10-28T23:13:34Z","wpt_revision":"d4b721171","product_revision":"0674e8efa7385741b626f8dfabd12daccdf72535","commit_message":"Upgrade Stylo to de0f23c"}
+{"date":"2026-10-28T23:13:34Z","wpt_revision":"d4b721171","product_revision":"0674e8efa7385741b626f8dfabd12daccdf72535","commit_message":"Upgrade Stylo to de0f23c"},
+{"date":"2026-10-29T17:53:25Z","wpt_revision":"d4b721171","product_revision":"6ef4b532d59fab22df0d7cf2a0e1a7e5163af8a7","commit_message":"Skip mounted events of elements removed in the same render (#1305)"}
 ]}
