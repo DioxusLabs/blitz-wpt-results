@@ -1243,5 +1243,6 @@
 {"date":"2026-10-29T23:57:53Z","wpt_revision":"d4b721171","product_revision":"784a567e409aafbecd3491150a5d75c5cb213e7a","commit_message":"Upgrade Stylo to cd230184a"},
 {"date":"2026-10-30T00:21:26Z","wpt_revision":"d4b721171","product_revision":"ae774d7f4bddb7c25cb1af6c1d331adfee241f6f","commit_message":"Use unrounded layout for computed width and height (#1339)"},
 {"date":"2026-10-30T03:12:39Z","wpt_revision":"d4b721171","product_revision":"ac6f9f582ac6cbb2735d73601507643c2e709d58","commit_message":"Implement `background-clip: text` (#1340)"},
-{"date":"2026-10-30T03:25:09Z","wpt_revision":"d4b721171","product_revision":"e5929f9e2af42f8fdc10cea315b502d3937b1350","commit_message":"Implement `-webkit-text-fill-color` (#1341)"}
+{"date":"2026-10-30T03:25:09Z","wpt_revision":"d4b721171","product_revision":"e5929f9e2af42f8fdc10cea315b502d3937b1350","commit_message":"Implement `-webkit-text-fill-color` (#1341)"},
+{"date":"2026-10-30T16:25:16Z","wpt_revision":"d4b721171","product_revision":"e42ee1f2577f968e29ea148a75d2d4f0d2cf19cc","commit_message":"Fix off-screen culling bounds applying node location twice (#1342)"}
 ]}
