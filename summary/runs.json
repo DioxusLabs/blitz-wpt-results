@@ -1244,5 +1244,6 @@
 {"date":"2026-10-30T00:21:26Z","wpt_revision":"d4b721171","product_revision":"ae774d7f4bddb7c25cb1af6c1d331adfee241f6f","commit_message":"Use unrounded layout for computed width and height (#1339)"},
 {"date":"2026-10-30T03:12:39Z","wpt_revision":"d4b721171","product_revision":"ac6f9f582ac6cbb2735d73601507643c2e709d58","commit_message":"Implement `background-clip: text` (#1340)"},
 {"date":"2026-10-30T03:25:09Z","wpt_revision":"d4b721171","product_revision":"e5929f9e2af42f8fdc10cea315b502d3937b1350","commit_message":"Implement `-webkit-text-fill-color` (#1341)"},
-{"date":"2026-10-30T16:25:16Z","wpt_revision":"d4b721171","product_revision":"e42ee1f2577f968e29ea148a75d2d4f0d2cf19cc","commit_message":"Fix off-screen culling bounds applying node location twice (#1342)"}
+{"date":"2026-10-30T16:25:16Z","wpt_revision":"d4b721171","product_revision":"e42ee1f2577f968e29ea148a75d2d4f0d2cf19cc","commit_message":"Fix off-screen culling bounds applying node location twice (#1342)"},
+{"date":"2026-11-01T19:55:29Z","wpt_revision":"6d49f3a85","product_revision":"d0f48bd17224130c3697b9c6a2de9c090cfdebc7","commit_message":"Bump WPT pin to 6d49f3a (#1355)"}
 ]}
