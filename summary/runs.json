@@ -1247,5 +1247,6 @@
 {"date":"2026-10-30T16:25:16Z","wpt_revision":"d4b721171","product_revision":"e42ee1f2577f968e29ea148a75d2d4f0d2cf19cc","commit_message":"Fix off-screen culling bounds applying node location twice (#1342)"},
 {"date":"2026-11-01T19:55:29Z","wpt_revision":"6d49f3a85","product_revision":"d0f48bd17224130c3697b9c6a2de9c090cfdebc7","commit_message":"Bump WPT pin to 6d49f3a (#1355)"},
 {"date":"2026-11-02T19:55:20Z","wpt_revision":"6d49f3a85","product_revision":"d07a78d9b543a1ee081dd768d1a988245040922b","commit_message":"Use device-pixel, Pathfinder-matched font embolden amounts (#1357)"},
-{"date":"2026-11-02T21:31:44Z","wpt_revision":"6d49f3a85","product_revision":"6491729c543d5dbb80257a5652518a938767c854","commit_message":"Apply `font-optical-sizing: auto` as an opsz variation (#1360)"}
+{"date":"2026-11-02T21:31:44Z","wpt_revision":"6d49f3a85","product_revision":"6491729c543d5dbb80257a5652518a938767c854","commit_message":"Apply `font-optical-sizing: auto` as an opsz variation (#1360)"},
+{"date":"2026-11-02T22:10:47Z","wpt_revision":"6d49f3a85","product_revision":"88160ec986b232dd19f19319b5696d43c4c0d4b1","commit_message":"Bump Stylo to servo/stylo@2dca345 (0.23.0) (#1363)"}
 ]}
