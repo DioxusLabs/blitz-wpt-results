@@ -1264,5 +1264,6 @@
 {"date":"2026-11-03T14:26:12Z","wpt_revision":"6d49f3a85","product_revision":"930448918713f25d547c669ce8843d18921f674a","commit_message":"Bump Taffy to pick up FloatInsets and zero-height float segments (#1377)"},
 {"date":"2026-11-03T14:56:27Z","wpt_revision":"6d49f3a85","product_revision":"aa983ec7c0e0f5d37784363b58b4ade6f54084a2","commit_message":"Place a mid-line float that doesn't fit beside the line below it (#1378)"},
 {"date":"2026-11-03T15:46:09Z","wpt_revision":"6d49f3a85","product_revision":"684b082439aa7672bce7268d9d9d0e473499faf8","commit_message":"Pin prettyplease to 0.2 so bindgen builds (#1383)"},
-{"date":"2026-11-03T16:50:51Z","wpt_revision":"6d49f3a85","product_revision":"7c744318c03f0000366393cabfc1ac3d9571f218","commit_message":"Paint text from the unrounded content box origin (#1382)"}
+{"date":"2026-11-03T16:50:51Z","wpt_revision":"6d49f3a85","product_revision":"7c744318c03f0000366393cabfc1ac3d9571f218","commit_message":"Paint text from the unrounded content box origin (#1382)"},
+{"date":"2026-11-03T20:05:37Z","wpt_revision":"6d49f3a85","product_revision":"c86a05461b871d5e067def2454c2fd2ca5f363fb","commit_message":"Initialize checkbox state for inputs that never generate a box (#1386)"}
 ]}
