@@ -1252,5 +1252,6 @@
 {"date":"2026-11-02T22:32:47Z","wpt_revision":"6d49f3a85","product_revision":"1299607be909de8a20c37e0c521981aa476a7f24","commit_message":"Tune the Vello font embolden amounts to match Safari (#1361)"},
 {"date":"2026-11-02T22:39:08Z","wpt_revision":"6d49f3a85","product_revision":"656719ed523c1f9b28115188c62ee896a8fb02d9","commit_message":"Scale the Vello font embolden by text luminance (#1364)"},
 {"date":"2026-11-02T23:07:11Z","wpt_revision":"6d49f3a85","product_revision":"483536601ee96f545cf38dcf72b3a82044bdfce0","commit_message":"Clip text input contents to the padding box vertically (#1365)"},
-{"date":"2026-11-03T00:32:34Z","wpt_revision":"6d49f3a85","product_revision":"e3d360b7d24fb288105133e41d4cb59e8e6676d1","commit_message":"Map the table cellspacing and cellpadding attributes to presentational hints (#1366)"}
+{"date":"2026-11-03T00:32:34Z","wpt_revision":"6d49f3a85","product_revision":"e3d360b7d24fb288105133e41d4cb59e8e6676d1","commit_message":"Map the table cellspacing and cellpadding attributes to presentational hints (#1366)"},
+{"date":"2026-11-03T01:05:17Z","wpt_revision":"6d49f3a85","product_revision":"76c62f77fd6be4abe1cfd6da2b65f06e8cb4cd3d","commit_message":"Use anyrender main (#1356)"}
 ]}
