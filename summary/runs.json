@@ -1255,5 +1255,6 @@
 {"date":"2026-11-03T00:32:34Z","wpt_revision":"6d49f3a85","product_revision":"e3d360b7d24fb288105133e41d4cb59e8e6676d1","commit_message":"Map the table cellspacing and cellpadding attributes to presentational hints (#1366)"},
 {"date":"2026-11-03T01:05:17Z","wpt_revision":"6d49f3a85","product_revision":"76c62f77fd6be4abe1cfd6da2b65f06e8cb4cd3d","commit_message":"Use anyrender main (#1356)"},
 {"date":"2026-11-03T01:59:45Z","wpt_revision":"6d49f3a85","product_revision":"29e53a31c302ad08555dc59fbdbbe9e49f49b0c8","commit_message":"Patch glifo and vello crates to the unhinted embolden fix (linebender/vello#2049) (#1367)"},
-{"date":"2026-11-03T02:00:00Z","wpt_revision":"6d49f3a85","product_revision":"c920f1c5bc884306fc830c6620c3229304a593d2","commit_message":"Use the latest Android NDK for the Android browser bundle (#1368)"}
+{"date":"2026-11-03T02:00:00Z","wpt_revision":"6d49f3a85","product_revision":"c920f1c5bc884306fc830c6620c3229304a593d2","commit_message":"Use the latest Android NDK for the Android browser bundle (#1368)"},
+{"date":"2026-11-03T09:50:29Z","wpt_revision":"6d49f3a85","product_revision":"c58ecda5898f352ef02c0a76291a0b4ea5e7d474","commit_message":"Fix asset!() stylesheets not loading on Windows (#1373)"}
 ]}
