@@ -1268,5 +1268,6 @@
 {"date":"2026-11-03T20:05:37Z","wpt_revision":"6d49f3a85","product_revision":"c86a05461b871d5e067def2454c2fd2ca5f363fb","commit_message":"Initialize checkbox state for inputs that never generate a box (#1386)"},
 {"date":"2026-11-03T20:16:23Z","wpt_revision":"6d49f3a85","product_revision":"9a93d470dd6d30e2cbf7bd57e7419282e20535e2","commit_message":"Decode external stylesheets from bytes (strip BOM, honour @charset) (#1388)"},
 {"date":"2026-11-03T20:32:35Z","wpt_revision":"6d49f3a85","product_revision":"8aca42fc3e2017172165201ccb417602c0b2f9e0","commit_message":"Retry inline lines in the next float slot down when they don't fit (#1390)"},
-{"date":"2026-11-03T21:18:26Z","wpt_revision":"6d49f3a85","product_revision":"c5ad75704287ae1a9eebf521ff0a75cbb42f8e26","commit_message":"Count the space skipped past floats in inline content height (#1379)"}
+{"date":"2026-11-03T21:18:26Z","wpt_revision":"6d49f3a85","product_revision":"c5ad75704287ae1a9eebf521ff0a75cbb42f8e26","commit_message":"Count the space skipped past floats in inline content height (#1379)"},
+{"date":"2026-11-03T21:54:19Z","wpt_revision":"f6789b0b5","product_revision":"6d81285f0435bf693b0695ff0c4d8c2034dd675e","commit_message":"Bump WPT pin to f6789b0 (#1392)"}
 ]}
