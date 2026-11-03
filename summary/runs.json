@@ -1259,5 +1259,6 @@
 {"date":"2026-11-03T09:50:29Z","wpt_revision":"6d49f3a85","product_revision":"c58ecda5898f352ef02c0a76291a0b4ea5e7d474","commit_message":"Fix asset!() stylesheets not loading on Windows (#1373)"},
 {"date":"2026-11-03T10:33:26Z","wpt_revision":"6d49f3a85","product_revision":"7ea0a2a5a540ede157da62938ced504636aa10fd","commit_message":"hit test: keep embedded boxes in border-box coordinates (#850)"},
 {"date":"2026-11-03T10:57:06Z","wpt_revision":"6d49f3a85","product_revision":"554d73a273065e19d7e1d0e83970b37da7fbdf8c","commit_message":"Skip resources whose URL can't be resolved instead of panicking (#1374)"},
-{"date":"2026-11-03T12:20:08Z","wpt_revision":"6d49f3a85","product_revision":"504e459e3350a092a7c4c1abca446cba217c5e3d","commit_message":"Don't ceil the shrink-to-fit width of inline layouts (#1375)"}
+{"date":"2026-11-03T12:20:08Z","wpt_revision":"6d49f3a85","product_revision":"504e459e3350a092a7c4c1abca446cba217c5e3d","commit_message":"Don't ceil the shrink-to-fit width of inline layouts (#1375)"},
+{"date":"2026-11-03T13:40:15Z","wpt_revision":"6d49f3a85","product_revision":"35cdfc859789664549e2e41ff06fa0af395ffdc0","commit_message":"Bump Taffy to 5e035cad (taffy#1385, taffy#1386) (#1376)"}
 ]}
