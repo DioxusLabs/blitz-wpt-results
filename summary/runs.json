@@ -1271,5 +1271,6 @@
 {"date":"2026-11-03T21:18:26Z","wpt_revision":"6d49f3a85","product_revision":"c5ad75704287ae1a9eebf521ff0a75cbb42f8e26","commit_message":"Count the space skipped past floats in inline content height (#1379)"},
 {"date":"2026-11-03T21:54:19Z","wpt_revision":"f6789b0b5","product_revision":"6d81285f0435bf693b0695ff0c4d8c2034dd675e","commit_message":"Bump WPT pin to f6789b0 (#1392)"},
 {"date":"2026-11-03T22:13:42Z","wpt_revision":"f6789b0b5","product_revision":"c51dd246c9816b697588efd23dc61fed1e619a44","commit_message":"Bump Taffy to stop double-counting collapse-through margins (#1393)"},
-{"date":"2026-11-04T14:34:46Z","wpt_revision":"f6789b0b5","product_revision":"bbf9ed630c87c98076e6261265ca9ab671470722","commit_message":"Keep checkbox state in sync when setting checked on a removed input (#1400)"}
+{"date":"2026-11-04T14:34:46Z","wpt_revision":"f6789b0b5","product_revision":"bbf9ed630c87c98076e6261265ca9ab671470722","commit_message":"Keep checkbox state in sync when setting checked on a removed input (#1400)"},
+{"date":"2026-11-04T18:04:50Z","wpt_revision":"f6789b0b5","product_revision":"3a5fdb3874ff52acac6f2eecedfbb13886f77194","commit_message":"Don't paint zero-size text (#1402)"}
 ]}
