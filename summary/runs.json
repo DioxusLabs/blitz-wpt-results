@@ -1274,5 +1274,6 @@
 {"date":"2026-11-04T14:34:46Z","wpt_revision":"f6789b0b5","product_revision":"bbf9ed630c87c98076e6261265ca9ab671470722","commit_message":"Keep checkbox state in sync when setting checked on a removed input (#1400)"},
 {"date":"2026-11-04T18:04:50Z","wpt_revision":"f6789b0b5","product_revision":"3a5fdb3874ff52acac6f2eecedfbb13886f77194","commit_message":"Don't paint zero-size text (#1402)"},
 {"date":"2026-11-04T21:25:47Z","wpt_revision":"f6789b0b5","product_revision":"c888b09d92165df42a2e165d51b74a8e234ac14a","commit_message":"Fix blitz-net build with both cache and multipart features"},
-{"date":"2026-11-05T00:20:45Z","wpt_revision":"f6789b0b5","product_revision":"73ff15c0d687ff04859b10ec8d08ceb6e25713e1","commit_message":"Add DevtoolsProvider for reporting DOM mutations (#1406)"}
+{"date":"2026-11-05T00:20:45Z","wpt_revision":"f6789b0b5","product_revision":"73ff15c0d687ff04859b10ec8d08ceb6e25713e1","commit_message":"Add DevtoolsProvider for reporting DOM mutations (#1406)"},
+{"date":"2026-11-05T00:35:49Z","wpt_revision":"f6789b0b5","product_revision":"4de068b7befc5236c4d4871350d47e3abb968a22","commit_message":"Let set_node_text set comment contents (#1408)"}
 ]}
