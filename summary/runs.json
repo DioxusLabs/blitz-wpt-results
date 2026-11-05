@@ -1284,5 +1284,6 @@
 {"date":"2026-11-05T02:42:18Z","wpt_revision":"f6789b0b5","product_revision":"9e1493052e12a684968f95eb31e3544ea89c5bcd","commit_message":"Move prettyplease to 0.3 so bindgen and prettyplease share syn 3 (#1414)"},
 {"date":"2026-11-05T02:48:58Z","wpt_revision":"f6789b0b5","product_revision":"5a486f629130312594639648e17a376c8647b9dd","commit_message":"CDP: keep sub-document targets stable across navigation (#1415)"},
 {"date":"2026-11-05T12:55:09Z","wpt_revision":"f6789b0b5","product_revision":"69c4618c5eaa07e4c3b42f41a85e3c78782bffaf","commit_message":"Update glifo patch to the merged embolden fix (linebender/vello#2049) (#1422)"},
-{"date":"2026-11-05T15:11:30Z","wpt_revision":"f6789b0b5","product_revision":"60c3baffd799a4bf38255223378d4a8a8aecad3a","commit_message":"Add parley_code_editor, a standalone code editing control (#1424)"}
+{"date":"2026-11-05T15:11:30Z","wpt_revision":"f6789b0b5","product_revision":"60c3baffd799a4bf38255223378d4a8a8aecad3a","commit_message":"Add parley_code_editor, a standalone code editing control (#1424)"},
+{"date":"2026-11-05T18:51:15Z","wpt_revision":"f6789b0b5","product_revision":"ad130c16ad37c84ff5f522f50ca0ea197f492b67","commit_message":"CDP: make <style>/<link> rules editable in the Styles pane (#1427)"}
 ]}
