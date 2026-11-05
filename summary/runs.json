@@ -1276,5 +1276,6 @@
 {"date":"2026-11-04T21:25:47Z","wpt_revision":"f6789b0b5","product_revision":"c888b09d92165df42a2e165d51b74a8e234ac14a","commit_message":"Fix blitz-net build with both cache and multipart features"},
 {"date":"2026-11-05T00:20:45Z","wpt_revision":"f6789b0b5","product_revision":"73ff15c0d687ff04859b10ec8d08ceb6e25713e1","commit_message":"Add DevtoolsProvider for reporting DOM mutations (#1406)"},
 {"date":"2026-11-05T00:35:49Z","wpt_revision":"f6789b0b5","product_revision":"4de068b7befc5236c4d4871350d47e3abb968a22","commit_message":"Let set_node_text set comment contents (#1408)"},
-{"date":"2026-11-05T01:04:59Z","wpt_revision":"f6789b0b5","product_revision":"98ab397de06797ebed7bb8017ae886bb422fede2","commit_message":"Record the previous sibling of inserted nodes for devtools (#1410)"}
+{"date":"2026-11-05T01:04:59Z","wpt_revision":"f6789b0b5","product_revision":"98ab397de06797ebed7bb8017ae886bb422fede2","commit_message":"Record the previous sibling of inserted nodes for devtools (#1410)"},
+{"date":"2026-11-05T01:24:45Z","wpt_revision":"f6789b0b5","product_revision":"af14e07fe5cbc60c56b4512bfa123d8c8a7e0164","commit_message":"Skip unsupported @font-face sources by format string and url path extension (#1412)"}
 ]}
