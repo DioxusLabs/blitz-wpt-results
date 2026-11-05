@@ -1280,5 +1280,6 @@
 {"date":"2026-11-05T01:24:45Z","wpt_revision":"f6789b0b5","product_revision":"af14e07fe5cbc60c56b4512bfa123d8c8a7e0164","commit_message":"Skip unsupported @font-face sources by format string and url path extension (#1412)"},
 {"date":"2026-11-05T01:45:37Z","wpt_revision":"f6789b0b5","product_revision":"a1670ef1b4d910daa2aded5d3321057c39a4068b","commit_message":"Add Chrome DevTools Protocol server (#572)"},
 {"date":"2026-11-05T02:06:55Z","wpt_revision":"f6789b0b5","product_revision":"6dd69eb1c06ec28b92a1867dd08939092e0d60ce","commit_message":"Give examples titles"},
-{"date":"2026-11-05T02:10:22Z","wpt_revision":"f6789b0b5","product_revision":"9645839bbe361b839068a0a95666b0ea983e6043","commit_message":"Name the browser UI's devtools target \"Blitz Browser UI\" (#1413)"}
+{"date":"2026-11-05T02:10:22Z","wpt_revision":"f6789b0b5","product_revision":"9645839bbe361b839068a0a95666b0ea983e6043","commit_message":"Name the browser UI's devtools target \"Blitz Browser UI\" (#1413)"},
+{"date":"2026-11-05T02:42:18Z","wpt_revision":"f6789b0b5","product_revision":"9e1493052e12a684968f95eb31e3544ea89c5bcd","commit_message":"Move prettyplease to 0.3 so bindgen and prettyplease share syn 3 (#1414)"}
 ]}
