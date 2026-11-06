@@ -1291,5 +1291,6 @@
 {"date":"2026-11-06T10:55:17Z","wpt_revision":"f6789b0b5","product_revision":"b0e009c187d3ab0ae54b9a057d67b25fd34c57d0","commit_message":"Don't panic when href is removed from a link that holds no stylesheet (#1439)"},
 {"date":"2026-11-06T10:55:46Z","wpt_revision":"f6789b0b5","product_revision":"32da6a81f2fabe9f7c5d6b0d7c4365f45038e077","commit_message":"Reset inherited text properties on form controls (#1437)"},
 {"date":"2026-11-06T11:15:08Z","wpt_revision":"f6789b0b5","product_revision":"bfee20617b08632769609780c161613743f9618d","commit_message":"Bump anyrender to d71b65e (Apple embolden baseline lift in user units) (#1442)"},
-{"date":"2026-11-06T11:49:35Z","wpt_revision":"f6789b0b5","product_revision":"c70a012ba50c3d4cc66a4a5f8c4154b1c7967a9b","commit_message":"Clamp float line slot to the layout width (#1443)"}
+{"date":"2026-11-06T11:49:35Z","wpt_revision":"f6789b0b5","product_revision":"c70a012ba50c3d4cc66a4a5f8c4154b1c7967a9b","commit_message":"Clamp float line slot to the layout width (#1443)"},
+{"date":"2026-11-06T11:55:49Z","wpt_revision":"f6789b0b5","product_revision":"986a2dbded481b03b9e4040155309a9a727a61ab","commit_message":"Cap Apple font embolden in device pixels under CSS transforms (#1444)"}
 ]}
