@@ -1300,5 +1300,6 @@
 {"date":"2026-11-06T16:07:02Z","wpt_revision":"f6789b0b5","product_revision":"752ed2e49cd3c3c843342674445f5f6a02be0141","commit_message":"Pin Taffy to main for taffy#1401 (percentage-width replaced min-content contributions) (#1451)"},
 {"date":"2026-11-06T16:54:25Z","wpt_revision":"f6789b0b5","product_revision":"d63145027a24b69172c77dd3a34de207fc58049b","commit_message":"Open DevTools from Blitz, with an embedded DevTools frontend (#1452)"},
 {"date":"2026-11-06T18:24:23Z","wpt_revision":"f6789b0b5","product_revision":"b6bb45c550a9490afa6c43468c77535c6d76856d","commit_message":"Match the stylesheet link type case-insensitively (#1438)"},
-{"date":"2026-11-06T18:35:43Z","wpt_revision":"f6789b0b5","product_revision":"5be96ed0e621f1b52b71b2206a2c3a54e90c0b5c","commit_message":"Default devtools keyboard shortcuts for Dioxus Native apps (#1454)"}
+{"date":"2026-11-06T18:35:43Z","wpt_revision":"f6789b0b5","product_revision":"5be96ed0e621f1b52b71b2206a2c3a54e90c0b5c","commit_message":"Default devtools keyboard shortcuts for Dioxus Native apps (#1454)"},
+{"date":"2026-11-06T21:47:36Z","wpt_revision":"f6789b0b5","product_revision":"be60597f67b3cece0456d26e8d7ff5a88600bbc5","commit_message":"Refresh the AccessKit tree after DOM and focus changes (#1456)"}
 ]}
