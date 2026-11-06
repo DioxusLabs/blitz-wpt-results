@@ -1295,5 +1295,6 @@
 {"date":"2026-11-06T11:55:49Z","wpt_revision":"f6789b0b5","product_revision":"986a2dbded481b03b9e4040155309a9a727a61ab","commit_message":"Cap Apple font embolden in device pixels under CSS transforms (#1444)"},
 {"date":"2026-11-06T12:46:20Z","wpt_revision":"f6789b0b5","product_revision":"0031337f570e50082de0ff6ab39cbc2bb1f360cd","commit_message":"Bump anyrender to 812644a (Apple glyph baseline y snap) (#1447)"},
 {"date":"2026-11-06T12:56:58Z","wpt_revision":"f6789b0b5","product_revision":"f9d0e8c76a5fd9ca10d426ac2c065a4f2ecaecb3","commit_message":"Paint positioned descendants of static boxes with their positioned ancestor (#1445)"},
-{"date":"2026-11-06T15:42:24Z","wpt_revision":"f6789b0b5","product_revision":"02a6dc38982b4acdf36601742aea8b188374ecd4","commit_message":"Place block-level abspos static position at line top when no content precedes it (#1450)"}
+{"date":"2026-11-06T15:42:24Z","wpt_revision":"f6789b0b5","product_revision":"02a6dc38982b4acdf36601742aea8b188374ecd4","commit_message":"Place block-level abspos static position at line top when no content precedes it (#1450)"},
+{"date":"2026-11-06T15:47:50Z","wpt_revision":"f6789b0b5","product_revision":"258657f3029ad9f86ce20408986f1006bfd1e6bb","commit_message":"Tolerate rounding error when line breaking shrink-to-fit inline layouts (#1449)"}
 ]}
