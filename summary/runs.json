@@ -1297,5 +1297,6 @@
 {"date":"2026-11-06T12:56:58Z","wpt_revision":"f6789b0b5","product_revision":"f9d0e8c76a5fd9ca10d426ac2c065a4f2ecaecb3","commit_message":"Paint positioned descendants of static boxes with their positioned ancestor (#1445)"},
 {"date":"2026-11-06T15:42:24Z","wpt_revision":"f6789b0b5","product_revision":"02a6dc38982b4acdf36601742aea8b188374ecd4","commit_message":"Place block-level abspos static position at line top when no content precedes it (#1450)"},
 {"date":"2026-11-06T15:47:50Z","wpt_revision":"f6789b0b5","product_revision":"258657f3029ad9f86ce20408986f1006bfd1e6bb","commit_message":"Tolerate rounding error when line breaking shrink-to-fit inline layouts (#1449)"},
-{"date":"2026-11-06T16:07:02Z","wpt_revision":"f6789b0b5","product_revision":"752ed2e49cd3c3c843342674445f5f6a02be0141","commit_message":"Pin Taffy to main for taffy#1401 (percentage-width replaced min-content contributions) (#1451)"}
+{"date":"2026-11-06T16:07:02Z","wpt_revision":"f6789b0b5","product_revision":"752ed2e49cd3c3c843342674445f5f6a02be0141","commit_message":"Pin Taffy to main for taffy#1401 (percentage-width replaced min-content contributions) (#1451)"},
+{"date":"2026-11-06T16:54:25Z","wpt_revision":"f6789b0b5","product_revision":"d63145027a24b69172c77dd3a34de207fc58049b","commit_message":"Open DevTools from Blitz, with an embedded DevTools frontend (#1452)"}
 ]}
