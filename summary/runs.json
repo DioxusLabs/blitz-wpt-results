@@ -1289,5 +1289,6 @@
 {"date":"2026-11-06T10:10:01Z","wpt_revision":"f6789b0b5","product_revision":"1a7ec714ecd77c0bba75194e8715238bebd2a45a","commit_message":"parley_code_editor: skip layout tests when built without system-fonts (#1441)"},
 {"date":"2026-11-06T10:22:41Z","wpt_revision":"f6789b0b5","product_revision":"2ee31e656ea7acf57c174fcd0e184e8a670a67be","commit_message":"CDP: support CSS.addRule for style sheet rules (#1429)"},
 {"date":"2026-11-06T10:55:17Z","wpt_revision":"f6789b0b5","product_revision":"b0e009c187d3ab0ae54b9a057d67b25fd34c57d0","commit_message":"Don't panic when href is removed from a link that holds no stylesheet (#1439)"},
-{"date":"2026-11-06T10:55:46Z","wpt_revision":"f6789b0b5","product_revision":"32da6a81f2fabe9f7c5d6b0d7c4365f45038e077","commit_message":"Reset inherited text properties on form controls (#1437)"}
+{"date":"2026-11-06T10:55:46Z","wpt_revision":"f6789b0b5","product_revision":"32da6a81f2fabe9f7c5d6b0d7c4365f45038e077","commit_message":"Reset inherited text properties on form controls (#1437)"},
+{"date":"2026-11-06T11:15:08Z","wpt_revision":"f6789b0b5","product_revision":"bfee20617b08632769609780c161613743f9618d","commit_message":"Bump anyrender to d71b65e (Apple embolden baseline lift in user units) (#1442)"}
 ]}
