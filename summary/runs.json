@@ -1305,5 +1305,6 @@
 {"date":"2026-11-08T14:02:28Z","wpt_revision":"f6789b0b5","product_revision":"61b699f614f62da24d137eeec5adde28fa6dc38f","commit_message":"Say the git version of Dioxus Native depends on Dioxus 0.8 alpha (#1465)"},
 {"date":"2026-11-08T15:54:29Z","wpt_revision":"f6789b0b5","product_revision":"9b9471f2fa1cd5f487088c33ad292581c73da3db","commit_message":"Decode pages lossily instead of panicking on non-UTF-8 bytes (#1460)"},
 {"date":"2026-11-08T18:29:10Z","wpt_revision":"f6789b0b5","product_revision":"9f9c8e321735890754b4a9970cb07765b8bf3c0c","commit_message":"Map the valign attribute of table rows, row groups and cells to vertical-align (#1459)"},
-{"date":"2026-11-09T02:03:31Z","wpt_revision":"f6789b0b5","product_revision":"808ded9348289cac0a3b4940e69da21d5b918443","commit_message":"Remove unused euclid and usvg dependencies from blitz-paint (#1466)"}
+{"date":"2026-11-09T02:03:31Z","wpt_revision":"f6789b0b5","product_revision":"808ded9348289cac0a3b4940e69da21d5b918443","commit_message":"Remove unused euclid and usvg dependencies from blitz-paint (#1466)"},
+{"date":"2026-11-09T14:02:58Z","wpt_revision":"f6789b0b5","product_revision":"27f5c777f958fd669795d6d230d90a82033565f9","commit_message":"Map the font element's face and size attributes (#1467)"}
 ]}
