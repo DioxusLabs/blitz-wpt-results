@@ -1308,5 +1308,6 @@
 {"date":"2026-11-09T02:03:31Z","wpt_revision":"f6789b0b5","product_revision":"808ded9348289cac0a3b4940e69da21d5b918443","commit_message":"Remove unused euclid and usvg dependencies from blitz-paint (#1466)"},
 {"date":"2026-11-09T14:02:58Z","wpt_revision":"f6789b0b5","product_revision":"27f5c777f958fd669795d6d230d90a82033565f9","commit_message":"Map the font element's face and size attributes (#1467)"},
 {"date":"2026-11-09T14:03:41Z","wpt_revision":"f6789b0b5","product_revision":"760966b846b0a5dbac0e15412f86af7fe172a458","commit_message":"Recompute overflow and transforms of every node after a scale change (#1468)"},
-{"date":"2026-11-09T15:00:46Z","wpt_revision":"f6789b0b5","product_revision":"6afcce06789063a2e6649892edd0418e2e541ccb","commit_message":"Skip drawing fully transparent text (#1474)"}
+{"date":"2026-11-09T15:00:46Z","wpt_revision":"f6789b0b5","product_revision":"6afcce06789063a2e6649892edd0418e2e541ccb","commit_message":"Skip drawing fully transparent text (#1474)"},
+{"date":"2026-11-09T15:04:13Z","wpt_revision":"f6789b0b5","product_revision":"67c778debe8af1d0fd66cde2e5fed4e7de2ab088","commit_message":"Use the WebGL vello_hybrid renderer on wasm (#1471)"}
 ]}
