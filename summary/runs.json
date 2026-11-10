@@ -1310,5 +1310,7 @@
 {"date":"2026-11-09T14:03:41Z","wpt_revision":"f6789b0b5","product_revision":"760966b846b0a5dbac0e15412f86af7fe172a458","commit_message":"Recompute overflow and transforms of every node after a scale change (#1468)"},
 {"date":"2026-11-09T15:00:46Z","wpt_revision":"f6789b0b5","product_revision":"6afcce06789063a2e6649892edd0418e2e541ccb","commit_message":"Skip drawing fully transparent text (#1474)"},
 {"date":"2026-11-09T15:04:13Z","wpt_revision":"f6789b0b5","product_revision":"67c778debe8af1d0fd66cde2e5fed4e7de2ab088","commit_message":"Use the WebGL vello_hybrid renderer on wasm (#1471)"},
-{"date":"2026-11-09T15:26:35Z","wpt_revision":"f6789b0b5","product_revision":"b6ace6a0c33e17b654e8e6d0b14a7e04e83756fe","commit_message":"dioxus-native: fix duplicate wgpu Features/Limits import on wasm (#1476)"}
+{"date":"2026-11-09T15:26:35Z","wpt_revision":"f6789b0b5","product_revision":"b6ace6a0c33e17b654e8e6d0b14a7e04e83756fe","commit_message":"dioxus-native: fix duplicate wgpu Features/Limits import on wasm (#1476)"},
+{"date":"2026-11-09T22:09:11Z","wpt_revision":"f6789b0b5","product_revision":"3a146c669aefab0b8a8c7f20c3eadedbacd33a73","commit_message":"Fall back to the default font when no listed family is available (#1473)"},
+{"date":"2026-11-10T13:39:28Z","wpt_revision":"07e827e43","product_revision":"4647f4a2c93b8f1d50951d7044f1ad6ec9d5f7e6","commit_message":"Bump WPT pin to 07e827e (#1490)"}
 ]}
