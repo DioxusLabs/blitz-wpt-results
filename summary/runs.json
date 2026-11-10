@@ -1312,5 +1312,6 @@
 {"date":"2026-11-09T15:04:13Z","wpt_revision":"f6789b0b5","product_revision":"67c778debe8af1d0fd66cde2e5fed4e7de2ab088","commit_message":"Use the WebGL vello_hybrid renderer on wasm (#1471)"},
 {"date":"2026-11-09T15:26:35Z","wpt_revision":"f6789b0b5","product_revision":"b6ace6a0c33e17b654e8e6d0b14a7e04e83756fe","commit_message":"dioxus-native: fix duplicate wgpu Features/Limits import on wasm (#1476)"},
 {"date":"2026-11-09T22:09:11Z","wpt_revision":"f6789b0b5","product_revision":"3a146c669aefab0b8a8c7f20c3eadedbacd33a73","commit_message":"Fall back to the default font when no listed family is available (#1473)"},
-{"date":"2026-11-10T13:39:28Z","wpt_revision":"07e827e43","product_revision":"4647f4a2c93b8f1d50951d7044f1ad6ec9d5f7e6","commit_message":"Bump WPT pin to 07e827e (#1490)"}
+{"date":"2026-11-10T13:39:28Z","wpt_revision":"07e827e43","product_revision":"4647f4a2c93b8f1d50951d7044f1ad6ec9d5f7e6","commit_message":"Bump WPT pin to 07e827e (#1490)"},
+{"date":"2026-11-10T22:14:02Z","wpt_revision":"07e827e43","product_revision":"e65ec76e1568a69ed83cbb4b94797db088607ec4","commit_message":"Treat an image with an empty alt as decorative (#1514)"}
 ]}
