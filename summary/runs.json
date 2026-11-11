@@ -1317,5 +1317,6 @@
 {"date":"2026-11-11T13:26:07Z","wpt_revision":"07e827e43","product_revision":"f2065fd48659562a4cc6f798f9719fde166ae6a0","commit_message":"CI: install wpt CLI with cargo binstall (#1523)"},
 {"date":"2026-11-11T13:37:05Z","wpt_revision":"07e827e43","product_revision":"946f7c461ed78b9f19c42fa507e046af662773eb","commit_message":"wpt: discover tests from the WPT manifest via wpt_manifest (#1492)"},
 {"date":"2026-11-11T13:52:33Z","wpt_revision":"07e827e43","product_revision":"f8f9a26f688ff06035c59b8dd68894ac4f4ec369","commit_message":"Copying from a text input doesn't fire an input event (#1517)"},
-{"date":"2026-11-11T16:51:21Z","wpt_revision":"07e827e43","product_revision":"e53e20ac4b0c9e2084ed82e51bd35ef5c5c408f4","commit_message":"Fix typos in documentation (#1526)"}
+{"date":"2026-11-11T16:51:21Z","wpt_revision":"07e827e43","product_revision":"e53e20ac4b0c9e2084ed82e51bd35ef5c5c408f4","commit_message":"Fix typos in documentation (#1526)"},
+{"date":"2026-11-11T17:01:48Z","wpt_revision":"07e827e43","product_revision":"c27b4ca14158dc457f35c78eb32b8c4fec906b7e","commit_message":"wpt: use wpt_manifest's fuzzy reftest types and parsing (#1525)"}
 ]}
