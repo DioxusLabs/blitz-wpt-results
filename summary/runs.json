@@ -1319,5 +1319,6 @@
 {"date":"2026-11-11T13:52:33Z","wpt_revision":"07e827e43","product_revision":"f8f9a26f688ff06035c59b8dd68894ac4f4ec369","commit_message":"Copying from a text input doesn't fire an input event (#1517)"},
 {"date":"2026-11-11T16:51:21Z","wpt_revision":"07e827e43","product_revision":"e53e20ac4b0c9e2084ed82e51bd35ef5c5c408f4","commit_message":"Fix typos in documentation (#1526)"},
 {"date":"2026-11-11T17:01:48Z","wpt_revision":"07e827e43","product_revision":"c27b4ca14158dc457f35c78eb32b8c4fec906b7e","commit_message":"wpt: use wpt_manifest's fuzzy reftest types and parsing (#1525)"},
-{"date":"2026-11-11T21:07:27Z","wpt_revision":"07e827e43","product_revision":"e4c5bc906ee5cc0a7f6053502480b84e1d733ef4","commit_message":"Bump AnyRender to main (vello 0.12, vello_cpu/vello_gpu 0.4, glifo 0.5) (#1527)"}
+{"date":"2026-11-11T21:07:27Z","wpt_revision":"07e827e43","product_revision":"e4c5bc906ee5cc0a7f6053502480b84e1d733ef4","commit_message":"Bump AnyRender to main (vello 0.12, vello_cpu/vello_gpu 0.4, glifo 0.5) (#1527)"},
+{"date":"2026-11-11T21:56:49Z","wpt_revision":"07e827e43","product_revision":"7b72c22bd52f388481439763b20912aa9055bfc5","commit_message":"Upgrade usvg to 0.50 and repin AnyRender to main (#1528)"}
 ]}
