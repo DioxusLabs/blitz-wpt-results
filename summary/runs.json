@@ -1315,5 +1315,6 @@
 {"date":"2026-11-10T13:39:28Z","wpt_revision":"07e827e43","product_revision":"4647f4a2c93b8f1d50951d7044f1ad6ec9d5f7e6","commit_message":"Bump WPT pin to 07e827e (#1490)"},
 {"date":"2026-11-10T22:14:02Z","wpt_revision":"07e827e43","product_revision":"e65ec76e1568a69ed83cbb4b94797db088607ec4","commit_message":"Treat an image with an empty alt as decorative (#1514)"},
 {"date":"2026-11-11T13:26:07Z","wpt_revision":"07e827e43","product_revision":"f2065fd48659562a4cc6f798f9719fde166ae6a0","commit_message":"CI: install wpt CLI with cargo binstall (#1523)"},
-{"date":"2026-11-11T13:37:05Z","wpt_revision":"07e827e43","product_revision":"946f7c461ed78b9f19c42fa507e046af662773eb","commit_message":"wpt: discover tests from the WPT manifest via wpt_manifest (#1492)"}
+{"date":"2026-11-11T13:37:05Z","wpt_revision":"07e827e43","product_revision":"946f7c461ed78b9f19c42fa507e046af662773eb","commit_message":"wpt: discover tests from the WPT manifest via wpt_manifest (#1492)"},
+{"date":"2026-11-11T13:52:33Z","wpt_revision":"07e827e43","product_revision":"f8f9a26f688ff06035c59b8dd68894ac4f4ec369","commit_message":"Copying from a text input doesn't fire an input event (#1517)"}
 ]}
