@@ -1327,5 +1327,6 @@
 {"date":"2026-11-12T10:57:50Z","wpt_revision":"07e827e43","product_revision":"085114b3f4e0cf85bc28319999a7accd3bdf4c84","commit_message":"Upgrade Parley to v0.13"},
 {"date":"2026-11-12T11:21:09Z","wpt_revision":"07e827e43","product_revision":"ec0cd2803b01ec0a57746fe41f4fb00a030474b5","commit_message":"Move the presentational hints into their own module"},
 {"date":"2026-11-12T11:32:05Z","wpt_revision":"07e827e43","product_revision":"0124f1b31d9c4cafb4bd733735f70797b2a4cab3","commit_message":"Update Stylo Device in place"},
-{"date":"2026-11-12T11:36:03Z","wpt_revision":"07e827e43","product_revision":"c4fbdc825df78af247ca7ee8b500cd438a7d5091","commit_message":"Move UserAgentStylesheet and init_stylo_prefs to the stylo module"}
+{"date":"2026-11-12T11:36:03Z","wpt_revision":"07e827e43","product_revision":"c4fbdc825df78af247ca7ee8b500cd438a7d5091","commit_message":"Move UserAgentStylesheet and init_stylo_prefs to the stylo module"},
+{"date":"2026-11-12T11:46:54Z","wpt_revision":"07e827e43","product_revision":"b003e1c5e0befc2c71a09aeba62b6d4cdcbd7e7d","commit_message":"Split stylo module into submodules"}
 ]}
