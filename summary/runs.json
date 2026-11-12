@@ -1324,5 +1324,6 @@
 {"date":"2026-11-11T22:12:55Z","wpt_revision":"07e827e43","product_revision":"a367c9ecb042efa1b8afb25652e7f3608fadd39f","commit_message":"Repin AnyRender to 21db1a3 (skrifa 0.49, read-fonts 0.46) (#1529)"},
 {"date":"2026-11-12T00:34:21Z","wpt_revision":"07e827e43","product_revision":"cf70559afb842fcf153360912e17498b5a023291","commit_message":"Adopt AnyRender's `NonUniformRoundedRect` and `draw_box_shadow` (#1024)"},
 {"date":"2026-11-12T00:52:05Z","wpt_revision":"07e827e43","product_revision":"e814eb0f1d44eff8b67beff823bc7ace636412c5","commit_message":"Store only border box geometry in CssBox (#1530)"},
-{"date":"2026-11-12T10:57:50Z","wpt_revision":"07e827e43","product_revision":"085114b3f4e0cf85bc28319999a7accd3bdf4c84","commit_message":"Upgrade Parley to v0.13"}
+{"date":"2026-11-12T10:57:50Z","wpt_revision":"07e827e43","product_revision":"085114b3f4e0cf85bc28319999a7accd3bdf4c84","commit_message":"Upgrade Parley to v0.13"},
+{"date":"2026-11-12T11:21:09Z","wpt_revision":"07e827e43","product_revision":"ec0cd2803b01ec0a57746fe41f4fb00a030474b5","commit_message":"Move the presentational hints into their own module"}
 ]}
