@@ -1330,5 +1330,6 @@
 {"date":"2026-11-12T11:36:03Z","wpt_revision":"07e827e43","product_revision":"c4fbdc825df78af247ca7ee8b500cd438a7d5091","commit_message":"Move UserAgentStylesheet and init_stylo_prefs to the stylo module"},
 {"date":"2026-11-12T11:46:54Z","wpt_revision":"07e827e43","product_revision":"b003e1c5e0befc2c71a09aeba62b6d4cdcbd7e7d","commit_message":"Split stylo module into submodules"},
 {"date":"2026-11-12T12:10:21Z","wpt_revision":"07e827e43","product_revision":"fcdf67aea1d9cef38b862f740a2a5d12cf16f181","commit_message":"Clip outset box shadows when background-clip leaves the border box uncovered (#1533)"},
-{"date":"2026-11-12T14:48:17Z","wpt_revision":"07e827e43","product_revision":"a946a0a7bc776a59159747883c6cd431b3df507b","commit_message":"Use AnyRender mask layers for CSS masks (#1534)"}
+{"date":"2026-11-12T14:48:17Z","wpt_revision":"07e827e43","product_revision":"a946a0a7bc776a59159747883c6cd431b3df507b","commit_message":"Use AnyRender mask layers for CSS masks (#1534)"},
+{"date":"2026-11-12T16:19:18Z","wpt_revision":"07e827e43","product_revision":"e2d6dc22d2eb9d5de41071edf72f8f6166254604","commit_message":"Make BlitzNode a newtype so Stylo's DOM trait impls aren't on &Node"}
 ]}
