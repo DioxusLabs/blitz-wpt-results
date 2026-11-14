@@ -1337,5 +1337,6 @@
 {"date":"2026-11-13T11:22:11Z","wpt_revision":"07e827e43","product_revision":"b4952e15f3a0d114dbecd21db341d9b1bd68d7d4","commit_message":"Bump Taffy to main (cache_get takes &self) (#1557)"},
 {"date":"2026-11-13T11:47:28Z","wpt_revision":"07e827e43","product_revision":"a27b8511b50564b1510d8ffe6e1a80fcdb756980","commit_message":"Collapse whitespace to U+3000 for text-transform: full-width (#1096)"},
 {"date":"2026-11-13T12:39:22Z","wpt_revision":"07e827e43","product_revision":"563d3db73150759a4e40832510b9218ca3931f8c","commit_message":"Resolve transforms through anonymous block boxes (#1549)"},
-{"date":"2026-11-13T13:50:15Z","wpt_revision":"07e827e43","product_revision":"84dec072bd3c6657ad0950372ffc1dff5c9d82e9","commit_message":"Bump anyrender to 1a314052 (SVG filters in anyrender_svg) (#1559)"}
+{"date":"2026-11-13T13:50:15Z","wpt_revision":"07e827e43","product_revision":"84dec072bd3c6657ad0950372ffc1dff5c9d82e9","commit_message":"Bump anyrender to 1a314052 (SVG filters in anyrender_svg) (#1559)"},
+{"date":"2026-11-14T17:00:15Z","wpt_revision":"07e827e43","product_revision":"e7cca1d371628128d957db812c5acbb5a289273f","commit_message":"WPT runner: add tiny-skia rendering backend (#1565)"}
 ]}
