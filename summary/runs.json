@@ -1347,5 +1347,6 @@
 {"date":"2026-11-15T00:57:12Z","wpt_revision":"07e827e43","product_revision":"b4d554f8d5fff174452f0eb3e47152229100a201","commit_message":"Bump anyrender to main (aa5be85) (#1584)"},
 {"date":"2026-11-15T01:05:52Z","wpt_revision":"bbb30d0f5","product_revision":"c30096724f6dbd0f3caa088eb560468573d48cf2","commit_message":"Bump WPT pin to bbb30d0 (#1585)"},
 {"date":"2026-11-15T02:09:44Z","wpt_revision":"bbb30d0f5","product_revision":"d2ee20b98021fcbf0789478456a6b462b5a7fc19","commit_message":"Quarantine 4 WPT tests that wait on dynamic load events (#1591)"},
-{"date":"2026-11-15T02:29:18Z","wpt_revision":"bbb30d0f5","product_revision":"fb381be2c02a7ad7b5f7345c73b1922d59d54406","commit_message":"Map the hr element's color, noshade and size attributes (#1398)"}
+{"date":"2026-11-15T02:29:18Z","wpt_revision":"bbb30d0f5","product_revision":"fb381be2c02a7ad7b5f7345c73b1922d59d54406","commit_message":"Map the hr element's color, noshade and size attributes (#1398)"},
+{"date":"2026-11-15T02:33:41Z","wpt_revision":"bbb30d0f5","product_revision":"ea7cfe0e36d562ddf1520940b70f568d3a7b5db1","commit_message":"Map SVG presentation attributes to CSS (#1593)"}
 ]}
