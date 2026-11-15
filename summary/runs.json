@@ -1349,5 +1349,6 @@
 {"date":"2026-11-15T02:09:44Z","wpt_revision":"bbb30d0f5","product_revision":"d2ee20b98021fcbf0789478456a6b462b5a7fc19","commit_message":"Quarantine 4 WPT tests that wait on dynamic load events (#1591)"},
 {"date":"2026-11-15T02:29:18Z","wpt_revision":"bbb30d0f5","product_revision":"fb381be2c02a7ad7b5f7345c73b1922d59d54406","commit_message":"Map the hr element's color, noshade and size attributes (#1398)"},
 {"date":"2026-11-15T02:33:41Z","wpt_revision":"bbb30d0f5","product_revision":"ea7cfe0e36d562ddf1520940b70f568d3a7b5db1","commit_message":"Map SVG presentation attributes to CSS (#1593)"},
-{"date":"2026-11-15T02:49:49Z","wpt_revision":"bbb30d0f5","product_revision":"4f61cffacee50fe4f944ebe9d0470d9a5d3997e0","commit_message":"Bump anyrender to main (97d06af) (#1592)"}
+{"date":"2026-11-15T02:49:49Z","wpt_revision":"bbb30d0f5","product_revision":"4f61cffacee50fe4f944ebe9d0470d9a5d3997e0","commit_message":"Bump anyrender to main (97d06af) (#1592)"},
+{"date":"2026-11-15T03:25:33Z","wpt_revision":"bbb30d0f5","product_revision":"0bdfe4fa31940d2a46f5817d8a43bb233eddba1b","commit_message":"Factor the presentational hint boilerplate into matches_tag! and helpers (#1595)"}
 ]}
