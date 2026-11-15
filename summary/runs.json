@@ -1343,5 +1343,6 @@
 {"date":"2026-11-14T21:26:25Z","wpt_revision":"07e827e43","product_revision":"414b89b59913ea94f802b06341c4822c7759135e","commit_message":"Map inline SVG overflow and outer transform attribute to CSS (#1580)"},
 {"date":"2026-11-14T22:50:03Z","wpt_revision":"07e827e43","product_revision":"f5ea1caf1af6d48000d640275616348500696bd4","commit_message":"Pass @font-face font-stretch descriptor to fontique (#1581)"},
 {"date":"2026-11-15T00:27:51Z","wpt_revision":"07e827e43","product_revision":"d176ac4e62fcb09b62016e04d6e9230498f0df3f","commit_message":"paint: clip SVG images to their root viewport (#1576)"},
-{"date":"2026-11-15T00:44:51Z","wpt_revision":"07e827e43","product_revision":"21d859d69780d1ae298831e8ff76fc2d6d34c119","commit_message":"Bump anyrender to main (17b0ec9) (#1582)"}
+{"date":"2026-11-15T00:44:51Z","wpt_revision":"07e827e43","product_revision":"21d859d69780d1ae298831e8ff76fc2d6d34c119","commit_message":"Bump anyrender to main (17b0ec9) (#1582)"},
+{"date":"2026-11-15T00:57:12Z","wpt_revision":"07e827e43","product_revision":"b4d554f8d5fff174452f0eb3e47152229100a201","commit_message":"Bump anyrender to main (aa5be85) (#1584)"}
 ]}
