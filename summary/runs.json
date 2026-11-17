@@ -1358,5 +1358,6 @@
 {"date":"2026-11-16T13:25:59Z","wpt_revision":"bbb30d0f5","product_revision":"92df4760cfa5095d1aa411efa31b78353de7b29a","commit_message":"Bump anyrender to main and rename vello hybrid backend to gpu (#1606)"},
 {"date":"2026-11-16T13:26:42Z","wpt_revision":"bbb30d0f5","product_revision":"e8b370a2569cadd8411095e9d6938c7924c5b507","commit_message":"wpt: remove float, calc and direction test flags (#1607)"},
 {"date":"2026-11-16T14:25:26Z","wpt_revision":"bbb30d0f5","product_revision":"81b48968474614b28364a452af6d4d0ecedcf6a1","commit_message":"Upgrade to AnyRender 0.15 from crates.io (#1608)"},
-{"date":"2026-11-17T10:49:57Z","wpt_revision":"bbb30d0f5","product_revision":"d02c094c730688b3f175d8eaa2fbad1b65a96e79","commit_message":"Fix: synthetic italic/oblique shears in wrong direction"}
+{"date":"2026-11-17T10:49:57Z","wpt_revision":"bbb30d0f5","product_revision":"d02c094c730688b3f175d8eaa2fbad1b65a96e79","commit_message":"Fix: synthetic italic/oblique shears in wrong direction"},
+{"date":"2026-11-17T11:32:47Z","wpt_revision":"92d37954d","product_revision":"585c1869cbd3d5c0fe8ff58012aa9adba4d6f7a7","commit_message":"Bump WPT pin to 92d3795 (#1625)"}
 ]}
