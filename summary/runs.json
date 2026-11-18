@@ -1365,5 +1365,6 @@
 {"date":"2026-11-18T14:03:07Z","wpt_revision":"92d37954d","product_revision":"f99630e1e72ceff7c2265399bb4639f552c2ccac","commit_message":"Stop scroll chaining at overscroll-behavior: contain and none (#1636)"},
 {"date":"2026-11-18T14:46:30Z","wpt_revision":"92d37954d","product_revision":"da2f95b1e7068679ba785493468fd0d2ce035a24","commit_message":"Skip PR WPT comparisons when test revisions differ (#1637)"},
 {"date":"2026-11-18T15:34:42Z","wpt_revision":"92d37954d","product_revision":"bb611089c02615881683d5d0a3acbac344ea12b7","commit_message":"Lock trackpad scroll gestures to their main axis (#1638)"},
-{"date":"2026-11-18T15:51:40Z","wpt_revision":"92d37954d","product_revision":"e1c32e3798b02cb5b2860e45cdd95fcb21dd465d","commit_message":"Move wheel event handling into its own file (#1639)"}
+{"date":"2026-11-18T15:51:40Z","wpt_revision":"92d37954d","product_revision":"e1c32e3798b02cb5b2860e45cdd95fcb21dd465d","commit_message":"Move wheel event handling into its own file (#1639)"},
+{"date":"2026-11-18T17:13:21Z","wpt_revision":"92d37954d","product_revision":"2f86235555931f808cc143d952bd31ce7d64f089","commit_message":"Handle a cancelled pointerup in the document (#1640)"}
 ]}
