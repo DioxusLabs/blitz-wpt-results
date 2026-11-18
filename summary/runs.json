@@ -1363,5 +1363,6 @@
 {"date":"2026-11-17T11:43:28Z","wpt_revision":"92d37954d","product_revision":"e5305a4c138b4c89c95864dd534a9b488830c9bb","commit_message":"Clamp scroll offsets after layout during layout rounding (#1624)"},
 {"date":"2026-11-18T10:46:20Z","wpt_revision":"92d37954d","product_revision":"0958b3d4cff2b8125a9f1383d5d4873cb9cf2f8b","commit_message":"Keep smooth scrolls monotonic when layout clamps their destination (#1634)"},
 {"date":"2026-11-18T14:03:07Z","wpt_revision":"92d37954d","product_revision":"f99630e1e72ceff7c2265399bb4639f552c2ccac","commit_message":"Stop scroll chaining at overscroll-behavior: contain and none (#1636)"},
-{"date":"2026-11-18T14:46:30Z","wpt_revision":"92d37954d","product_revision":"da2f95b1e7068679ba785493468fd0d2ce035a24","commit_message":"Skip PR WPT comparisons when test revisions differ (#1637)"}
+{"date":"2026-11-18T14:46:30Z","wpt_revision":"92d37954d","product_revision":"da2f95b1e7068679ba785493468fd0d2ce035a24","commit_message":"Skip PR WPT comparisons when test revisions differ (#1637)"},
+{"date":"2026-11-18T15:34:42Z","wpt_revision":"92d37954d","product_revision":"bb611089c02615881683d5d0a3acbac344ea12b7","commit_message":"Lock trackpad scroll gestures to their main axis (#1638)"}
 ]}
