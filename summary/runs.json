@@ -1360,5 +1360,6 @@
 {"date":"2026-11-16T14:25:26Z","wpt_revision":"bbb30d0f5","product_revision":"81b48968474614b28364a452af6d4d0ecedcf6a1","commit_message":"Upgrade to AnyRender 0.15 from crates.io (#1608)"},
 {"date":"2026-11-17T10:49:57Z","wpt_revision":"bbb30d0f5","product_revision":"d02c094c730688b3f175d8eaa2fbad1b65a96e79","commit_message":"Fix: synthetic italic/oblique shears in wrong direction"},
 {"date":"2026-11-17T11:32:47Z","wpt_revision":"92d37954d","product_revision":"585c1869cbd3d5c0fe8ff58012aa9adba4d6f7a7","commit_message":"Bump WPT pin to 92d3795 (#1625)"},
-{"date":"2026-11-17T11:43:28Z","wpt_revision":"92d37954d","product_revision":"e5305a4c138b4c89c95864dd534a9b488830c9bb","commit_message":"Clamp scroll offsets after layout during layout rounding (#1624)"}
+{"date":"2026-11-17T11:43:28Z","wpt_revision":"92d37954d","product_revision":"e5305a4c138b4c89c95864dd534a9b488830c9bb","commit_message":"Clamp scroll offsets after layout during layout rounding (#1624)"},
+{"date":"2026-11-18T10:46:20Z","wpt_revision":"92d37954d","product_revision":"0958b3d4cff2b8125a9f1383d5d4873cb9cf2f8b","commit_message":"Keep smooth scrolls monotonic when layout clamps their destination (#1634)"}
 ]}
