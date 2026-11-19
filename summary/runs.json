@@ -1372,5 +1372,6 @@
 {"date":"2026-11-18T19:17:13Z","wpt_revision":"92d37954d","product_revision":"2c76b3f3c4b0d71836981845770101d744bc02be","commit_message":"Add a queue_ua_event helper for events the document generates (#1654)"},
 {"date":"2026-11-19T01:45:16Z","wpt_revision":"92d37954d","product_revision":"1e61a279bcfe7aa35dec64e3b4e6f7675547b983","commit_message":"Make LayoutPassState and Node::svg_source public for embedders (#1664)"},
 {"date":"2026-11-19T02:03:11Z","wpt_revision":"92d37954d","product_revision":"c86d84d0b434e00e1c7a279f14c8e360505a1fad","commit_message":"Add ScriptDocument::runtime_limits_mut (#1671)"},
-{"date":"2026-11-19T02:08:44Z","wpt_revision":"92d37954d","product_revision":"13fa9ace8fcfa5ca789636aa5fea6c6278d0dbd2","commit_message":"Expose a wheel event's phase and source on NativeWheelData (#1658)"}
+{"date":"2026-11-19T02:08:44Z","wpt_revision":"92d37954d","product_revision":"13fa9ace8fcfa5ca789636aa5fea6c6278d0dbd2","commit_message":"Expose a wheel event's phase and source on NativeWheelData (#1658)"},
+{"date":"2026-11-19T02:11:18Z","wpt_revision":"92d37954d","product_revision":"5b8e7a26810aa0c3a2bdf8a8bb2d1acd77b84806","commit_message":"Exclude visibility: collapse elements from the accessibility tree (#1647)"}
 ]}
