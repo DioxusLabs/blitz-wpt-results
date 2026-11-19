@@ -1375,5 +1375,6 @@
 {"date":"2026-11-19T02:08:44Z","wpt_revision":"92d37954d","product_revision":"13fa9ace8fcfa5ca789636aa5fea6c6278d0dbd2","commit_message":"Expose a wheel event's phase and source on NativeWheelData (#1658)"},
 {"date":"2026-11-19T02:11:18Z","wpt_revision":"92d37954d","product_revision":"5b8e7a26810aa0c3a2bdf8a8bb2d1acd77b84806","commit_message":"Exclude visibility: collapse elements from the accessibility tree (#1647)"},
 {"date":"2026-11-19T09:59:50Z","wpt_revision":"92d37954d","product_revision":"f0d7aeac99ab8db4c871a09f3fe7b3f03728f700","commit_message":"Refuse @import rules whose URL does not parse (#1677)"},
-{"date":"2026-11-19T10:08:55Z","wpt_revision":"92d37954d","product_revision":"18ce65e97e42396b6bc82c074fe36f901010954b","commit_message":"Hide the element when an inset() clip region is empty (#1662)"}
+{"date":"2026-11-19T10:08:55Z","wpt_revision":"92d37954d","product_revision":"18ce65e97e42396b6bc82c074fe36f901010954b","commit_message":"Hide the element when an inset() clip region is empty (#1662)"},
+{"date":"2026-11-19T10:11:10Z","wpt_revision":"92d37954d","product_revision":"547d7514ba2adb357d41d5e4655a63ddd5cdc5ec","commit_message":"Order pseudo-elements by box position in compare_document_order (#1667)"}
 ]}
