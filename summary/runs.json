@@ -1369,5 +1369,6 @@
 {"date":"2026-11-18T17:13:21Z","wpt_revision":"92d37954d","product_revision":"2f86235555931f808cc143d952bd31ce7d64f089","commit_message":"Handle a cancelled pointerup in the document (#1640)"},
 {"date":"2026-11-18T18:25:00Z","wpt_revision":"92d37954d","product_revision":"5ee785aaec0bc82d7b76496fa6731c2f5a49a032","commit_message":"Bump accesskit adapters to latest patch versions (#1653)"},
 {"date":"2026-11-18T19:01:04Z","wpt_revision":"92d37954d","product_revision":"3ddd337c726a3d60b3cca25ad08db1c3500ba72e","commit_message":"Connect AccessKit's UIKit adapter on iOS (#1645)"},
-{"date":"2026-11-18T19:17:13Z","wpt_revision":"92d37954d","product_revision":"2c76b3f3c4b0d71836981845770101d744bc02be","commit_message":"Add a queue_ua_event helper for events the document generates (#1654)"}
+{"date":"2026-11-18T19:17:13Z","wpt_revision":"92d37954d","product_revision":"2c76b3f3c4b0d71836981845770101d744bc02be","commit_message":"Add a queue_ua_event helper for events the document generates (#1654)"},
+{"date":"2026-11-19T01:45:16Z","wpt_revision":"92d37954d","product_revision":"1e61a279bcfe7aa35dec64e3b4e6f7675547b983","commit_message":"Make LayoutPassState and Node::svg_source public for embedders (#1664)"}
 ]}
