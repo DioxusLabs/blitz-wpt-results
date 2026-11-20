@@ -1381,5 +1381,6 @@
 {"date":"2026-11-20T13:41:54Z","wpt_revision":"92d37954d","product_revision":"6fd5a3ade5321fab972722642080455c00f292fa","commit_message":"blitz-vibey-script: implement DOMTokenList.replace (#1691)"},
 {"date":"2026-11-20T13:42:19Z","wpt_revision":"92d37954d","product_revision":"c4328ad5b49625d900e6a196451a2513e359d088","commit_message":"Resolve float keyword sizes and logical float/clear sides (#1690)"},
 {"date":"2026-11-20T14:05:03Z","wpt_revision":"92d37954d","product_revision":"1fa2034d0abac5bfaba3518966565814c2ad7444","commit_message":"Recurse through display: contents in is_or_contains_block (#1692)"},
-{"date":"2026-11-20T14:17:33Z","wpt_revision":"92d37954d","product_revision":"719268a9e317cdbf5619dea7a7cb3dd0a1287e47","commit_message":"Fix display: contents pseudo-elements and inline-only wrapping in inline layout (#1689)"}
+{"date":"2026-11-20T14:17:33Z","wpt_revision":"92d37954d","product_revision":"719268a9e317cdbf5619dea7a7cb3dd0a1287e47","commit_message":"Fix display: contents pseudo-elements and inline-only wrapping in inline layout (#1689)"},
+{"date":"2026-11-20T15:40:22Z","wpt_revision":"92d37954d","product_revision":"7beb5917659c220a6705ca9f92b4d414cf23f142","commit_message":"Underline the text an input method is composing (#1694)"}
 ]}
