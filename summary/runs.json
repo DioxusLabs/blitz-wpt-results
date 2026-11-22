@@ -1383,5 +1383,8 @@
 {"date":"2026-11-20T14:05:03Z","wpt_revision":"92d37954d","product_revision":"1fa2034d0abac5bfaba3518966565814c2ad7444","commit_message":"Recurse through display: contents in is_or_contains_block (#1692)"},
 {"date":"2026-11-20T14:17:33Z","wpt_revision":"92d37954d","product_revision":"719268a9e317cdbf5619dea7a7cb3dd0a1287e47","commit_message":"Fix display: contents pseudo-elements and inline-only wrapping in inline layout (#1689)"},
 {"date":"2026-11-20T15:40:22Z","wpt_revision":"92d37954d","product_revision":"7beb5917659c220a6705ca9f92b4d414cf23f142","commit_message":"Underline the text an input method is composing (#1694)"},
-{"date":"2026-11-20T15:42:33Z","wpt_revision":"92d37954d","product_revision":"6636442d30ebe29289ebfbb8a3bf53ddfd640a0e","commit_message":"Lay out a textarea's text only once layout knows its width (#1695)"}
+{"date":"2026-11-20T15:42:33Z","wpt_revision":"92d37954d","product_revision":"6636442d30ebe29289ebfbb8a3bf53ddfd640a0e","commit_message":"Lay out a textarea's text only once layout knows its width (#1695)"},
+{"date":"2026-11-21T17:48:40Z","wpt_revision":"92d37954d","product_revision":"120520960125c90b88d1effe17912af112d225ff","commit_message":"Show WPT results alongside revision-mismatch warning (#1711)"},
+{"date":"2026-11-21T17:53:24Z","wpt_revision":"9986bb32c","product_revision":"cec303355bb0b83adca5136eb5cf9fbd66900bd8","commit_message":"Bump WPT pin to 9986bb3 (#1710)"},
+{"date":"2026-11-22T13:05:58Z","wpt_revision":"9986bb32c","product_revision":"165d698c31d00b9614664dddfbb865ff030948b3","commit_message":"CI: name Pages artifact per run attempt so re-runs can deploy (#1720)"}
 ]}
