@@ -1390,5 +1390,6 @@
 {"date":"2026-11-23T16:07:37Z","wpt_revision":"9986bb32c","product_revision":"f559f3fe22c73db12adfcbf2e03b96d29ced5319","commit_message":"Keep a <br> after text in the text's anonymous flex item (#1709)"},
 {"date":"2026-11-23T16:13:48Z","wpt_revision":"9986bb32c","product_revision":"2e9fd4af16d463f496006e9a4fc4cbc2082adb68","commit_message":"Upgrade to Taffy 0.16.0 (#1734)"},
 {"date":"2026-11-23T18:42:20Z","wpt_revision":"9986bb32c","product_revision":"f65baeca56826eaf136684419ab19ce5db11c911","commit_message":"Clip only the clipped axis for one-axis overflow: clip (#1735)"},
-{"date":"2026-11-23T19:21:18Z","wpt_revision":"9986bb32c","product_revision":"82a6573eedca65bffcdcd247de9ab02fd8fef751","commit_message":"Support drops from other applications (#1718)"}
+{"date":"2026-11-23T19:21:18Z","wpt_revision":"9986bb32c","product_revision":"82a6573eedca65bffcdcd247de9ab02fd8fef751","commit_message":"Support drops from other applications (#1718)"},
+{"date":"2026-11-23T19:39:32Z","wpt_revision":"9986bb32c","product_revision":"22c18e38f32436366df08a216f2b0083ce4602b9","commit_message":"Ignore preventDefault on non-cancelable events (#1736)"}
 ]}
