@@ -1386,5 +1386,6 @@
 {"date":"2026-11-20T15:42:33Z","wpt_revision":"92d37954d","product_revision":"6636442d30ebe29289ebfbb8a3bf53ddfd640a0e","commit_message":"Lay out a textarea's text only once layout knows its width (#1695)"},
 {"date":"2026-11-21T17:48:40Z","wpt_revision":"92d37954d","product_revision":"120520960125c90b88d1effe17912af112d225ff","commit_message":"Show WPT results alongside revision-mismatch warning (#1711)"},
 {"date":"2026-11-21T17:53:24Z","wpt_revision":"9986bb32c","product_revision":"cec303355bb0b83adca5136eb5cf9fbd66900bd8","commit_message":"Bump WPT pin to 9986bb3 (#1710)"},
-{"date":"2026-11-22T13:05:58Z","wpt_revision":"9986bb32c","product_revision":"165d698c31d00b9614664dddfbb865ff030948b3","commit_message":"CI: name Pages artifact per run attempt so re-runs can deploy (#1720)"}
+{"date":"2026-11-22T13:05:58Z","wpt_revision":"9986bb32c","product_revision":"165d698c31d00b9614664dddfbb865ff030948b3","commit_message":"CI: name Pages artifact per run attempt so re-runs can deploy (#1720)"},
+{"date":"2026-11-23T16:07:37Z","wpt_revision":"9986bb32c","product_revision":"f559f3fe22c73db12adfcbf2e03b96d29ced5319","commit_message":"Keep a <br> after text in the text's anonymous flex item (#1709)"}
 ]}
