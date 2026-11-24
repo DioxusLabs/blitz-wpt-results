@@ -1397,5 +1397,6 @@
 {"date":"2026-11-24T13:05:49Z","wpt_revision":"9986bb32c","product_revision":"cee0ddb6dc5b926211aae9f4a74fdd962ecc619a","commit_message":"Bump async-executor patch version"},
 {"date":"2026-11-24T13:14:40Z","wpt_revision":"9986bb32c","product_revision":"846ca67795b1e4fb0952fd05a91d682b44330268","commit_message":"Bump version for 0.3.0-beta.5 release (#1738)"},
 {"date":"2026-11-24T14:46:44Z","wpt_revision":"9986bb32c","product_revision":"e7f67e7cb83e55ff5b6bcdb572960ce500766a03","commit_message":"Remove redundant homepage fields from Cargo.toml (#1745)"},
-{"date":"2026-11-24T15:31:46Z","wpt_revision":"9986bb32c","product_revision":"eff2d971808020069b29d61a90bf496ee35181fa","commit_message":"Support cjk-decimal list markers (#1731)"}
+{"date":"2026-11-24T15:31:46Z","wpt_revision":"9986bb32c","product_revision":"eff2d971808020069b29d61a90bf496ee35181fa","commit_message":"Support cjk-decimal list markers (#1731)"},
+{"date":"2026-11-24T17:52:48Z","wpt_revision":"9986bb32c","product_revision":"084aa573539a4e099fbca852c6e5874e65371938","commit_message":"Create Stylo element data lazily to fix viewport-resize panic (#1751)"}
 ]}
