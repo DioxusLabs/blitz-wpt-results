@@ -1392,5 +1392,8 @@
 {"date":"2026-11-23T18:42:20Z","wpt_revision":"9986bb32c","product_revision":"f65baeca56826eaf136684419ab19ce5db11c911","commit_message":"Clip only the clipped axis for one-axis overflow: clip (#1735)"},
 {"date":"2026-11-23T19:21:18Z","wpt_revision":"9986bb32c","product_revision":"82a6573eedca65bffcdcd247de9ab02fd8fef751","commit_message":"Support drops from other applications (#1718)"},
 {"date":"2026-11-23T19:39:32Z","wpt_revision":"9986bb32c","product_revision":"22c18e38f32436366df08a216f2b0083ce4602b9","commit_message":"Ignore preventDefault on non-cancelable events (#1736)"},
-{"date":"2026-11-23T19:45:30Z","wpt_revision":"9986bb32c","product_revision":"29a439e0563cbed6252c8f1d8ab4ed68afe03968","commit_message":"Add file_drop example with previews of dropped content (#1737)"}
+{"date":"2026-11-23T19:45:30Z","wpt_revision":"9986bb32c","product_revision":"29a439e0563cbed6252c8f1d8ab4ed68afe03968","commit_message":"Add file_drop example with previews of dropped content (#1737)"},
+{"date":"2026-11-24T12:57:32Z","wpt_revision":"9986bb32c","product_revision":"5ad512dcd8f9dfe18c09e0e43b2873b6e82ba8ee","commit_message":"Bump accesskit_xplat to 0.2.2"},
+{"date":"2026-11-24T13:05:49Z","wpt_revision":"9986bb32c","product_revision":"cee0ddb6dc5b926211aae9f4a74fdd962ecc619a","commit_message":"Bump async-executor patch version"},
+{"date":"2026-11-24T13:14:40Z","wpt_revision":"9986bb32c","product_revision":"846ca67795b1e4fb0952fd05a91d682b44330268","commit_message":"Bump version for 0.3.0-beta.5 release (#1738)"}
 ]}
