@@ -1395,5 +1395,6 @@
 {"date":"2026-11-23T19:45:30Z","wpt_revision":"9986bb32c","product_revision":"29a439e0563cbed6252c8f1d8ab4ed68afe03968","commit_message":"Add file_drop example with previews of dropped content (#1737)"},
 {"date":"2026-11-24T12:57:32Z","wpt_revision":"9986bb32c","product_revision":"5ad512dcd8f9dfe18c09e0e43b2873b6e82ba8ee","commit_message":"Bump accesskit_xplat to 0.2.2"},
 {"date":"2026-11-24T13:05:49Z","wpt_revision":"9986bb32c","product_revision":"cee0ddb6dc5b926211aae9f4a74fdd962ecc619a","commit_message":"Bump async-executor patch version"},
-{"date":"2026-11-24T13:14:40Z","wpt_revision":"9986bb32c","product_revision":"846ca67795b1e4fb0952fd05a91d682b44330268","commit_message":"Bump version for 0.3.0-beta.5 release (#1738)"}
+{"date":"2026-11-24T13:14:40Z","wpt_revision":"9986bb32c","product_revision":"846ca67795b1e4fb0952fd05a91d682b44330268","commit_message":"Bump version for 0.3.0-beta.5 release (#1738)"},
+{"date":"2026-11-24T14:46:44Z","wpt_revision":"9986bb32c","product_revision":"e7f67e7cb83e55ff5b6bcdb572960ce500766a03","commit_message":"Remove redundant homepage fields from Cargo.toml (#1745)"}
 ]}
