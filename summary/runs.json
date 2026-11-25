@@ -1400,5 +1400,7 @@
 {"date":"2026-11-24T15:31:46Z","wpt_revision":"9986bb32c","product_revision":"eff2d971808020069b29d61a90bf496ee35181fa","commit_message":"Support cjk-decimal list markers (#1731)"},
 {"date":"2026-11-24T17:52:48Z","wpt_revision":"9986bb32c","product_revision":"084aa573539a4e099fbca852c6e5874e65371938","commit_message":"Create Stylo element data lazily to fix viewport-resize panic (#1751)"},
 {"date":"2026-11-25T09:43:14Z","wpt_revision":"9986bb32c","product_revision":"3e7d1d1db21f6e072335f531f7b405b3382a0678","commit_message":"feat(dioxus-native-dom): expose constructors and re-exports for NativeWheelData, NativeScrollData, NativeTouchData, and NativeFocusData (#1760)"},
-{"date":"2026-11-25T10:50:53Z","wpt_revision":"9986bb32c","product_revision":"0e8e7af75fb1b4ee362b03592ce2d979438a3cdd","commit_message":"Clear hoisted child lists in display: none subtrees (#1572)"}
+{"date":"2026-11-25T10:50:53Z","wpt_revision":"9986bb32c","product_revision":"0e8e7af75fb1b4ee362b03592ce2d979438a3cdd","commit_message":"Clear hoisted child lists in display: none subtrees (#1572)"},
+{"date":"2026-11-25T15:05:37Z","wpt_revision":"9986bb32c","product_revision":"ca175fa06e15dc20068024c55abc83888ea98954","commit_message":"Give pen pointers their own pointer ID in Dioxus Native (#1764)"},
+{"date":"2026-11-25T21:23:07Z","wpt_revision":"9986bb32c","product_revision":"414ce834b7bfd263c1f53648f96e4e9d329e5744","commit_message":"blitz-shell: assign Blitz's own finger pointer IDs (#1765)"}
 ]}
