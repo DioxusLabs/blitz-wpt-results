@@ -1405,5 +1405,6 @@
 {"date":"2026-11-25T21:23:07Z","wpt_revision":"9986bb32c","product_revision":"414ce834b7bfd263c1f53648f96e4e9d329e5744","commit_message":"blitz-shell: assign Blitz's own finger pointer IDs (#1765)"},
 {"date":"2026-11-26T09:25:59Z","wpt_revision":"9b8b1beec","product_revision":"c1072ed5b3283f8d07c96309e4686aa5172c2834","commit_message":"Bump WPT pin to 9b8b1beec7 (wpt master 2026-11-25) (#1770)"},
 {"date":"2026-11-26T11:19:33Z","wpt_revision":"9b8b1beec","product_revision":"2730dcdf86fece0554e3da31182e834c4759a72c","commit_message":"Use Blitz finger IDs for harness touch events (#1769)"},
-{"date":"2026-11-26T11:20:08Z","wpt_revision":"9b8b1beec","product_revision":"c7ec33aa9d116fa14b56078a70e05a6c2b6c33c9","commit_message":"Deploy WPT results in a separate Pages job (#1768)"}
+{"date":"2026-11-26T11:20:08Z","wpt_revision":"9b8b1beec","product_revision":"c7ec33aa9d116fa14b56078a70e05a6c2b6c33c9","commit_message":"Deploy WPT results in a separate Pages job (#1768)"},
+{"date":"2026-11-26T14:37:22Z","wpt_revision":"d87507ffa","product_revision":"957382db5bb58c56673b9c908b65b8bfae15377e","commit_message":"Bump WPT pin to d87507ffa (wpt master 2026-11-26) (#1773)"}
 ]}
