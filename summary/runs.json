@@ -1408,5 +1408,6 @@
 {"date":"2026-11-26T11:20:08Z","wpt_revision":"9b8b1beec","product_revision":"c7ec33aa9d116fa14b56078a70e05a6c2b6c33c9","commit_message":"Deploy WPT results in a separate Pages job (#1768)"},
 {"date":"2026-11-26T14:37:22Z","wpt_revision":"d87507ffa","product_revision":"957382db5bb58c56673b9c908b65b8bfae15377e","commit_message":"Bump WPT pin to d87507ffa (wpt master 2026-11-26) (#1773)"},
 {"date":"2026-11-26T14:43:04Z","wpt_revision":"d87507ffa","product_revision":"fbacf02691c8bc6328e511251d7c64142ad8716e","commit_message":"Fix broken intra-doc links (#1774)"},
-{"date":"2026-11-26T17:15:06Z","wpt_revision":"d87507ffa","product_revision":"1532e7c4dba25bed888106b7e33d283b586683e3","commit_message":"CI: document every workspace crate (#1775)"}
+{"date":"2026-11-26T17:15:06Z","wpt_revision":"d87507ffa","product_revision":"1532e7c4dba25bed888106b7e33d283b586683e3","commit_message":"CI: document every workspace crate (#1775)"},
+{"date":"2026-11-26T21:15:02Z","wpt_revision":"d87507ffa","product_revision":"9726707bd7c4fab2544e6b7ce572c30e3f9a6d85","commit_message":"Preserve raw text in style elements (#1748)"}
 ]}
