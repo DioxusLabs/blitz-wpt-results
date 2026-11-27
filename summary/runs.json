@@ -1411,5 +1411,6 @@
 {"date":"2026-11-26T17:15:06Z","wpt_revision":"d87507ffa","product_revision":"1532e7c4dba25bed888106b7e33d283b586683e3","commit_message":"CI: document every workspace crate (#1775)"},
 {"date":"2026-11-26T21:15:02Z","wpt_revision":"d87507ffa","product_revision":"9726707bd7c4fab2544e6b7ce572c30e3f9a6d85","commit_message":"Preserve raw text in style elements (#1748)"},
 {"date":"2026-11-27T00:56:53Z","wpt_revision":"d87507ffa","product_revision":"a18106be449ca43eb2763c93ef31730d0fd8f8d6","commit_message":"Upgrade to Dioxus 0.8.0-alpha.4 (#1785)"},
-{"date":"2026-11-27T01:02:29Z","wpt_revision":"d87507ffa","product_revision":"a50ee6e48758c267168916747c20d14d70c349ab","commit_message":"Implement MountedData pointer capture for Dioxus Native (#1789)"}
+{"date":"2026-11-27T01:02:29Z","wpt_revision":"d87507ffa","product_revision":"a50ee6e48758c267168916747c20d14d70c349ab","commit_message":"Implement MountedData pointer capture for Dioxus Native (#1789)"},
+{"date":"2026-11-27T01:09:30Z","wpt_revision":"d87507ffa","product_revision":"6609083ada95d257affa5d63ea0ff1e397d9ebe7","commit_message":"Resolve CSSOM width and height in physical axes (#1786)"}
 ]}
