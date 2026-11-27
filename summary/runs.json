@@ -1417,5 +1417,6 @@
 {"date":"2026-11-27T02:15:08Z","wpt_revision":"d87507ffa","product_revision":"ed2630dccbc1a32913fd4530ca79d9fc3da0f8a8","commit_message":"Dispatch queued events in the default Document::poll (#1792)"},
 {"date":"2026-11-27T02:38:11Z","wpt_revision":"d87507ffa","product_revision":"5e532c53aa25eb332d6cf522a948f65c81a4a0cf","commit_message":"Keep namespaced attributes out of ID and class matching (#1749)"},
 {"date":"2026-11-27T02:40:13Z","wpt_revision":"d87507ffa","product_revision":"5ebeb96fcd46a783a928498ba6f0dc9edfb4ebc5","commit_message":"Add element resize observer support and Dioxus Native `onresize` (#1746)"},
-{"date":"2026-11-27T03:04:09Z","wpt_revision":"d87507ffa","product_revision":"1ad8c7cf884482e3dd9611ce58af03db22578301","commit_message":"Make blitz-dom's thread_local dependency optional"}
+{"date":"2026-11-27T03:04:09Z","wpt_revision":"d87507ffa","product_revision":"1ad8c7cf884482e3dd9611ce58af03db22578301","commit_message":"Make blitz-dom's thread_local dependency optional"},
+{"date":"2026-11-27T03:51:38Z","wpt_revision":"d87507ffa","product_revision":"9e934964a10dc9ad41f12f1575248586637b746e","commit_message":"Sync Native pointer capture with Dioxus (#1795)"}
 ]}
